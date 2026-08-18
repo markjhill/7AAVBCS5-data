@@ -1,0 +1,15 @@
+File	Speaker	Start	End	Transcript
+LothianDiaries_55	55	0.42	4.08	Hi my name is Jessica and I'm seventeen years old
+LothianDiaries_55	55	4.53	8.55	So when Lockdown first started I was in sixth year at high school
+LothianDiaries_55	55	8.61	16.26	Em and I was planning on doing my advanced higher exams but this all just stopped and it felt like the world just got put on pause
+LothianDiaries_55	55	16.8	20.46	I felt very scared at that moment of time as I had no idea
+LothianDiaries_55	55	20.52	23.97	What my Future would hold for me and how long Lockdown would last
+LothianDiaries_55	55	24.27	28.89	So I really did Miss also seeing my family my friends
+LothianDiaries_55	55	28.92	30.39	Playing sport
+LothianDiaries_55	55	30.72	32.19	So in order to
+LothianDiaries_55	55	32.34	33.42	Try me best
+LothianDiaries_55	55	33.51	35.76	To situation I would
+LothianDiaries_55	55	35.82	42.42	Facetime friends do virtual Quizzes I went out running did Online exercise videos
+LothianDiaries_55	55	42.69	44.25	I learnt to Bake
+LothianDiaries_55	55	45.09	52.26	Trying to think of the postives of of the situation um I think I developed a better relationship with my family
+LothianDiaries_55	55	52.38	59.88	I also do appreciate the smaller things in life a lot more and know that I don't the big expensive things to have happiness

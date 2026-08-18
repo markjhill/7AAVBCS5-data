@@ -1,0 +1,17 @@
+File	Speaker	Start	End	Transcription
+LothianDiaries_20	20	1.415	6.254	"Hello Everyone, my name is Perry I am a doctorate student in the University of Edinburgh."
+LothianDiaries_20	20	6.473	12.536	I am now in the meadows and someone is playing bagpipe
+LothianDiaries_20	20	12.643	21.329	"behind me. And, this what I usually do during the lockdown. I just sit here a and enjoy the sun."
+LothianDiaries_20	20	21.445	27.457	And the lockdown is a good experience to me
+LothianDiaries_20	20	27.614	31.737	and it is also a bad experience to be honest
+LothianDiaries_20	20	31.833	38.537	"Um, the good thing is Edinburgh became very quiet and I can just walk around the city"
+LothianDiaries_20	20	38.645	45.377	"Uh, you know, enjoy the city and see. Usually Meadows is very crowded"
+LothianDiaries_20	20	45.479	49.378	"but now during lockdown, so quiet."
+LothianDiaries_20	20	49.493	56.18	"And the bad thing is, I felt quiet demotivated"
+LothianDiaries_20	20	56.286	63.773	and you know tired and I don't feel like doing anything and I know this is not only me and I think a lot of my friends
+LothianDiaries_20	20	63.913	68.075	have been telling a lot of uh have been telling me the same thing
+LothianDiaries_20	20	68.195	76.573	that they just want to lie in bed they don't they don't want to do anything it just take too much effort to write assignment or read
+LothianDiaries_20	20	76.688	79.62	so yeah it's a mixture.
+LothianDiaries_20	20	79.719	87.129	but I am quite I am quite grateful that I am in Edinburgh this beautiful city
+LothianDiaries_20	20	87.249	91.044	And I hope everything will be fine soon
+LothianDiaries_20	20	91.149	95.546	"Um, yeah, thank you. That is my experience"

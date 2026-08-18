@@ -1,0 +1,31 @@
+File	Speaker	Start	End	Transcription
+LothianDiaries_2	2	0.163	5.317	 Hi my name's Anne, I'm sixty-seven years old and I'm retired from full time work.
+LothianDiaries_2	2	5.45	11.525	I'm in year three of a four year degree course at Edinburgh University.
+LothianDiaries_2	2	11.916	15.939	I went in to lockdown a couple of weeks early
+LothianDiaries_2	2	16.028	21.734	em because I hadn't been well over the winter and have some health conditions.
+LothianDiaries_2	2	22.049	25.036	 At first I found it really hard,
+LothianDiaries_2	2	25.211	35.261	 first three weeks or so, em and I was relying on one particular friend to kinda eh give me support,
+LothianDiaries_2	2	35.354	41.492	 on Skype, you know, eh he kept saying no you're really strong person you can do this, blah, blah, blah.
+LothianDiaries_2	2	41.593	48.525	because I live on my own. I think I feared that I wouldn't be able to cope.
+LothianDiaries_2	2	48.607	53.152	more than I feared the lockdown itself if
+LothianDiaries_2	2	53.24	57.779	 you know what I mean. Em, however I surprised myself,
+LothianDiaries_2	2	57.872	62.499	and after about week four I was into a routine
+LothianDiaries_2	2	62.579	66.549	um a creature of habit anyway so I found a routine helps
+LothianDiaries_2	2	66.69	70.552	 getting up, get breakfast, go for my first walk.
+LothianDiaries_2	2	70.644	74.748	 come back, do emails, admin stuff, have lunch.
+LothianDiaries_2	2	74.839	84.209	 I restrict my eh reading and social media stuff on Coronavirus cause I found that a bit overwhelming at first,
+LothianDiaries_2	2	84.355	88.669	so I do ten minutes of Nicola at half past twelve everyday.
+LothianDiaries_2	2	88.767	97.324	 Then the afternoon I might read, listen to music do something different like trying my hand at sketching or
+LothianDiaries_2	2	97.418	101.052	I'm trying to learn italian too. em
+LothianDiaries_2	2	101.143	105.375	Then of course now we can have an evening walk which is great.
+LothianDiaries_2	2	105.469	112.07	 um, also another thing that helps me is keeping a weekend,
+LothianDiaries_2	2	112.156	120.182	 em, I don't read newspapers except on the two days which are my weekend at the moment it's Saturday Sunday when
+LothianDiaries_2	2	120.381	125.992	I'm at uni sometimes it's Friday Saturday. The things I most miss most are
+LothianDiaries_2	2	126.085	130.567	 meeting up with my friends for coffee and shopping, going out for lunch.
+LothianDiaries_2	2	130.657	134.379	 just that person to person contact, it's
+LothianDiaries_2	2	134.512	140.324	not quite the same on Skype or Zoom of whatever.
+LothianDiaries_2	2	140.404	146.25	 em, but having said that those things are good a good way to keep in touch.
+LothianDiaries_2	2	146.4	150.843	 em, what I've learned, well about myself
+LothianDiaries_2	2	151.002	158.185	 learned that I am a really strong person and I can do this, although I want it all to be over soon
+LothianDiaries_2	2	158.275	162.235	 em, or the new normal to to start
+LothianDiaries_2	2	162.373	167.553	I found that I can really cope with it. So that's it.

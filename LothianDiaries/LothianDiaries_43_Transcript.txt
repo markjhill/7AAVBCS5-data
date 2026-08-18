@@ -1,0 +1,102 @@
+File	Speaker	Start	End	Transcript
+LothianDiaries_43	43	1.87	7.71	Hello, my name's Mike and I'm from Edinburgh, and um
+LothianDiaries_43	43	8.01	47.06	I would say overall that my life has of course changed, as, as with everyone else, b-- because of the, the Lockdown, but I, I would say It's perhaps changed less than I would have expected if you'd told me a few months ago that we were, there was going to be a global pandemic, we were going to go into Lockdown, a concept I'd never, never even considered outside of a, Uh, Apocalyptic film or something, and if I was asked to guess how it would have been, how it would be, sorry, how I would feel, I would probably have predicted a lot worse, Erm,
+LothianDiaries_43	43	47.19	57.1	{LS} but I suppose my own situation is, is quite unique, so here is why I feel life hasn't changed so much for me. er, although I'm from Edinburgh,
+LothianDiaries_43	43	57.71	59.29	{LS} um
+LothianDiaries_43	43	59.78	63.55	I often live abroad, I often live and work abroad,
+LothianDiaries_43	43	63.64	65.99	And when I do come back to Edinburgh these days
+LothianDiaries_43	43	66.25	70.62	It is often to visit family and friends, to stick around for a few weeks
+LothianDiaries_43	43	70.79	72.54	Um
+LothianDiaries_43	43	72.59	78.98	And then go back to where I was living or move on elsewhere, um.
+LothianDiaries_43	43	79.33	83.23	On this occasion I have,
+LothianDiaries_43	43	83.43	97.78	So, Uh, to clarify, I always stay with my parents when I do come back, because when I left, I used to stay with my parents and then I got my own place, I used to live with friends, et cetera, but in, in recent years
+LothianDiaries_43	43	97.85	104.44	When I come back to Edinburgh I don't have my own space, my own place, I'm only here temporarily, so
+LothianDiaries_43	43	104.63	116.62	I stay with my parents and that was the case again here, I came back a few months ago, this time with the intention of, of staying in Edinburgh and finding a job
+LothianDiaries_43	43	116.62	120.47	And obviously the timing has been a little bit unfortunate and
+LothianDiaries_43	43	120.47	124.98	Covid nineteen happened and everyone's on Lockdown, so, um.
+LothianDiaries_43	43	125.92	137.15	The reason, to take it back to my point that it feels like things haven't been so different for me, is that although it wasn't my plan, I was hoping to stick around in Edinburgh and find a job and find a flat,
+LothianDiaries_43	43	137.89	166.35	It does feel to me like I'm just visiting Edinburgh, as I've done many times in the past, it's not too out of the ordinary for me to be in Edinburgh, not working, Uh, spending time with my family and visiting friends. not for three months of course but it's still not as unusual as it might have been. um, let me have a look, I've made little notes here as I go along, so you might here some paper being ruffled et cetera.
+LothianDiaries_43	43	166.52	168.17	Um
+LothianDiaries_43	43	169.58	180.02	So, technology. er, another reason why I feel, it's quite an obvious one, really, I'm sure lots of people feel the same way, Uh, another reason why I don't feel things have been too
+LothianDiaries_43	43	180.09	184.97	Different is that things like zoom and Whatnot has allowed me to Socialise.
+LothianDiaries_43	43	184.97	186.01	Er
+LothianDiaries_43	43	186.06	189.05	Chatting to groups of friends, not just one at a time,
+LothianDiaries_43	43	189.16	191.88	I've even got a group of friends who like board games
+LothianDiaries_43	43	191.9	223.17	And they're quite obsessed with Board games and there's even some Board games that have been possible over, over zoom, with Video cameras set up et cetera. Obviously some board games can be too complicated, you need to be there in person, um, you now, seeing What's going on, and you've got cards in your hands, and all kinds of things going on. But there's some Boardgames that are possible over zoom and we've made use of that and obviously just normal, the kind of conversation you would have in a pub or at a party is obviously just possible on zoom. So, Socialising, um,
+LothianDiaries_43	43	223.37	226.28	I feel that technology's allowed that to happen
+LothianDiaries_43	43	226.3	230.79	Almost as much as it would have done. Obviously you're doing it in your own home and that's still
+LothianDiaries_43	43	230.84	240.56	Restricted, it's still different, it's not as nice as being in a pub with a bit of background music or, er, in the park or something, but it's still Socialising with your friends.
+LothianDiaries_43	43	240.89	244.71	Er, exercise, because although we were locked down,
+LothianDiaries_43	43	245.38	253.18	We've been allowed out for an hour a day and stuff, so I've been doing even more exercise than I would normally, and have
+LothianDiaries_43	43	253.18	261.5	Come up with a bit of a routine. I guess that touches on the skills, hobbies thing that you wanted me to talk about, so
+LothianDiaries_43	43	261.52	265.71	Yeah, cooking has been another one. I have used my time
+LothianDiaries_43	43	265.71	275.87	To cook, learn a few new recipes, I've used a slow Cooker a lot. um, so that's been good and although I always keep fit
+LothianDiaries_43	43	275.97	285.48	I've never had an actual exercise routine, so Lockdown has allowed me to do that, do daily exercise, X amount of press UPS, and
+LothianDiaries_43	43	285.57	293.72	Planking for X amount of minutes. once you have a little routine going and you do it for a while, it's easier to stick to. So, that, that's been good.
+LothianDiaries_43	43	294.43	298.98	Erm, so the hardest part.
+LothianDiaries_43	43	299.21	309.69	Eh, I guess I've just talked about a lot of positive things, ways in which the Lockdown hasn't really affected me too much. So one thing I would, I have noticed is
+LothianDiaries_43	43	310.12	328.95	In a kind of roundabout way, I would say the hardest part of Lockdown has been having all this free time, suddenly, like so, too much free time, so much free time, you do feel obliged to learn something. eh, I like languages for example, and I did dabble with the idea of learning, er
+LothianDiaries_43	43	329.26	338.2	A more difficult one than, er, I currently speak some Latin languages which are all quite similar to each other. I Toyed with the idea of learning Japanese or
+LothianDiaries_43	43	338.38	355.39	Uh, Arabic, Mandarin, something a bit more challenging. Uh, and I had no excuse, I had so much time, but didn't end up happening, I had a crack at it, it was a bit overwhelming, a bit too much, I couldn't motivate myself. and when I abandoned that idea I felt very guilty.
+LothianDiaries_43	43	355.43	365.9	You know, I've got no excuse, I've got all this free time, how, how could you, how can you justify abandoning it. So I guess that's been tricky for me as well. I've, I've almost felt obliged to use this time
+LothianDiaries_43	43	366.16	380.23	To study something Online or to develop my career, or just to do something a bit more profound. and when I find myself reading books and watching Netflix and chatting to my friends on zoom there has been a sense of guilt
+LothianDiaries_43	43	380.53	386.98	Which is silly, Arguably, it's just self-imposed guilt but, so, that's worth mentioning I suppose.
+LothianDiaries_43	43	390.83	402.15	So, not working. Yeah, as I say, I had been abroad, I came back with the intention of finding work here in Edinburgh and I normally work in Childcare or tourism.
+LothianDiaries_43	43	402.33	405.53	So those are both industries which are obviously not, Uh,
+LothianDiaries_43	43	405.59	407.17	Not running.
+LothianDiaries_43	43	407.63	412.73	Um, this means I've not been on any furlough scheme, so
+LothianDiaries_43	43	412.85	423.72	I can't complain, I've come back, I've stayed with the parents, I'm not paying rent or anything. It is still a little bit annoying that, um, if I'd stayed where I was in my previous job
+LothianDiaries_43	43	423.9	426.03	For just that little bit longer
+LothianDiaries_43	43	426.33	428.72	I would be on furlough, I would be getting paid
+LothianDiaries_43	43	428.74	438.25	To sit in my house, enjoying time to myself, just like a lot of my friends are. So, Uh, that's a little bit unfortunate but nothing, nothing can be done about that.
+LothianDiaries_43	43	438.8	442.85	Um, and it could be worse, a lot worse, so I'm not complaining.
+LothianDiaries_43	43	443.72	459.95	Er, bright spots, er, positive aspects of the Lockdown. er, for me I would say time with the parents, as I say, I often live away, so, and what I do come back it can be quite brief and even though I'm s--, er, staying with my parents when I do come back
+LothianDiaries_43	43	460.15	473.35	I'm often out and about, doing things, Seeing friends and, Uh, spending Lockdown with the parents has meant seeing a lot of them and having a good Catch-Up. um, it has also actually, purely because of the time,
+LothianDiaries_43	43	473.77	477.58	Allowed me to get back in contact and spend a bit more time
+LothianDiaries_43	43	477.83	480.97	Keeping in touch with, er, other friends.
+LothianDiaries_43	43	481.14	486.69	Again due to technology, it doesn't matter where people are. having more time has allowed me to do
+LothianDiaries_43	43	486.95	525.21	WhatsApp, Skype, whatever it might be, zoom calls to, to friends I've got abroad and having lived and travelled extensively a lot of my close friends are in various countries. I don't have, although I'm from Edinburgh, I don't have {the} majority of my friends here in Edinburgh. um, and it's easier to sort of lose contact with people who are important to you, so Lockdown has allowed me to, kind of, invest in my time, invest my time, getting in touch with people who are important to me in life and these people live in Ireland, Ex-Flatmates who are in Argentina, friends in Australia, for example. So, er, Yeah, that's been good.
+LothianDiaries_43	43	525.48	527.21	{LS} um
+LothianDiaries_43	43	527.3	538.87	I will admit to being quite a lazy person sometimes in general. er, I work hard, um, when I come home in the evenings or at weekends I often like to just relax.
+LothianDiaries_43	43	539.08	548.8	Er, my girlfriend or friends might want to do things, go places and I'm not a completely boring person who refuses to ever do anything of course, I do like
+LothianDiaries_43	43	548.93	560.36	Getting out and about myself, Erm, but I'm often guilty of just preferring to, to stay in these days. I'm quite, I'm quite lazy. So the point I'm making here is
+LothianDiaries_43	43	560.36	563.25	This is one aspect of Lockdown which I've
+LothianDiaries_43	43	563.25	565.63	Found quite beneficial to me.
+LothianDiaries_43	43	565.65	567.33	Um, when I do
+LothianDiaries_43	43	567.43	574.13	Stay in the house on a normal day, or weekend or evening, there is a sense of
+LothianDiaries_43	43	574.13	585.31	Obligation to go out and be social and if someone invites you out and you say no, you can feel guilty, cause that person wants to see you, they're your friend, Uh, you can feel
+LothianDiaries_43	43	585.53	588.12	Lazy, um
+LothianDiaries_43	43	588.26	596.14	You feel bad about yourself for just Moping around the house, so, sort of a thing, and, um, Lockdown has allowed me to do
+LothianDiaries_43	43	596.47	624.63	Just that, without any feeling of guilt whatsoever. again, it is a bit too much time. er, I'm sure I'm not the only one who has had moments during Lockdown where you feel, you just wish you could work or do something useful and {you know} you've just got far too much free time, but for me the majority of the time I've actually felt that I've been able to be lazy and read a book and just chill out without that feeling of guilt, I ought to be doing something, er, er, more with my time.
+LothianDiaries_43	43	625.15	629.45	It sounds like a contradiction to what I said about, er, the pressure of
+LothianDiaries_43	43	629.49	638.03	Doing something profound. I would say it just depends on the day, {they} both of these things are true at different times however, however contradictory.
+LothianDiaries_43	43	638.3	645.43	Um, so I have already mentioned that, but to clarify, who am I spending Lockdown with: my parents.
+LothianDiaries_43	43	645.53	653.85	Um, they're doing fine, they're slightly higher risk category, being a little bit older, so They've been very strict, playing it by the book
+LothianDiaries_43	43	654.02	657.26	Um, and I've had to do the same of course, I've
+LothianDiaries_43	43	657.27	659.2	Been aware that
+LothianDiaries_43	43	659.57	668.27	I'm living with my parents and so anything I do can, can affect them as well. So I've had that in mind throughout the Lockdown.
+LothianDiaries_43	43	668.36	669.24	And
+LothianDiaries_43	43	670.8	676.12	Being a thirty two, thirty one, I don't even know my own age, being a thirty one year old guy
+LothianDiaries_43	43	676.29	678.29	Living with his parents suddenly for
+LothianDiaries_43	43	678.71	686.23	Two or three months, er, isn't ideal for certain obvious reasons but, eh, because I don't see them very often
+LothianDiaries_43	43	686.48	695.17	Probably not as daunting as it would be for some people, um, who, their parents drive them mad, sort of thing
+LothianDiaries_43	43	695.17	718.97	But I suppose I have been, it is a little bit more time than I would have liked, especially confined with my parents, so There's maybe been little moments of friction or the parents, parents have a habit of, sort of, after a couple of weeks, they forget that you're thirty one and they forget that you're not a kid anymore. I don't think that'll ever change, perhaps I'm forty one, fifty one, if they're still alive, it'll still be
+LothianDiaries_43	43	719.02	731.84	Accidentally Forgetting that and talking to me like a kid or something, but I don't complain. We've, er, we've had a good time together. um, and Yeah, I think that answers most of the
+LothianDiaries_43	43	732.55	741.11	Most of the, the questions, Uh, that I saw on the Website. I would quickly say some extra things. um, it's been a,
+LothianDiaries_43	43	742.39	754.23	All this extra time has given me time to think about life, where I'm going, m- more profound things which day-to-day life often doesn't give you much time to think about deeper things.
+LothianDiaries_43	43	754.23	763.6	Um, kinda helps you to see the bigger picture, not only just having time to think in general but seeing What's happening in the world, how governments, not just our own
+LothianDiaries_43	43	763.65	764.77	Um
+LothianDiaries_43	43	764.82	768.76	How the world reacts and deals with such a
+LothianDiaries_43	43	768.8	770.12	Er
+LothianDiaries_43	43	770.32	780.02	Well, the pandemic, you know. how we can come together as people and how the nation has had the resources to look after businesses and people and
+LothianDiaries_43	43	780.28	786.11	You've seen how homeless people have been put in hotels and just when, when things go,
+LothianDiaries_43	43	786.12	787.34	Go wrong
+LothianDiaries_43	43	787.51	803.15	The government can step up, {but would you} powers that they do have, and things that have gone well and things that have not gone well, how the government Arguably could've done better, certain governments but particularly ours has been criticised for however long It's taken to react and stuff so
+LothianDiaries_43	43	803.27	818.06	Er, without going into politics and giving my opinion on all that, just speaking generally, this has been time to sort of look and see the world in a different way and watching the world react to a pandemic, er, just really puts things in perspective.
+LothianDiaries_43	43	818.18	823.94	Um, there's been a big huge cultural shift in the way that, I think, things are gonna change.
+LothianDiaries_43	43	823.94	849.8	Um, even after Lockdown things like people working from home will probably continue largely, there'll be some environmental positive impacts, er, people, fewer people commuting and stuff. So It's just been a very interesting time to have a look at things going on in the world and how things could now change for the better in the future. er, and finally It's quite Humbling, you know, a reminder that mankind is fragile and
+LothianDiaries_43	43	849.84	851.24	Um
+LothianDiaries_43	43	852.06	866.46	A virus is almost this natural way the Ecosystem reduces population, or s- something like this, er, so again, I won't go into any detail on things like that, that's absolutely not what you were asking me for, just my experiences of Lockdown. But I guess my point is simply
+LothianDiaries_43	43	866.66	877.06	Time has allowed me to think about things like that. er, see the, see the bigger picture both in life and in the world, and, and Yeah
+LothianDiaries_43	43	877.16	880.56	Any follow up questions feel free to let me know.
+LothianDiaries_43	43	880.56	887.23	Um, you wanted five minutes, I've done fifteen there, so hopefully that's not too much, I haven't rambled on too much.

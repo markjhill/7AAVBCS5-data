@@ -1,0 +1,49 @@
+File	Speaker	Start	End	Transcript
+LothianDiaries_50	50	1.38	8.88	Hi, I'm Jack, I am a linguistics student. um, I live in Edinburgh. I was born in Edinburgh.
+LothianDiaries_50	50	8.93	10.6	Um
+LothianDiaries_50	50	11.08	14.77	So I guess my typical day before
+LothianDiaries_50	50	14.86	23.31	Lockdown, Erm, if it was, like, during the University semester, I'd probably go in for lectures pretty early, um
+LothianDiaries_50	50	23.35	39.81	I'D be out and about, maybe meet some friends, go for lunch, um, come back, you know, and then maybe go back out later, or like go visit my family, because they, they don't live that far away. um, and obviously with Lockdown It's not really possible
+LothianDiaries_50	50	39.93	45.17	Right now, so right now I've been doing a lot of work at home
+LothianDiaries_50	50	45.34	46.41	Um
+LothianDiaries_50	50	46.41	47.72	Which is
+LothianDiaries_50	50	48.0	56.21	Very different for me because I'm used to working more outside of my room, I don't really like working in my room, um
+LothianDiaries_50	50	56.39	60.14	I get very easily distracted, um
+LothianDiaries_50	50	60.14	66.91	You know with, like, Netflix, or talking to friends or, you know, doing whatever, um
+LothianDiaries_50	50	67.52	72.04	{ s} so, Uh, that's been a big adjustment.
+LothianDiaries_50	50	72.11	73.12	Um
+LothianDiaries_50	50	73.83	76.13	I'D say probably the hardest part
+LothianDiaries_50	50	76.41	78.62	During Lockdown is not being able to,
+LothianDiaries_50	50	79.07	86.18	To see friends as much. um, obviously you can, you know, see people {with social SPN} but it's not really the same.
+LothianDiaries_50	50	86.27	87.83	You know, it would be nice to, like,
+LothianDiaries_50	50	88.44	90.3	Go for a coffee with friends,
+LothianDiaries_50	50	90.3	91.32	That would be good.
+LothianDiaries_50	50	91.32	92.66	Um
+LothianDiaries_50	50	93.35	95.29	I'D say that
+LothianDiaries_50	50	98.2	103.3	Probably my life has changed for the better in some ways.
+LothianDiaries_50	50	103.3	104.29	Um
+LothianDiaries_50	50	104.35	109.14	I feel like It's slowed down a bit, um
+LothianDiaries_50	50	109.6	113.68	Obviously There's a lot of new, kind of, stresses and anxieties, and that's,
+LothianDiaries_50	50	113.93	119.02	You know, the fact that this is in some ways better for me is like a very privileged
+LothianDiaries_50	50	119.04	121.6	Position because for a lot of people It's not,
+LothianDiaries_50	50	121.68	132.9	Um, you know, they're really struggling right now, it's been really terrible for some people, but just, like, from my perspective It's been good to slow down a bit and be able to, to have more time.
+LothianDiaries_50	50	132.97	133.93	Um
+LothianDiaries_50	50	134.57	155.85	In terms of, like, new skills or hobbies, you know, I've been practising my languages, obviously I'm a linguistics student so I really like learning languages. um, I've been doing some French and Spanish. um, in terms of hobbies, um, I've been gaming a lot more. I decided to buy a P s four for Lockdown.
+LothianDiaries_50	50	155.99	157.79	So that's been great.
+LothianDiaries_50	50	157.83	160.37	Um, I have found that my
+LothianDiaries_50	50	160.79	165.88	Concentration and my attention span has gone down
+LothianDiaries_50	50	165.94	182.49	Pretty {LG} significantly. um, I'm having so much trouble, like, sitting down to read a book, or to watch a movie. I feel like I'm constantly drifting and wanting to, like, try a new thing, I'll read a couple of pages of one book and I want to move on to a different one, um, so Yeah
+LothianDiaries_50	50	182.67	187.27	I, I usually have a not that bad attention span, so I think Lockdown's probably
+LothianDiaries_50	50	187.38	190.86	Responsible for that. I also have been having very weird
+LothianDiaries_50	50	190.98	192.62	Lockdown-Related dreams.
+LothianDiaries_50	50	192.9	195.28	Which I've heard is kinda common,
+LothianDiaries_50	50	195.3	198.44	But They've been strange, um.
+LothianDiaries_50	50	198.47	201.22	So I'm in Lockdown with
+LothianDiaries_50	50	201.22	202.73	My three Flatmates
+LothianDiaries_50	50	202.73	226.55	Um, who are {also} my really good friends, Ryan, {Asha} and Julia, um, so It's been really good having them. um, I can't imagine being in Lockdown without them because they keep me sane and they keep me stable, um, and, you know, we have a good time living together. um, Julia actually was away
+LothianDiaries_50	50	226.64	231.53	For her year abroad, for her University degree, she came back
+LothianDiaries_50	50	231.76	235.45	Maybe a, a month or two ago, so she had to
+LothianDiaries_50	50	235.72	250.24	Socially distance in her room for two weeks, so we had to make her meals and do everything for her which was actually sweet and fun, um, not for her{ Lg}. But, Yeah, it's been so good having them here, um
+LothianDiaries_50	50	250.66	256.67	And, Yeah, I, I don't think that I would cope very well alone. I think any of that kind of
+LothianDiaries_50	50	256.92	259.61	Social interaction,
+LothianDiaries_50	50	259.66	261.73	Um, {but} Yeah.

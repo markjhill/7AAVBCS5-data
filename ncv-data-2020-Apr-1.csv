@@ -1,0 +1,1001 @@
+ID,Age,Gender,Knowledge.self.rate,Comply.lockdown,Chance.by.end.month,Chance.by.end.year
+1004.0,52.0,Male,4,Completely,,
+2060.0,74.0,Female,1,Completely,20.0,20.0
+298.0,28.0,Male,4,Nearly all the time,,
+423.0,29.0,Male,3,Most of the time,,
+2609.0,73.0,Female,3,Completely,45.0,45.0
+2488.0,53.0,Female,4,Nearly all the time,50.0,30.0
+66.0,29.0,Male,2,Completely,,
+851.0,69.0,Female,2,Completely,5.0,80.0
+1474.0,42.0,Female,3,Nearly all the time,80.0,90.0
+731.0,23.0,Female,2,Completely,50.0,50.0
+3349.0,40.0,Male,3,Completely,20.0,20.0
+1503.0,50.0,Male,3,Completely,10.0,2.0
+2884.0,26.0,Male,2,Nearly all the time,20.0,40.0
+962.0,18.0,Male,7,Most of the time,34.0,89.0
+1561.0,70.0,Female,7,About half of the time,,
+438.0,34.0,Female,2,Completely,40.0,40.0
+816.0,53.0,Female,4,Most of the time,40.0,20.0
+2510.0,70.0,Male,2,Nearly all the time,20.0,40.0
+1215.0,19.0,Female,4,Completely,50.0,70.0
+2928.0,33.0,Female,1,Completely,30.0,10.0
+676.0,22.0,Male,2,Most of the time,,
+2735.0,30.0,Female,4,Completely,,
+3115.0,26.0,Female,4,Most of the time,,
+1006.0,19.0,Female,2,Nearly all the time,80.0,30.0
+1901.0,71.0,Male,5,Completely,,
+1031.0,69.0,Female,4,Nearly all the time,50.0,60.0
+393.0,16.0,Male,5,Less than half of the time,,
+1169.0,67.0,Male,4,Completely,10.0,20.0
+1613.0,45.0,Female,2,Completely,10.0,30.0
+453.0,48.0,Male,3,Nearly all the time,50.0,75.0
+556.0,41.0,Female,3,Nearly all the time,10.0,10.0
+2895.0,41.0,Female,5,Completely,30.0,50.0
+1872.0,72.0,Male,3,Completely,,
+3353.0,62.0,Male,4,Completely,10.0,50.0
+1796.0,70.0,Female,5,Completely,25.0,50.0
+1425.0,26.0,Female,5,Completely,10.0,30.0
+1043.0,24.0,Female,5,Most of the time,,
+1781.0,70.0,Female,4,Nearly all the time,,
+415.0,28.0,Male,1,About half of the time,,
+1241.0,24.0,Female,3,Nearly all the time,50.0,50.0
+2188.0,66.0,Female,3,Completely,,
+1507.0,47.0,Female,2,Completely,,
+2513.0,45.0,Female,4,Completely,20.0,20.0
+2053.0,33.0,Female,2,Completely,,
+4100.0,38.0,Male,2,Most of the time,50.0,50.0
+2776.0,55.0,Male,5,Nearly all the time,25.0,25.0
+1831.0,70.0,Male,3,Nearly all the time,20.0,
+256.0,23.0,Male,5,Nearly all the time,,
+1012.0,21.0,Female,1,Completely,,
+2540.0,74.0,Female,2,Completely,10.0,50.0
+2261.0,72.0,Male,2,Completely,2.0,2.0
+318.0,29.0,Male,2,Most of the time,40.0,60.0
+1717.0,74.0,Female,3,Completely,,
+4750.0,43.0,Male,3,Completely,,
+838.0,49.0,Male,2,Completely,20.0,40.0
+1001.0,71.0,Male,3,Completely,15.0,25.0
+1875.0,66.0,Male,1,Completely,20.0,20.0
+2177.0,44.0,Female,2,Completely,,
+908.0,41.0,Female,4,Nearly all the time,,
+1676.0,54.0,Female,3,About half of the time,,
+3007.0,52.0,Male,4,Nearly all the time,,
+2021.0,68.0,Male,6,Completely,20.0,40.0
+2367.0,67.0,Male,6,Completely,15.0,25.0
+2956.0,63.0,Male,4,Completely,0.0,30.0
+555.0,30.0,Male,4,About half of the time,,
+2786.0,53.0,Female,1,Nearly all the time,2.0,2.0
+3434.0,43.0,Male,3,Nearly all the time,65.0,75.0
+17.0,36.0,Female,1,Completely,,
+3212.0,39.0,Female,4,Completely,,
+2518.0,37.0,Female,5,Completely,50.0,80.0
+2180.0,72.0,Male,5,Most of the time,40.0,50.0
+1639.0,70.0,Male,5,Completely,25.0,
+2365.0,38.0,Female,2,Completely,15.0,0.0
+1426.0,53.0,Female,3,Completely,,
+698.0,16.0,Male,6,Completely,20.0,30.0
+1007.0,70.0,Female,6,Nearly all the time,75.0,75.0
+3385.0,60.0,Male,2,Nearly all the time,10.0,10.0
+2553.0,55.0,Female,2,Completely,,
+2794.0,57.0,Male,1,Completely,,
+3591.0,42.0,Male,2,Completely,20.0,30.0
+191.0,52.0,Male,2,Completely,,
+1752.0,37.0,Male,5,Completely,,
+40.0,41.0,Female,3,Completely,,
+2115.0,47.0,Female,3,About half of the time,,
+1787.0,45.0,Female,2,Completely,95.0,100.0
+2486.0,57.0,Female,3,Nearly all the time,20.0,
+871.0,47.0,Female,6,Completely,70.0,70.0
+2537.0,67.0,Male,3,Completely,75.0,90.0
+2920.0,63.0,Male,6,Nearly all the time,50.0,50.0
+339.0,30.0,Female,5,Less than half of the time,,
+972.0,19.0,In another way,3,Most of the time,5.0,15.0
+4363.0,39.0,Male,3,Completely,1.0,5.0
+2095.0,66.0,Female,3,Completely,20.0,30.0
+2999.0,60.0,Male,2,Completely,50.0,50.0
+75.0,20.0,Female,4,Most of the time,,
+3094.0,64.0,Male,3,Nearly all the time,,
+90.0,42.0,Male,2,Completely,90.0,90.0
+1763.0,54.0,Female,3,Nearly all the time,,
+1320.0,49.0,Male,4,Completely,30.0,30.0
+1334.0,50.0,Female,1,Completely,,
+73.0,25.0,Female,4,Completely,,
+200.0,32.0,Male,5,About half of the time,2.0,2.0
+2111.0,68.0,Male,2,Nearly all the time,,
+5.0,29.0,Female,1,Completely,5.0,10.0
+818.0,53.0,Female,4,Nearly all the time,,
+2538.0,47.0,Male,1,Completely,50.0,70.0
+2590.0,66.0,Male,,Nearly all the time,,
+1315.0,39.0,Female,2,Nearly all the time,50.0,50.0
+1178.0,53.0,Female,4,Most of the time,80.0,
+2927.0,48.0,Male,5,Nearly all the time,60.0,30.0
+2528.0,36.0,Male,2,Nearly all the time,,
+460.0,51.0,Female,2,Completely,10.0,25.0
+537.0,24.0,Male,3,Completely,,20.0
+1028.0,70.0,Male,3,Completely,5.0,5.0
+2890.0,38.0,Male,6,Completely,,
+2985.0,52.0,Male,3,Completely,50.0,50.0
+2236.0,42.0,Female,3,Completely,5.0,10.0
+374.0,24.0,Male,3,Completely,40.0,90.0
+2412.0,44.0,Male,4,Nearly all the time,25.0,25.0
+1981.0,51.0,Female,2,Completely,,
+1393.0,68.0,Female,3,Completely,,
+2539.0,53.0,Female,2,Completely,20.0,30.0
+2495.0,48.0,Female,4,Nearly all the time,50.0,50.0
+1264.0,33.0,Female,1,Completely,30.0,50.0
+1377.0,20.0,Male,4,Nearly all the time,60.0,40.0
+2703.0,45.0,Female,2,Nearly all the time,5.0,5.0
+2337.0,73.0,Female,3,Completely,,0.0
+2479.0,50.0,Female,2,Completely,50.0,50.0
+147.0,18.0,Male,1,Completely,,
+815.0,23.0,Male,3,Completely,20.0,20.0
+1935.0,44.0,Female,4,Completely,,
+895.0,48.0,Male,5,Completely,0.0,0.0
+2288.0,55.0,Male,6,Nearly all the time,,
+756.0,69.0,Male,3,Completely,25.0,50.0
+2465.0,68.0,Male,4,Completely,20.0,40.0
+2631.0,73.0,Male,3,Completely,0.0,0.0
+1600.0,71.0,Male,5,Nearly all the time,10.0,10.0
+3285.0,50.0,Female,4,Completely,50.0,50.0
+2052.0,71.0,Male,2,Nearly all the time,60.0,60.0
+314.0,31.0,Male,1,Completely,,
+1281.0,38.0,Female,4,Completely,20.0,80.0
+3233.0,32.0,Female,3,Nearly all the time,20.0,20.0
+2485.0,47.0,Female,3,Nearly all the time,10.0,25.0
+2755.0,51.0,Male,1,Completely,100.0,100.0
+421.0,17.0,Female,3,Completely,75.0,90.0
+394.0,24.0,Female,1,Completely,1.0,20.0
+160.0,31.0,Male,4,Hardly any of the time,100.0,100.0
+1887.0,31.0,Female,3,Completely,50.0,80.0
+1770.0,75.0,Female,3,Completely,25.0,
+3126.0,60.0,Male,5,Completely,2.0,10.0
+3236.0,34.0,Male,4,Completely,35.0,80.0
+365.0,30.0,Female,6,Nearly all the time,,
+807.0,19.0,Male,2,Nearly all the time,,
+770.0,43.0,Male,5,Completely,5.0,5.0
+663.0,18.0,Female,1,Completely,20.0,20.0
+381.0,18.0,Female,2,Completely,50.0,75.0
+2158.0,71.0,Male,3,Nearly all the time,20.0,20.0
+1611.0,49.0,Female,2,Completely,0.0,
+1695.0,50.0,Female,3,Nearly all the time,,
+2845.0,69.0,Male,2,Completely,20.0,20.0
+1410.0,47.0,Female,2,Nearly all the time,,
+1523.0,26.0,Female,3,Nearly all the time,,
+2832.0,43.0,Female,1,Completely,50.0,50.0
+309.0,21.0,Male,2,Not at all,90.0,90.0
+1057.0,17.0,Male,5,Completely,32.0,40.0
+1132.0,68.0,Male,3,Nearly all the time,80.0,100.0
+1369.0,46.0,Male,4,Completely,5.0,5.0
+1296.0,67.0,Female,2,Completely,50.0,50.0
+2636.0,48.0,Female,4,Nearly all the time,5.0,
+805.0,18.0,Male,4,Most of the time,,
+2250.0,67.0,Male,3,Nearly all the time,25.0,25.0
+2526.0,67.0,Female,3,Completely,75.0,80.0
+1245.0,45.0,Male,3,Nearly all the time,50.0,70.0
+12.0,28.0,Female,3,Completely,,
+325.0,22.0,Female,4,Nearly all the time,,
+2082.0,53.0,Female,4,Don’t know,,
+3097.0,31.0,Female,4,Nearly all the time,50.0,50.0
+1151.0,68.0,Male,2,Nearly all the time,20.0,50.0
+2214.0,69.0,Male,3,Completely,50.0,50.0
+1160.0,47.0,Female,4,Completely,,
+2396.0,71.0,Male,3,Nearly all the time,20.0,20.0
+372.0,69.0,Male,4,Completely,50.0,30.0
+2224.0,66.0,Female,2,Completely,,
+2127.0,72.0,Female,5,Completely,50.0,75.0
+426.0,33.0,Male,5,Completely,,
+2231.0,44.0,Male,3,Completely,0.0,0.0
+1522.0,68.0,Male,4,Completely,,
+2758.0,74.0,Male,1,Completely,5.0,5.0
+1453.0,30.0,Female,1,Completely,50.0,50.0
+105.0,52.0,Male,5,Completely,,
+782.0,24.0,Male,1,Most of the time,55.0,4.0
+240.0,46.0,Female,3,Completely,70.0,70.0
+976.0,21.0,Male,7,Don’t know,0.0,0.0
+2850.0,30.0,Male,4,Completely,,
+498.0,28.0,Male,4,About half of the time,,
+2682.0,41.0,Female,2,Completely,95.0,95.0
+2896.0,62.0,Male,2,Most of the time,,100.0
+342.0,58.0,Male,5,Completely,50.0,60.0
+3693.0,31.0,Female,5,Nearly all the time,50.0,50.0
+621.0,23.0,Male,5,Completely,,
+3418.0,49.0,Female,4,Completely,5.0,15.0
+765.0,70.0,Male,3,Completely,10.0,20.0
+2852.0,36.0,Female,5,Nearly all the time,,
+3989.0,40.0,Male,3,Completely,20.0,0.0
+4606.0,43.0,Male,3,Nearly all the time,30.0,80.0
+2611.0,50.0,Male,5,Completely,75.0,85.0
+1173.0,69.0,Male,5,Completely,25.0,30.0
+1961.0,69.0,Male,4,Nearly all the time,60.0,60.0
+1328.0,40.0,Female,5,Completely,80.0,100.0
+2211.0,36.0,Male,4,Most of the time,79.0,100.0
+2330.0,54.0,Female,3,Completely,50.0,50.0
+2506.0,51.0,Female,2,Completely,,
+457.0,29.0,Male,4,About half of the time,10.0,50.0
+1312.0,46.0,Female,4,Nearly all the time,30.0,80.0
+2029.0,44.0,Female,3,Nearly all the time,40.0,60.0
+2003.0,68.0,Female,2,Completely,,
+1802.0,69.0,Male,5,Completely,10.0,20.0
+1090.0,34.0,Female,6,Completely,,
+730.0,50.0,Male,5,Completely,50.0,75.0
+1930.0,66.0,Female,5,Most of the time,20.0,25.0
+2508.0,34.0,Male,4,About half of the time,0.0,50.0
+2836.0,22.0,Female,6,Completely,80.0,80.0
+2656.0,44.0,Male,2,Completely,5.0,5.0
+2531.0,45.0,Male,1,Completely,30.0,30.0
+2719.0,54.0,Female,1,Completely,,
+2915.0,52.0,Male,4,Nearly all the time,50.0,50.0
+1648.0,42.0,Female,4,Nearly all the time,30.0,30.0
+1786.0,68.0,Male,3,Completely,,
+1669.0,51.0,Female,4,Most of the time,,
+580.0,70.0,Male,2,Completely,5.0,5.0
+667.0,18.0,Male,3,Hardly any of the time,100.0,
+1152.0,31.0,Male,3,Completely,,
+1422.0,49.0,Female,2,Completely,100.0,100.0
+1680.0,54.0,Female,4,Completely,20.0,40.0
+1844.0,73.0,Female,,About half of the time,,
+3289.0,39.0,Female,1,Completely,,30.0
+2564.0,54.0,Male,,Nearly all the time,,
+1528.0,48.0,Female,4,Nearly all the time,,
+2134.0,42.0,Female,5,Nearly all the time,,
+509.0,24.0,Female,4,Nearly all the time,,
+2042.0,50.0,Male,2,Completely,20.0,60.0
+2217.0,71.0,Male,5,Completely,5.0,20.0
+2448.0,69.0,Male,4,Nearly all the time,,
+2741.0,67.0,Male,5,Completely,1.0,5.0
+2346.0,34.0,Male,1,Nearly all the time,50.0,75.0
+2614.0,51.0,Female,5,Completely,50.0,
+477.0,21.0,Female,1,Completely,50.0,50.0
+2797.0,27.0,Male,3,Completely,80.0,90.0
+126.0,21.0,Male,3,Most of the time,36.0,20.0
+1326.0,74.0,Male,3,Completely,10.0,19.0
+3031.0,48.0,Female,2,Nearly all the time,,
+2241.0,43.0,In another way,2,Completely,,
+124.0,18.0,Male,6,About half of the time,,
+153.0,19.0,Female,3,Nearly all the time,30.0,20.0
+1665.0,32.0,Female,2,Completely,25.0,60.0
+1148.0,68.0,Female,2,Completely,,
+1791.0,66.0,Female,4,Completely,1.0,0.0
+3730.0,31.0,Male,2,Completely,5.0,5.0
+752.0,19.0,Female,3,Completely,95.0,100.0
+2817.0,30.0,Female,1,Completely,50.0,
+113.0,47.0,Female,1,Completely,,
+2586.0,75.0,Male,2,Completely,20.0,20.0
+3412.0,70.0,Male,1,Nearly all the time,50.0,50.0
+1749.0,55.0,Male,3,Nearly all the time,,
+1827.0,52.0,Female,2,Most of the time,80.0,40.0
+4720.0,42.0,Male,1,Completely,20.0,50.0
+1863.0,46.0,Male,2,Completely,,
+2635.0,51.0,Female,1,Completely,75.0,75.0
+724.0,22.0,Male,2,Completely,30.0,30.0
+1444.0,33.0,Male,3,Completely,50.0,50.0
+2181.0,48.0,Male,3,Nearly all the time,0.0,20.0
+2387.0,71.0,Male,4,Completely,10.0,20.0
+2226.0,70.0,Male,5,Nearly all the time,,
+258.0,33.0,Male,1,Nearly all the time,,
+1737.0,38.0,Female,3,Completely,,
+166.0,51.0,Male,4,Completely,50.0,50.0
+67.0,52.0,Female,4,Completely,,
+2202.0,54.0,Female,3,Completely,30.0,75.0
+1259.0,16.0,Male,5,Most of the time,40.0,50.0
+2922.0,53.0,Female,3,Completely,50.0,20.0
+1024.0,22.0,Male,4,Less than half of the time,,
+3035.0,33.0,Female,4,Completely,20.0,40.0
+1870.0,59.0,Female,2,Completely,30.0,
+1707.0,70.0,Male,4,Completely,0.0,0.0
+1591.0,72.0,Male,6,Nearly all the time,,
+439.0,23.0,Male,4,Completely,,
+606.0,21.0,Male,4,Most of the time,56.0,78.0
+2662.0,42.0,Female,2,Completely,30.0,50.0
+803.0,35.0,Female,4,Nearly all the time,50.0,50.0
+1367.0,68.0,Male,2,Completely,30.0,50.0
+2814.0,32.0,Female,3,Completely,,
+407.0,33.0,Male,2,Nearly all the time,50.0,30.0
+3001.0,65.0,Female,4,Completely,30.0,90.0
+3549.0,48.0,Male,7,Completely,,
+2939.0,48.0,Female,3,Nearly all the time,20.0,80.0
+2223.0,54.0,Female,3,Completely,,
+2452.0,75.0,Male,2,Nearly all the time,,
+2986.0,42.0,Female,2,Nearly all the time,30.0,60.0
+1989.0,30.0,Female,3,Completely,50.0,80.0
+1587.0,66.0,Female,2,Completely,,
+1252.0,47.0,Female,3,Completely,60.0,80.0
+881.0,70.0,Female,2,Completely,0.0,0.0
+493.0,33.0,Female,3,Completely,50.0,75.0
+780.0,69.0,Female,3,Completely,,
+3527.0,23.0,Female,4,Most of the time,20.0,10.0
+2354.0,71.0,Male,3,Completely,10.0,50.0
+3114.0,64.0,Male,3,Completely,5.0,10.0
+2132.0,40.0,Male,2,Completely,10.0,20.0
+1290.0,48.0,Female,2,Completely,10.0,
+1164.0,39.0,Male,6,Nearly all the time,,
+2279.0,48.0,Male,2,Completely,68.0,86.0
+2275.0,73.0,Male,1,Completely,10.0,10.0
+176.0,28.0,Female,3,Completely,,
+2831.0,67.0,Male,2,Completely,80.0,80.0
+212.0,22.0,Male,6,Most of the time,20.0,25.0
+3065.0,52.0,Female,5,Nearly all the time,80.0,80.0
+611.0,44.0,Female,5,Completely,50.0,50.0
+1604.0,36.0,Female,7,Nearly all the time,10.0,10.0
+195.0,42.0,Male,2,Nearly all the time,,
+207.0,23.0,Male,1,Completely,,
+1447.0,51.0,Male,2,Nearly all the time,70.0,75.0
+1677.0,44.0,Female,5,Completely,50.0,50.0
+4737.0,36.0,Male,2,Completely,20.0,100.0
+463.0,32.0,Female,3,Completely,50.0,70.0
+475.0,29.0,Male,1,About half of the time,,
+2407.0,43.0,Female,4,Completely,10.0,60.0
+1269.0,27.0,Male,1,Completely,99.0,99.0
+401.0,30.0,Male,6,Completely,,
+2370.0,41.0,Male,2,Completely,15.0,35.0
+311.0,30.0,Female,1,Completely,50.0,50.0
+1755.0,36.0,Female,3,Completely,80.0,80.0
+2240.0,71.0,Male,2,Completely,10.0,0.0
+586.0,53.0,Female,2,Completely,10.0,20.0
+74.0,31.0,Female,2,Completely,,
+3092.0,54.0,Female,3,Completely,50.0,50.0
+1745.0,75.0,Male,2,Completely,,
+1224.0,67.0,Female,3,Completely,0.0,10.0
+2040.0,51.0,Female,5,Completely,,
+1176.0,54.0,Female,1,Completely,,
+4743.0,29.0,Male,2,Completely,15.0,50.0
+2977.0,52.0,Female,4,Completely,,
+244.0,32.0,Male,5,Completely,50.0,60.0
+48.0,35.0,Female,4,Completely,50.0,50.0
+980.0,51.0,Male,3,Completely,50.0,50.0
+4762.0,43.0,Male,2,Completely,5.0,15.0
+2418.0,62.0,Male,2,Completely,,
+1212.0,40.0,Female,3,Completely,10.0,60.0
+2112.0,75.0,Male,4,Completely,,
+960.0,38.0,Female,4,Nearly all the time,50.0,95.0
+450.0,24.0,Female,5,Most of the time,,
+3316.0,48.0,Female,2,Completely,50.0,20.0
+2274.0,39.0,Female,5,Completely,20.0,35.0
+849.0,73.0,Male,5,Completely,10.0,
+33.0,21.0,Male,4,About half of the time,,
+2014.0,72.0,Female,2,Completely,,50.0
+822.0,42.0,Female,2,Nearly all the time,,
+42.0,52.0,Female,2,Completely,,
+1994.0,50.0,Female,5,Completely,30.0,50.0
+1456.0,51.0,Male,2,Completely,50.0,90.0
+130.0,32.0,Female,1,Completely,5.0,5.0
+2252.0,66.0,Male,1,Completely,20.0,30.0
+1907.0,73.0,Female,4,Completely,,
+1142.0,33.0,Male,2,Completely,90.0,80.0
+3550.0,40.0,Female,3,Completely,5.0,10.0
+1440.0,26.0,Male,2,Nearly all the time,10.0,20.0
+4943.0,31.0,Female,2,Nearly all the time,30.0,30.0
+2213.0,72.0,Male,3,Completely,4.0,2.0
+2678.0,75.0,Male,4,Completely,5.0,5.0
+2853.0,69.0,Male,3,Completely,5.0,5.0
+2566.0,47.0,Female,2,Completely,1.0,10.0
+23.0,35.0,Female,2,Completely,,
+209.0,30.0,Male,2,Nearly all the time,1.0,57.0
+134.0,39.0,Female,3,Completely,90.0,90.0
+1413.0,45.0,Female,3,Completely,50.0,70.0
+2801.0,61.0,Male,2,Nearly all the time,50.0,50.0
+518.0,41.0,Male,3,Completely,,
+456.0,31.0,Male,3,Completely,70.0,95.0
+1448.0,70.0,Male,3,Completely,10.0,30.0
+1412.0,22.0,Male,3,Completely,20.0,80.0
+1476.0,39.0,Female,2,Completely,60.0,30.0
+1596.0,66.0,Female,5,Completely,,
+95.0,28.0,Male,2,Nearly all the time,,
+2552.0,39.0,Female,3,Completely,5.0,15.0
+305.0,23.0,Female,3,Completely,30.0,50.0
+1509.0,32.0,Female,3,Completely,,
+6.0,32.0,Male,5,Completely,80.0,100.0
+3013.0,41.0,Female,2,Nearly all the time,,
+87.0,51.0,Female,2,Completely,20.0,40.0
+2447.0,47.0,Female,4,Completely,100.0,100.0
+1008.0,20.0,Female,3,Nearly all the time,2.0,10.0
+2152.0,70.0,Female,2,Nearly all the time,60.0,45.0
+2521.0,29.0,Female,3,Nearly all the time,20.0,30.0
+2634.0,72.0,Female,4,Completely,50.0,
+2096.0,74.0,Female,2,Nearly all the time,0.0,0.0
+966.0,17.0,Male,4,About half of the time,5.0,10.0
+1454.0,36.0,Female,3,Completely,10.0,40.0
+1283.0,67.0,Male,3,Nearly all the time,20.0,33.0
+1433.0,38.0,Female,3,Completely,,
+2723.0,70.0,Female,3,Nearly all the time,50.0,50.0
+2698.0,52.0,Male,2,Completely,25.0,50.0
+2066.0,66.0,Female,1,Completely,25.0,10.0
+933.0,19.0,Male,4,Nearly all the time,,
+905.0,69.0,Female,5,Nearly all the time,14.0,8.0
+2560.0,67.0,Male,4,Completely,,50.0
+366.0,28.0,Female,1,Completely,0.0,0.0
+2104.0,75.0,Male,2,Completely,5.0,
+2451.0,53.0,Female,4,Nearly all the time,0.0,0.0
+2525.0,51.0,Male,2,Completely,25.0,25.0
+1305.0,68.0,Male,4,Nearly all the time,,
+1477.0,24.0,Female,4,Nearly all the time,50.0,80.0
+2313.0,66.0,Male,3,Nearly all the time,40.0,50.0
+919.0,31.0,Male,1,Completely,20.0,10.0
+392.0,33.0,Female,4,About half of the time,,
+1808.0,38.0,Male,4,Nearly all the time,,
+1147.0,67.0,Female,1,Nearly all the time,,
+1910.0,74.0,Female,3,Completely,,
+1038.0,50.0,Female,1,Completely,,
+3118.0,56.0,Male,2,Nearly all the time,30.0,40.0
+2763.0,24.0,Female,5,Completely,30.0,30.0
+2933.0,41.0,Male,2,Nearly all the time,95.0,50.0
+3675.0,65.0,Male,3,Completely,,
+2865.0,47.0,Female,3,Completely,50.0,50.0
+382.0,19.0,Female,3,Nearly all the time,50.0,60.0
+2623.0,43.0,Female,5,Completely,60.0,60.0
+2281.0,51.0,Male,7,Nearly all the time,50.0,50.0
+2620.0,70.0,Male,5,Nearly all the time,,
+2209.0,75.0,Male,3,Nearly all the time,10.0,15.0
+1967.0,46.0,Female,4,Completely,,
+1105.0,50.0,Female,2,Completely,50.0,50.0
+1818.0,50.0,Female,4,Completely,,
+4088.0,37.0,Male,3,Completely,10.0,50.0
+961.0,21.0,Female,1,Nearly all the time,,
+2603.0,47.0,Female,3,Nearly all the time,50.0,80.0
+1459.0,47.0,Female,3,Completely,,
+3214.0,65.0,Female,5,Completely,,
+3298.0,55.0,Male,2,Nearly all the time,15.0,15.0
+263.0,31.0,Female,3,Less than half of the time,0.0,0.0
+2404.0,29.0,Male,3,Completely,,
+1218.0,58.0,Male,3,Completely,5.0,10.0
+2222.0,69.0,Male,4,Completely,3.0,3.0
+2290.0,17.0,Male,2,Completely,20.0,25.0
+766.0,40.0,Female,6,Nearly all the time,,
+1394.0,33.0,Female,3,Completely,,
+2547.0,73.0,Male,3,Completely,10.0,10.0
+2568.0,74.0,Female,3,Completely,,
+2291.0,66.0,Female,5,Completely,50.0,50.0
+941.0,20.0,Female,,Don’t know,,
+1442.0,38.0,Male,5,Nearly all the time,20.0,30.0
+2897.0,68.0,Male,7,Nearly all the time,,20.0
+2998.0,38.0,Female,1,Nearly all the time,10.0,10.0
+2461.0,50.0,Female,3,Completely,,
+1918.0,53.0,Male,3,Completely,,
+1963.0,36.0,Female,2,Most of the time,10.0,35.0
+2582.0,49.0,Male,2,Completely,0.0,10.0
+2310.0,71.0,Female,3,Completely,,
+3186.0,64.0,Male,2,Nearly all the time,10.0,20.0
+2785.0,26.0,Female,1,Completely,,70.0
+440.0,32.0,Female,3,Completely,70.0,99.0
+4448.0,19.0,Male,4,Completely,30.0,80.0
+2615.0,71.0,Female,4,Completely,5.0,10.0
+2532.0,66.0,Female,3,Nearly all the time,,
+2642.0,68.0,Female,2,Completely,0.0,0.0
+2704.0,56.0,Female,5,Completely,2.0,2.0
+3116.0,33.0,Female,5,Completely,50.0,
+633.0,19.0,Male,5,About half of the time,,
+4816.0,38.0,Male,3,Most of the time,100.0,100.0
+1880.0,36.0,Male,3,Completely,20.0,15.0
+248.0,30.0,Female,3,Completely,,
+720.0,40.0,Female,2,Completely,50.0,80.0
+1545.0,40.0,Male,2,Completely,,
+1562.0,44.0,Male,2,Nearly all the time,50.0,
+37.0,22.0,Male,4,Completely,80.0,99.0
+629.0,18.0,Female,6,Nearly all the time,30.0,30.0
+2945.0,68.0,Male,6,Completely,50.0,50.0
+2352.0,68.0,Male,4,Completely,50.0,
+2229.0,69.0,Male,1,Nearly all the time,15.0,30.0
+2050.0,44.0,Male,6,Nearly all the time,25.0,40.0
+2294.0,73.0,Male,2,Completely,1.0,3.0
+1654.0,71.0,Female,3,Completely,,
+2687.0,50.0,Female,2,Nearly all the time,50.0,75.0
+1957.0,67.0,Male,4,Completely,,
+2189.0,70.0,Male,5,Completely,,
+2637.0,67.0,Female,1,Nearly all the time,,
+2979.0,37.0,Female,4,Completely,10.0,10.0
+2459.0,53.0,Female,4,Completely,4.0,2.0
+2200.0,74.0,Female,3,Nearly all the time,10.0,10.0
+1361.0,20.0,Male,6,About half of the time,100.0,100.0
+605.0,20.0,Male,1,Completely,30.0,40.0
+1345.0,68.0,Female,4,Completely,,
+971.0,21.0,Female,5,Completely,,
+2694.0,73.0,Male,3,Completely,2.0,
+910.0,41.0,Male,5,Completely,50.0,50.0
+2818.0,54.0,Male,7,Completely,20.0,20.0
+879.0,70.0,Female,3,Completely,,
+253.0,46.0,Male,3,Nearly all the time,,
+761.0,70.0,Female,1,Completely,0.0,0.0
+2516.0,71.0,Male,3,Nearly all the time,50.0,75.0
+2683.0,73.0,Female,3,Completely,5.0,5.0
+1700.0,36.0,Male,4,About half of the time,10.0,60.0
+3207.0,60.0,Female,4,Completely,,
+2501.0,35.0,Female,1,Nearly all the time,,
+178.0,21.0,Male,6,Completely,50.0,0.0
+3096.0,38.0,Female,5,Completely,45.0,60.0
+1491.0,30.0,Male,1,Nearly all the time,,
+1192.0,20.0,Female,3,Completely,60.0,0.0
+2012.0,68.0,Female,5,Completely,75.0,50.0
+2051.0,54.0,Female,2,Completely,1.0,1.0
+2972.0,33.0,Female,3,Nearly all the time,,
+2788.0,19.0,Female,3,Completely,20.0,30.0
+133.0,30.0,Male,3,Nearly all the time,50.0,75.0
+1505.0,48.0,Male,4,Completely,,
+767.0,50.0,Female,3,Completely,60.0,90.0
+781.0,39.0,Female,1,Completely,,
+2034.0,66.0,Female,2,Completely,35.0,
+778.0,31.0,Male,3,Nearly all the time,35.0,85.0
+2562.0,29.0,Female,4,Completely,,
+2299.0,30.0,Female,1,Completely,50.0,50.0
+2989.0,57.0,Male,4,Nearly all the time,,
+4339.0,16.0,Male,4,Completely,3.0,15.0
+3244.0,42.0,Female,2,Completely,10.0,20.0
+1332.0,33.0,Male,5,Nearly all the time,5.0,20.0
+3323.0,57.0,Male,5,Nearly all the time,,
+2114.0,44.0,Female,3,Completely,25.0,25.0
+1122.0,23.0,Male,3,Completely,0.0,0.0
+297.0,31.0,Male,1,Completely,0.0,0.0
+2579.0,74.0,Female,3,Completely,10.0,20.0
+2625.0,54.0,Female,2,Completely,50.0,30.0
+2545.0,53.0,Male,4,Completely,50.0,50.0
+1308.0,69.0,Male,3,Completely,17.0,35.0
+1389.0,21.0,Male,4,Most of the time,,
+1630.0,32.0,Female,3,Completely,1.0,20.0
+2228.0,75.0,Female,3,Nearly all the time,20.0,20.0
+2360.0,74.0,Female,3,Completely,,
+55.0,31.0,Male,2,Completely,50.0,
+1295.0,53.0,Female,5,Completely,20.0,10.0
+3077.0,41.0,Female,1,Nearly all the time,50.0,50.0
+1223.0,23.0,Male,4,Nearly all the time,,
+1865.0,35.0,Female,3,Nearly all the time,10.0,12.0
+3746.0,39.0,Male,2,Completely,10.0,20.0
+513.0,32.0,Female,3,Nearly all the time,75.0,5.0
+576.0,16.0,Male,2,Completely,0.0,0.0
+2260.0,37.0,Male,6,Completely,30.0,70.0
+2673.0,37.0,Female,4,Completely,10.0,10.0
+4893.0,26.0,Male,4,Nearly all the time,50.0,50.0
+1387.0,35.0,Female,2,Completely,75.0,40.0
+2322.0,73.0,Female,2,Completely,75.0,100.0
+2921.0,52.0,Male,1,Nearly all the time,1.0,
+1239.0,39.0,Female,3,Nearly all the time,70.0,50.0
+4496.0,30.0,Male,5,Completely,,
+2123.0,48.0,Male,6,Nearly all the time,60.0,70.0
+1126.0,23.0,Female,5,Completely,50.0,50.0
+1513.0,75.0,Male,2,Nearly all the time,,
+1500.0,69.0,Female,5,Completely,,
+3249.0,66.0,Male,3,Nearly all the time,50.0,50.0
+501.0,67.0,Female,3,Completely,,
+2196.0,37.0,Female,2,Completely,80.0,90.0
+2737.0,66.0,Male,3,Nearly all the time,70.0,80.0
+3711.0,30.0,Female,3,Completely,50.0,50.0
+1904.0,48.0,Female,5,Completely,10.0,15.0
+2464.0,54.0,Male,4,Completely,40.0,40.0
+2789.0,24.0,Female,6,About half of the time,23.0,34.0
+2483.0,74.0,Female,1,Completely,50.0,50.0
+1560.0,75.0,Male,7,Completely,,
+226.0,24.0,Male,6,Completely,80.0,80.0
+2795.0,32.0,Female,2,Completely,50.0,90.0
+3360.0,71.0,Male,5,Nearly all the time,10.0,10.0
+506.0,31.0,Female,4,Nearly all the time,50.0,50.0
+2265.0,24.0,Female,3,Most of the time,20.0,30.0
+2131.0,46.0,Female,2,Completely,,
+2675.0,72.0,Male,6,Completely,,
+1232.0,47.0,Female,3,Completely,25.0,75.0
+1739.0,67.0,Female,1,Hardly any of the time,0.0,0.0
+861.0,24.0,Male,3,Most of the time,45.0,55.0
+4766.0,40.0,Male,2,Completely,,
+2766.0,66.0,Male,3,Completely,30.0,35.0
+2578.0,69.0,Female,3,Completely,40.0,40.0
+173.0,34.0,Male,7,About half of the time,,
+659.0,18.0,Male,1,Completely,90.0,95.0
+11.0,43.0,Female,4,Completely,20.0,30.0
+2168.0,52.0,Male,4,Completely,,
+2016.0,71.0,Female,4,Completely,50.0,50.0
+4399.0,16.0,Male,4,Nearly all the time,50.0,50.0
+1684.0,54.0,Male,3,Nearly all the time,50.0,40.0
+2907.0,47.0,Male,5,Nearly all the time,50.0,80.0
+2938.0,33.0,Female,4,Nearly all the time,,
+1494.0,51.0,Female,1,Completely,,
+2428.0,71.0,Female,4,Most of the time,50.0,50.0
+3027.0,65.0,Female,3,Completely,,
+3023.0,42.0,Female,2,Completely,,
+210.0,46.0,Male,3,Most of the time,,
+2136.0,36.0,Female,5,Hardly any of the time,,
+4200.0,38.0,Male,4,Nearly all the time,50.0,50.0
+857.0,52.0,Female,2,Completely,50.0,90.0
+3039.0,53.0,Male,3,Completely,33.0,33.0
+1558.0,47.0,Male,3,Nearly all the time,50.0,80.0
+3088.0,54.0,Male,2,Nearly all the time,,
+220.0,28.0,Male,3,Completely,,
+2138.0,67.0,Male,4,Nearly all the time,65.0,50.0
+2777.0,68.0,Female,3,Completely,30.0,
+3036.0,60.0,Male,3,Nearly all the time,,
+115.0,66.0,Male,4,Completely,5.0,5.0
+902.0,53.0,Male,2,Completely,10.0,10.0
+49.0,31.0,Male,2,Completely,10.0,40.0
+1848.0,27.0,Female,4,Completely,20.0,40.0
+2455.0,40.0,Male,2,Completely,50.0,70.0
+1602.0,66.0,Male,2,Nearly all the time,50.0,85.0
+1220.0,22.0,Male,5,Nearly all the time,2.0,70.0
+2092.0,40.0,Male,2,Completely,20.0,80.0
+238.0,41.0,Male,3,Nearly all the time,100.0,100.0
+1758.0,68.0,Male,2,Completely,0.0,0.0
+4133.0,21.0,Male,5,Nearly all the time,,
+38.0,20.0,Female,4,Completely,50.0,60.0
+1059.0,49.0,Male,5,Completely,50.0,75.0
+1238.0,27.0,Female,4,Completely,40.0,10.0
+3424.0,64.0,Male,3,Completely,1.0,
+2769.0,52.0,Male,6,Nearly all the time,20.0,60.0
+110.0,41.0,Male,4,Completely,,
+1732.0,17.0,Male,4,Most of the time,,20.0
+1822.0,40.0,Male,4,Nearly all the time,40.0,50.0
+1092.0,67.0,Male,3,Completely,33.0,50.0
+1166.0,68.0,Female,4,Nearly all the time,20.0,30.0
+700.0,23.0,Female,2,Completely,,
+1229.0,52.0,Male,3,Completely,0.0,
+2286.0,38.0,Female,3,Completely,40.0,20.0
+981.0,19.0,Male,5,Completely,10.0,10.0
+2341.0,69.0,Female,1,Completely,,
+2805.0,53.0,Male,2,Completely,,70.0
+4883.0,27.0,Male,2,Nearly all the time,5.0,10.0
+1928.0,34.0,Male,6,Nearly all the time,,
+1346.0,42.0,Male,2,Completely,5.0,6.0
+1692.0,56.0,Female,4,Nearly all the time,50.0,50.0
+2271.0,42.0,Female,3,Nearly all the time,,
+3706.0,23.0,Female,4,Completely,50.0,50.0
+2148.0,38.0,Female,3,Nearly all the time,20.0,30.0
+3111.0,62.0,Male,1,Completely,30.0,60.0
+324.0,23.0,Female,3,Completely,60.0,85.0
+1297.0,21.0,Male,4,Completely,5.0,5.0
+497.0,22.0,Male,4,Most of the time,20.0,
+2954.0,59.0,Male,5,Completely,,
+746.0,49.0,Female,3,Completely,60.0,12.0
+2435.0,39.0,Female,5,Completely,,
+2151.0,68.0,Female,4,Completely,,
+732.0,48.0,Female,1,Completely,90.0,100.0
+2437.0,45.0,Female,4,Nearly all the time,80.0,100.0
+1947.0,67.0,Male,7,Nearly all the time,10.0,10.0
+1414.0,47.0,Male,4,Nearly all the time,50.0,90.0
+321.0,18.0,Male,5,Most of the time,20.0,30.0
+850.0,49.0,Female,5,Completely,10.0,10.0
+360.0,28.0,Male,2,Nearly all the time,,
+1667.0,49.0,Female,2,Completely,,50.0
+2234.0,43.0,Female,4,Nearly all the time,40.0,60.0
+396.0,25.0,Female,6,Nearly all the time,,
+1706.0,60.0,Male,2,Nearly all the time,10.0,10.0
+914.0,52.0,Female,4,Completely,20.0,40.0
+275.0,35.0,Female,3,Completely,,
+1306.0,37.0,Female,3,Completely,40.0,50.0
+1337.0,41.0,Female,3,Nearly all the time,60.0,60.0
+858.0,48.0,Female,4,Completely,,
+2652.0,46.0,Male,5,Completely,10.0,0.0
+950.0,44.0,Male,2,Nearly all the time,3.0,4.0
+1030.0,54.0,Male,6,Completely,,
+260.0,52.0,Female,3,Completely,40.0,40.0
+1021.0,47.0,Male,5,Nearly all the time,10.0,25.0
+4320.0,42.0,Male,4,Nearly all the time,10.0,20.0
+2858.0,24.0,Female,2,Nearly all the time,,
+1637.0,53.0,Female,2,Completely,50.0,80.0
+2357.0,36.0,Female,4,Completely,15.0,30.0
+2588.0,31.0,Male,3,Most of the time,25.0,25.0
+2157.0,69.0,Female,2,Nearly all the time,,50.0
+465.0,21.0,Female,5,Most of the time,,
+4812.0,30.0,Male,2,Nearly all the time,50.0,50.0
+2971.0,46.0,Female,4,Nearly all the time,,
+145.0,53.0,Female,2,Completely,50.0,50.0
+2601.0,54.0,Female,2,Completely,,50.0
+2981.0,48.0,Male,2,Nearly all the time,7.0,7.0
+222.0,52.0,Female,3,Completely,50.0,50.0
+102.0,32.0,Female,1,Completely,25.0,30.0
+2773.0,42.0,Male,3,Nearly all the time,,
+1446.0,38.0,Female,4,About half of the time,20.0,20.0
+3356.0,28.0,Male,2,Completely,20.0,80.0
+2342.0,71.0,Female,1,Completely,,
+2427.0,68.0,Female,1,Completely,50.0,50.0
+3324.0,71.0,Male,3,Most of the time,10.0,20.0
+2235.0,67.0,Female,2,Completely,0.0,0.0
+1344.0,20.0,Male,5,About half of the time,3.0,5.0
+2651.0,70.0,Female,6,Nearly all the time,0.0,0.0
+4933.0,31.0,Female,3,Completely,30.0,40.0
+1467.0,53.0,Female,3,Completely,25.0,45.0
+1589.0,57.0,Female,4,Completely,80.0,80.0
+2268.0,49.0,Male,4,Most of the time,25.0,25.0
+2756.0,54.0,Male,5,Completely,,
+1202.0,30.0,Female,3,Completely,50.0,70.0
+3195.0,62.0,Male,2,Completely,,
+1651.0,70.0,Male,2,Nearly all the time,6.0,6.0
+1702.0,38.0,Female,3,Completely,,
+2098.0,75.0,Female,4,Completely,,
+736.0,52.0,Female,4,Most of the time,50.0,
+1730.0,70.0,Male,3,Completely,20.0,15.0
+1653.0,66.0,Male,2,Nearly all the time,40.0,60.0
+1355.0,21.0,Male,1,Nearly all the time,0.0,2.0
+376.0,30.0,Female,1,Completely,50.0,
+4935.0,28.0,Female,3,Nearly all the time,60.0,80.0
+3863.0,32.0,Male,3,Completely,50.0,50.0
+384.0,23.0,Male,3,Completely,,
+429.0,43.0,Male,5,Completely,10.0,5.0
+3704.0,29.0,Female,3,Completely,70.0,40.0
+2997.0,57.0,Male,2,Completely,10.0,50.0
+2605.0,68.0,Male,3,Completely,5.0,10.0
+1352.0,68.0,Female,5,Most of the time,10.0,30.0
+2107.0,45.0,Female,3,Nearly all the time,50.0,50.0
+2326.0,67.0,Female,3,Completely,0.0,0.0
+3648.0,24.0,Female,4,Most of the time,5.0,20.0
+1272.0,68.0,Female,1,Completely,,
+4758.0,33.0,Male,3,Nearly all the time,25.0,10.0
+4926.0,29.0,Female,1,Completely,,
+671.0,35.0,Female,3,Completely,30.0,39.0
+2659.0,28.0,Male,2,Nearly all the time,30.0,40.0
+4498.0,41.0,Male,2,Nearly all the time,80.0,80.0
+3659.0,19.0,Female,1,Completely,20.0,70.0
+2408.0,32.0,Female,5,Completely,50.0,50.0
+1850.0,73.0,Female,2,Completely,10.0,10.0
+98.0,31.0,Female,2,Nearly all the time,75.0,100.0
+2782.0,37.0,Female,4,Completely,10.0,0.0
+2087.0,75.0,Male,3,Completely,,
+2511.0,68.0,Male,1,Completely,0.0,5.0
+408.0,30.0,Female,5,Completely,0.0,0.0
+1415.0,48.0,Male,5,Completely,99.0,99.0
+2383.0,73.0,Female,2,Completely,10.0,2.0
+930.0,20.0,Male,5,Most of the time,3.0,2.0
+2197.0,37.0,Female,4,Completely,25.0,60.0
+2280.0,71.0,Male,2,Completely,1.0,60.0
+3488.0,41.0,Male,5,Completely,,
+1506.0,67.0,Female,4,Completely,10.0,10.0
+379.0,31.0,Female,1,Most of the time,0.0,0.0
+1441.0,46.0,Male,1,Completely,5.0,5.0
+1750.0,74.0,Female,1,Nearly all the time,50.0,50.0
+2745.0,47.0,Male,6,Completely,,
+1066.0,24.0,Male,6,Completely,50.0,50.0
+146.0,51.0,Female,5,Nearly all the time,25.0,25.0
+154.0,26.0,Female,3,Nearly all the time,35.0,35.0
+350.0,30.0,Female,1,Completely,10.0,15.0
+4765.0,43.0,Male,3,Most of the time,,
+1689.0,38.0,Male,5,Completely,15.0,20.0
+121.0,49.0,Female,2,Completely,49.0,20.0
+1016.0,18.0,Male,7,Completely,,
+3034.0,53.0,Female,4,Nearly all the time,50.0,30.0
+1437.0,70.0,Male,2,Completely,10.0,20.0
+320.0,30.0,Female,3,Completely,20.0,20.0
+161.0,53.0,Male,4,Completely,,
+688.0,20.0,Female,5,Nearly all the time,40.0,80.0
+54.0,21.0,Female,5,Completely,20.0,20.0
+1662.0,59.0,Female,3,Completely,,
+1053.0,53.0,Female,2,Nearly all the time,50.0,80.0
+1274.0,19.0,Female,5,Completely,,
+2822.0,39.0,Male,2,Nearly all the time,50.0,79.0
+1582.0,71.0,Male,3,Nearly all the time,,
+1679.0,67.0,Female,3,Completely,20.0,20.0
+2697.0,70.0,Male,4,Most of the time,50.0,80.0
+669.0,73.0,Male,2,Nearly all the time,,
+2025.0,29.0,Male,6,Most of the time,,
+449.0,53.0,Female,4,Nearly all the time,50.0,50.0
+254.0,52.0,Male,3,Nearly all the time,25.0,50.0
+208.0,32.0,Male,1,Nearly all the time,,
+2768.0,64.0,Male,2,About half of the time,25.0,25.0
+3015.0,61.0,Male,2,Completely,50.0,90.0
+2463.0,72.0,Male,2,Most of the time,25.0,25.0
+1526.0,69.0,Female,3,Completely,25.0,2.0
+373.0,29.0,Female,7,Nearly all the time,4.0,5.0
+2833.0,43.0,Female,3,Completely,,
+491.0,24.0,Male,3,About half of the time,,
+303.0,42.0,Male,1,Completely,0.0,100.0
+296.0,23.0,Male,4,About half of the time,,
+2668.0,48.0,Male,2,Nearly all the time,50.0,50.0
+251.0,23.0,Female,3,Completely,30.0,30.0
+4622.0,43.0,Male,4,Don’t know,50.0,15.0
+1460.0,66.0,Male,3,Nearly all the time,,
+2160.0,25.0,Male,2,Most of the time,,
+388.0,34.0,Male,5,Most of the time,50.0,60.0
+1678.0,74.0,Female,2,Completely,2.0,3.0
+2648.0,74.0,Male,4,Nearly all the time,100.0,
+1114.0,24.0,Female,6,Completely,,
+2881.0,31.0,Female,4,Completely,50.0,80.0
+156.0,33.0,Male,3,Nearly all the time,,
+1435.0,68.0,Male,5,Completely,25.0,50.0
+1551.0,69.0,Female,6,Nearly all the time,,
+814.0,21.0,Female,,Nearly all the time,,
+1699.0,67.0,Female,3,Nearly all the time,50.0,50.0
+978.0,19.0,Female,3,Completely,40.0,40.0
+2587.0,53.0,Male,2,Completely,50.0,50.0
+15.0,20.0,Male,5,Completely,0.0,0.0
+2191.0,54.0,Male,5,Completely,,
+2724.0,51.0,Female,3,Completely,70.0,95.0
+2442.0,33.0,Female,4,Completely,50.0,50.0
+2718.0,68.0,Female,3,Completely,,
+2083.0,73.0,Male,2,Nearly all the time,50.0,50.0
+1515.0,45.0,Male,4,Nearly all the time,,
+1799.0,43.0,Female,3,Completely,50.0,50.0
+454.0,29.0,Male,7,Completely,,
+1301.0,39.0,Female,4,Completely,50.0,60.0
+1564.0,50.0,Female,3,Completely,20.0,60.0
+709.0,18.0,Female,2,Completely,90.0,100.0
+2233.0,70.0,Female,2,Completely,,
+673.0,40.0,Female,1,Nearly all the time,1.0,1.0
+2008.0,45.0,Male,1,Completely,5.0,50.0
+3344.0,54.0,Male,7,Completely,,
+1358.0,69.0,Male,2,Completely,10.0,5.0
+2317.0,55.0,Female,3,Completely,50.0,80.0
+2959.0,42.0,Male,4,Completely,,
+1356.0,27.0,Female,2,Completely,25.0,75.0
+3021.0,65.0,Male,4,Nearly all the time,10.0,10.0
+1576.0,69.0,Female,4,Completely,10.0,10.0
+1821.0,75.0,Male,4,Nearly all the time,,
+100.0,35.0,Male,2,Completely,5.0,60.0
+1141.0,39.0,Female,2,Completely,45.0,75.0
+2397.0,68.0,Male,1,Completely,60.0,10.0
+1325.0,40.0,Female,3,Completely,0.0,10.0
+1534.0,75.0,Male,3,Completely,,
+790.0,42.0,Male,5,Nearly all the time,70.0,90.0
+873.0,24.0,Male,4,About half of the time,,
+1063.0,66.0,Male,5,Nearly all the time,,
+139.0,44.0,Prefer not to answer,5,Most of the time,,
+1977.0,66.0,Female,4,Completely,5.0,5.0
+4077.0,36.0,Male,6,Completely,10.0,20.0
+1698.0,69.0,Female,3,Completely,,
+343.0,26.0,Female,6,Completely,20.0,30.0
+2144.0,54.0,Male,2,Completely,,
+630.0,29.0,Female,3,Completely,50.0,50.0
+2194.0,39.0,Female,2,Completely,35.0,70.0
+24.0,30.0,Female,3,Completely,30.0,30.0
+625.0,18.0,Male,3,Hardly any of the time,,
+2305.0,46.0,Female,3,Completely,25.0,75.0
+1537.0,72.0,Male,2,Completely,50.0,10.0
+2439.0,71.0,Female,2,Completely,2.0,5.0
+149.0,35.0,Female,4,Completely,15.0,30.0
+3166.0,48.0,Male,3,Completely,15.0,15.0
+764.0,19.0,Male,3,Most of the time,15.0,25.0
+3061.0,35.0,Female,3,Completely,10.0,5.0
+1403.0,47.0,Male,3,Completely,10.0,10.0
+2116.0,38.0,Male,4,About half of the time,50.0,50.0
+1806.0,67.0,Male,2,Completely,10.0,40.0
+1719.0,70.0,Female,4,Completely,20.0,10.0
+734.0,19.0,Male,2,Completely,40.0,90.0
+4302.0,42.0,Male,2,Nearly all the time,,
+1128.0,18.0,Female,5,Completely,60.0,75.0
+1867.0,73.0,Female,1,Completely,20.0,20.0
+1237.0,18.0,Female,4,Nearly all the time,25.0,55.0
+1039.0,60.0,Male,3,Nearly all the time,50.0,50.0
+1279.0,23.0,Female,5,Completely,50.0,50.0
+2835.0,36.0,Male,1,Nearly all the time,50.0,50.0
+2666.0,44.0,Female,2,Nearly all the time,25.0,75.0
+2690.0,72.0,Male,2,Completely,,
+435.0,61.0,Male,6,Completely,4.0,6.0
+2140.0,36.0,Female,4,Nearly all the time,35.0,75.0
+2936.0,41.0,Male,2,Completely,20.0,50.0
+2714.0,54.0,Male,3,Completely,50.0,50.0
+422.0,31.0,Female,1,Completely,20.0,20.0
+2667.0,39.0,Female,2,Nearly all the time,80.0,100.0
+2318.0,40.0,Male,2,Completely,50.0,60.0
+2987.0,62.0,Male,3,Nearly all the time,50.0,50.0
+170.0,72.0,Male,1,Nearly all the time,20.0,20.0
+1316.0,42.0,Male,5,Nearly all the time,20.0,15.0
+1364.0,46.0,Female,2,Completely,50.0,50.0
+2143.0,48.0,Female,3,Completely,25.0,10.0
+1774.0,39.0,Female,3,Nearly all the time,5.0,5.0
+1573.0,46.0,Female,3,Don’t know,,
+2147.0,75.0,Female,2,Completely,2.0,0.0
+1271.0,20.0,Female,5,Completely,,
+2848.0,67.0,Male,2,Completely,75.0,100.0
+540.0,31.0,Female,7,Completely,,
+2604.0,47.0,Female,3,Nearly all the time,25.0,75.0
+181.0,17.0,Female,3,Completely,45.0,34.0
+19.0,43.0,Male,6,Completely,30.0,0.0
+763.0,20.0,Female,4,Completely,50.0,50.0
+1819.0,54.0,Female,4,Completely,,
+395.0,19.0,Male,5,Completely,,
+2798.0,35.0,Male,4,Most of the time,50.0,50.0
+4425.0,44.0,Male,6,Completely,,
+2877.0,66.0,Female,3,Completely,50.0,10.0
+458.0,33.0,Female,5,Nearly all the time,50.0,80.0
+163.0,30.0,Female,2,Nearly all the time,40.0,30.0
+2864.0,36.0,Male,2,Completely,20.0,75.0
+975.0,70.0,Female,1,Nearly all the time,,
+551.0,19.0,Male,6,Nearly all the time,,
+2613.0,24.0,Male,1,Nearly all the time,,
+2573.0,68.0,Male,4,Completely,75.0,68.0
+2767.0,43.0,Male,5,Completely,50.0,50.0
+215.0,32.0,Male,7,Nearly all the time,,
+2676.0,23.0,Female,4,Completely,100.0,70.0
+2535.0,40.0,Male,4,Completely,,
+578.0,23.0,Male,3,About half of the time,,
+2860.0,68.0,Female,3,Completely,10.0,13.0
+4840.0,28.0,Male,4,Nearly all the time,5.0,10.0
+391.0,34.0,Male,1,Completely,,
+1645.0,44.0,Female,4,Nearly all the time,20.0,20.0
+288.0,32.0,Female,1,Nearly all the time,40.0,70.0
+1404.0,69.0,Female,2,Completely,50.0,50.0
+312.0,29.0,Male,6,Most of the time,,
+1214.0,24.0,Male,4,Most of the time,,
+1555.0,54.0,Female,3,Completely,20.0,20.0
+2541.0,71.0,Male,3,Completely,15.0,
+1926.0,18.0,Female,5,Nearly all the time,,
+2686.0,50.0,Female,1,Completely,,
+1701.0,74.0,Male,4,Nearly all the time,,
+1609.0,44.0,Female,4,Nearly all the time,,
+3255.0,54.0,Male,3,Nearly all the time,40.0,70.0
+1266.0,33.0,Male,3,Completely,50.0,80.0
+2594.0,39.0,Male,1,Completely,10.0,5.0
+1487.0,47.0,Female,2,Completely,70.0,90.0
+2410.0,46.0,Female,3,Nearly all the time,,
+2502.0,37.0,Male,6,Hardly any of the time,50.0,50.0
+2353.0,41.0,Male,7,Nearly all the time,,
+1716.0,36.0,Female,4,Nearly all the time,,
+2117.0,30.0,Male,1,Completely,5.0,5.0
+900.0,70.0,Female,2,Completely,10.0,10.0
+2137.0,54.0,Female,4,Completely,,
+989.0,22.0,Female,3,Completely,50.0,50.0
+2249.0,71.0,Male,4,Nearly all the time,,
+4249.0,22.0,Female,5,Less than half of the time,50.0,70.0
+1233.0,49.0,Male,3,Nearly all the time,,
+2577.0,66.0,Female,1,Nearly all the time,5.0,
+27.0,18.0,Female,3,Completely,15.0,40.0
+3072.0,60.0,Male,2,Most of the time,,
+559.0,19.0,Male,1,Completely,,
+2708.0,66.0,Male,3,Completely,15.0,15.0
+2781.0,42.0,Female,4,Completely,60.0,60.0
+2657.0,54.0,Female,3,Most of the time,,
+1405.0,48.0,Male,4,Hardly any of the time,50.0,
+627.0,19.0,Female,3,Completely,20.0,50.0
+1388.0,36.0,Male,2,Nearly all the time,,
+487.0,34.0,Female,1,Completely,50.0,70.0
+104.0,19.0,Female,1,Completely,20.0,25.0
+43.0,29.0,Male,3,Nearly all the time,2.0,5.0
+1514.0,73.0,Female,4,Completely,50.0,50.0
+1089.0,40.0,Female,3,Completely,75.0,75.0
+1510.0,44.0,Male,2,Nearly all the time,35.0,50.0
+2943.0,68.0,Male,3,Nearly all the time,50.0,50.0
+1813.0,37.0,Female,2,Nearly all the time,50.0,
+2761.0,30.0,Female,3,Nearly all the time,,
+2059.0,48.0,Male,3,Completely,25.0,25.0
+1390.0,39.0,Female,3,Completely,50.0,90.0
+1254.0,23.0,Female,4,Completely,,
+4755.0,39.0,Male,5,Nearly all the time,,
+1054.0,53.0,Male,3,Completely,90.0,100.0
+2210.0,33.0,Female,2,Completely,10.0,50.0
+2955.0,60.0,Male,2,Most of the time,60.0,70.0
+230.0,19.0,Female,2,Completely,20.0,
+2262.0,39.0,Female,7,Completely,10.0,10.0
+2251.0,54.0,Female,3,Nearly all the time,,
+3046.0,32.0,Female,3,Completely,50.0,70.0
+1488.0,67.0,Male,1,Completely,10.0,
+3158.0,47.0,Female,2,Most of the time,10.0,20.0
+2491.0,41.0,Female,1,Completely,,
+1776.0,70.0,Female,5,Nearly all the time,40.0,40.0
+772.0,70.0,Female,5,Completely,,
+367.0,20.0,Female,4,About half of the time,,
+84.0,19.0,Female,6,Completely,10.0,10.0
+2303.0,72.0,Male,4,Nearly all the time,5.0,5.0
+572.0,21.0,Male,2,Completely,80.0,80.0
+1109.0,19.0,Female,5,Less than half of the time,50.0,80.0
+2507.0,74.0,Male,2,Completely,25.0,50.0
+1886.0,73.0,Female,4,Completely,,
+2791.0,52.0,Female,4,Most of the time,,
+405.0,24.0,Female,1,Completely,,
+2762.0,39.0,Female,3,Nearly all the time,80.0,10.0
+1595.0,44.0,Male,4,Completely,,
+2122.0,43.0,Female,3,Completely,,
+2519.0,72.0,Female,1,Completely,,
+2509.0,55.0,Male,5,Most of the time,50.0,0.0
+3454.0,55.0,Male,1,About half of the time,,
+370.0,24.0,Male,1,Completely,,
+1384.0,20.0,In another way,3,Most of the time,5.0,10.0
+1605.0,47.0,Female,1,Nearly all the time,20.0,75.0
+418.0,34.0,Female,2,Completely,5.0,5.0
+3170.0,61.0,Male,4,Completely,,
+1083.0,69.0,Male,3,Completely,2.0,1.0
+1335.0,47.0,Female,5,Completely,10.0,30.0
+1255.0,24.0,Male,4,Completely,50.0,60.0
+2399.0,54.0,Female,1,Completely,,
+869.0,41.0,Male,3,Completely,90.0,
+636.0,19.0,Female,1,Don’t know,45.0,78.0
+2559.0,52.0,Male,4,Most of the time,,
+4610.0,41.0,Male,3,Nearly all the time,,
+1171.0,68.0,Female,1,Completely,,
+2091.0,71.0,Male,2,Completely,40.0,40.0
+3011.0,54.0,Male,3,Completely,,
+1557.0,74.0,Male,3,Completely,25.0,25.0
+1497.0,51.0,Female,2,Completely,10.0,80.0
+2739.0,47.0,Female,2,Completely,20.0,20.0
+516.0,31.0,Female,2,About half of the time,50.0,50.0
+1715.0,66.0,Female,3,Completely,60.0,60.0
+2630.0,27.0,Male,2,Completely,100.0,100.0
+4769.0,43.0,Male,3,Less than half of the time,,
+378.0,21.0,Male,4,Most of the time,55.0,10.0
+4223.0,34.0,Male,2,Nearly all the time,10.0,20.0
+3792.0,37.0,Male,3,Completely,30.0,45.0
+1137.0,47.0,Male,2,Nearly all the time,25.0,30.0
+757.0,34.0,Male,4,Hardly any of the time,,
+1311.0,48.0,Female,3,Completely,30.0,50.0
+1869.0,72.0,Male,3,Completely,,
+4945.0,19.0,Female,3,Completely,,

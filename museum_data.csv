@@ -1,0 +1,151 @@
+"object_id","object_type","region","acquisition_date","acquisition_method","original_owner","cultural_significance","valuation"
+1,"Pottery","Pacific Islands",1952,"Purchase",NA,"Ceremonial",27000
+2,"Jewelry","Southeast Asia",2008,"Colonial Collection",NA,NA,49000
+3,"Sculpture","Southeast Asia",1989,"Purchase",NA,"Ceremonial",13000
+4,"Sculpture","West Africa",1917,"Colonial Collection",NA,NA,10000
+5,"Textile","Pacific Islands",1923,NA,NA,"Sacred",35000
+6,"Jewelry","North Africa",1981,"Colonial Collection",NA,NA,1000
+7,"Sculpture","South America",1956,"Purchase",NA,NA,26000
+8,"Pottery","North Africa",2009,"Purchase",NA,"Sacred",27000
+9,"Pottery","Southeast Asia",1998,"Purchase",NA,NA,49000
+10,"Textile","Pacific Islands",1948,NA,NA,NA,41000
+11,"Pottery","South America",1948,"Donation",NA,"Domestic",NA
+12,"Mask","Pacific Islands",1941,"Purchase",NA,"Sacred",38000
+13,"Sculpture","North Africa",1891,"Donation",NA,NA,43000
+14,"Sculpture","West Africa",1912,NA,NA,"Ceremonial",29000
+15,"Pottery","South America",1917,"Donation",NA,"Ceremonial",36000
+16,"Textile","Pacific Islands",1929,NA,NA,"Domestic",1000
+17,"Sculpture","North Africa",1955,NA,NA,"Domestic",18000
+18,"Textile","Southeast Asia",1955,"Donation",NA,"Ceremonial",36000
+19,"Mask","West Africa",1969,"Purchase",NA,"Domestic",36000
+20,"Mask","Pacific Islands",1919,"Purchase",NA,"Domestic",39000
+21,"Mask","West Africa",1928,"Colonial Collection",NA,"Domestic",37000
+22,"Sculpture","West Africa",1956,"Purchase",NA,"Ceremonial",15000
+23,"Pottery","Pacific Islands",1969,"Purchase",NA,"Ceremonial",18000
+24,"Sculpture","West Africa",1964,"Purchase",NA,"Ceremonial",40000
+25,"Jewelry","Southeast Asia",1968,"Colonial Collection","Known Community",NA,12000
+26,"Mask","North Africa",2000,NA,"Known Community",NA,48000
+27,"Mask","West Africa",1919,NA,NA,"Domestic",44000
+28,"Textile","South America",1919,NA,NA,NA,38000
+29,"Sculpture","South America",1906,"Purchase",NA,"Ceremonial",34000
+30,"Textile","West Africa",1918,NA,NA,"Ceremonial",11000
+31,"Textile","South America",1973,"Colonial Collection","Known Community",NA,42000
+32,"Sculpture","South America",1936,"Purchase",NA,NA,11000
+33,"Textile","South America",2012,"Donation",NA,"Ceremonial",49000
+34,"Textile","North Africa",1881,"Purchase",NA,"Domestic",5000
+35,"Jewelry","West Africa",1992,"Purchase","Known Community",NA,40000
+36,"Pottery","West Africa",1897,"Colonial Collection",NA,NA,40000
+37,"Pottery","South America",1962,"Colonial Collection","Named Individual",NA,9000
+38,"Textile","Pacific Islands",1984,"Purchase",NA,"Domestic",14000
+39,"Sculpture","Pacific Islands",1913,"Purchase",NA,NA,30000
+40,"Jewelry","West Africa",1893,NA,NA,NA,6000
+41,"Mask","Pacific Islands",1902,NA,NA,"Sacred",32000
+42,"Textile","Southeast Asia",1981,"Purchase",NA,"Domestic",13000
+43,"Jewelry","West Africa",1945,NA,NA,"Sacred",21000
+44,"Sculpture","Pacific Islands",1891,NA,NA,NA,38000
+45,"Textile","Southeast Asia",1890,"Purchase",NA,NA,32000
+46,"Sculpture","Southeast Asia",2019,NA,NA,NA,16000
+47,"Sculpture","South America",1972,NA,NA,NA,7000
+48,"Textile","South America",1949,"Donation",NA,"Domestic",21000
+49,"Mask","Southeast Asia",1951,NA,NA,NA,37000
+50,"Sculpture","Southeast Asia",1949,"Donation",NA,"Ceremonial",49000
+51,"Textile","South America",1988,NA,"Named Individual","Ceremonial",44000
+52,"Sculpture","West Africa",1925,"Colonial Collection",NA,NA,37000
+53,"Textile","South America",2016,"Purchase",NA,"Ceremonial",43000
+54,"Mask","South America",1896,"Colonial Collection",NA,NA,32000
+55,"Jewelry","Southeast Asia",1920,"Donation",NA,"Ceremonial",48000
+56,"Pottery","Pacific Islands",1995,"Purchase",NA,"Sacred",26000
+57,"Jewelry","Southeast Asia",1977,NA,NA,NA,16000
+58,"Sculpture","South America",1906,"Purchase",NA,"Sacred",48000
+59,"Mask","West Africa",1994,NA,NA,"Domestic",32000
+60,"Sculpture","West Africa",2020,"Purchase",NA,"Domestic",7000
+61,"Pottery","West Africa",1994,"Donation","Known Community",NA,38000
+62,"Mask","South America",1991,"Colonial Collection",NA,NA,22000
+63,"Pottery","West Africa",1962,"Purchase","Named Individual","Domestic",NA
+64,"Pottery","West Africa",1881,NA,NA,"Ceremonial",9000
+65,"Jewelry","Southeast Asia",1996,"Purchase",NA,"Ceremonial",1000
+66,"Sculpture","Southeast Asia",1953,"Colonial Collection",NA,NA,5000
+67,"Jewelry","South America",1946,NA,NA,NA,4000
+68,"Mask","Pacific Islands",1918,NA,NA,NA,31000
+69,"Jewelry","South America",1923,"Colonial Collection",NA,NA,34000
+70,"Pottery","Southeast Asia",1893,"Donation",NA,NA,32000
+71,"Pottery","West Africa",1987,"Colonial Collection",NA,"Sacred",35000
+72,"Pottery","Southeast Asia",1952,"Donation",NA,NA,26000
+73,"Sculpture","South America",1972,"Donation",NA,"Ceremonial",39000
+74,"Mask","South America",2005,"Donation",NA,"Sacred",45000
+75,"Textile","North Africa",1942,"Colonial Collection",NA,NA,31000
+76,"Mask","West Africa",1939,"Purchase",NA,"Ceremonial",44000
+77,"Jewelry","West Africa",2010,"Colonial Collection",NA,NA,20000
+78,"Textile","South America",2000,"Colonial Collection","Known Community",NA,42000
+79,"Pottery","Pacific Islands",2015,"Purchase","Known Community",NA,32000
+80,"Mask","West Africa",1916,"Purchase",NA,"Sacred",34000
+81,"Jewelry","North Africa",1928,"Donation",NA,NA,50000
+82,"Textile","Pacific Islands",1981,"Purchase","Named Individual",NA,27000
+83,"Pottery","North Africa",1943,"Colonial Collection",NA,NA,36000
+84,"Pottery","North Africa",1977,"Purchase","Known Community",NA,2000
+85,"Pottery","Pacific Islands",2012,"Colonial Collection","Named Individual",NA,23000
+86,"Textile","North Africa",1892,NA,NA,"Sacred",3000
+87,"Textile","North Africa",2017,"Purchase",NA,"Domestic",29000
+88,"Jewelry","Pacific Islands",2008,NA,NA,"Ceremonial",NA
+89,"Textile","North Africa",1942,"Purchase",NA,"Domestic",47000
+90,"Sculpture","South America",1938,NA,NA,"Ceremonial",4000
+91,"Pottery","North Africa",1908,"Purchase",NA,"Ceremonial",43000
+92,"Pottery","South America",1983,"Donation",NA,"Sacred",32000
+93,"Sculpture","Pacific Islands",1932,"Colonial Collection",NA,"Sacred",25000
+94,"Jewelry","West Africa",1880,"Colonial Collection",NA,NA,26000
+95,"Textile","South America",1967,NA,NA,NA,32000
+96,"Textile","Pacific Islands",1980,"Colonial Collection",NA,NA,45000
+97,"Textile","North Africa",1932,"Purchase",NA,NA,34000
+98,"Jewelry","Southeast Asia",2018,NA,NA,"Domestic",4000
+99,"Mask","West Africa",2015,NA,NA,NA,15000
+100,"Textile","South America",1952,NA,NA,"Domestic",24000
+101,"Mask","South America",2005,NA,"Named Individual",NA,9000
+102,"Textile","Pacific Islands",1912,NA,NA,NA,NA
+103,"Pottery","South America",1899,"Purchase",NA,NA,50000
+104,"Jewelry","Pacific Islands",1994,"Purchase",NA,"Domestic",1000
+105,"Textile","Southeast Asia",2011,"Purchase",NA,NA,13000
+106,"Jewelry","Southeast Asia",1892,"Colonial Collection",NA,"Sacred",40000
+107,"Textile","Pacific Islands",1953,"Purchase",NA,"Domestic",6000
+108,"Pottery","South America",1964,NA,NA,NA,23000
+109,"Sculpture","South America",1915,"Colonial Collection",NA,"Sacred",7000
+110,"Jewelry","North Africa",1958,"Purchase",NA,NA,40000
+111,"Textile","North Africa",1947,NA,NA,"Domestic",12000
+112,"Mask","South America",2018,"Purchase",NA,NA,49000
+113,"Sculpture","South America",1941,"Colonial Collection",NA,NA,43000
+114,"Pottery","West Africa",1912,"Purchase",NA,"Domestic",23000
+115,"Pottery","Pacific Islands",1924,"Purchase",NA,NA,46000
+116,"Mask","South America",1966,"Purchase",NA,"Domestic",19000
+117,"Mask","West Africa",2018,NA,NA,"Ceremonial",13000
+118,"Textile","North Africa",1898,"Colonial Collection",NA,NA,29000
+119,"Sculpture","North Africa",1926,"Donation",NA,"Domestic",33000
+120,"Jewelry","Pacific Islands",1928,"Donation",NA,NA,13000
+121,"Textile","Pacific Islands",2007,NA,NA,"Sacred",43000
+122,"Sculpture","North Africa",1955,"Donation",NA,NA,22000
+123,"Pottery","Pacific Islands",1998,"Purchase",NA,"Sacred",7000
+124,"Jewelry","Pacific Islands",1948,"Purchase",NA,"Domestic",28000
+125,"Mask","Southeast Asia",1910,"Colonial Collection",NA,NA,18000
+126,"Pottery","Southeast Asia",1965,NA,NA,"Ceremonial",24000
+127,"Sculpture","West Africa",1964,"Purchase","Known Community",NA,29000
+128,"Textile","South America",2003,NA,NA,NA,48000
+129,"Mask","Pacific Islands",1880,"Donation",NA,NA,48000
+130,"Mask","North Africa",2001,NA,NA,"Domestic",45000
+131,"Pottery","North Africa",1945,"Donation",NA,"Ceremonial",46000
+132,"Pottery","North Africa",1892,"Purchase","Named Individual",NA,49000
+133,"Sculpture","Southeast Asia",1912,"Colonial Collection",NA,NA,7000
+134,"Sculpture","North Africa",1924,"Purchase",NA,NA,5000
+135,"Mask","South America",1958,NA,NA,"Domestic",30000
+136,"Textile","Southeast Asia",1934,"Purchase",NA,"Domestic",35000
+137,"Mask","North Africa",1884,NA,NA,NA,34000
+138,"Mask","West Africa",1948,NA,NA,NA,20000
+139,"Pottery","North Africa",1900,"Purchase",NA,NA,7000
+140,"Jewelry","Southeast Asia",1942,"Donation",NA,NA,35000
+141,"Sculpture","Southeast Asia",1953,NA,NA,"Ceremonial",44000
+142,"Jewelry","West Africa",1948,"Donation",NA,NA,29000
+143,"Mask","South America",1937,"Colonial Collection",NA,NA,10000
+144,"Textile","West Africa",1936,"Purchase",NA,"Domestic",33000
+145,"Mask","Southeast Asia",1907,"Purchase",NA,NA,50000
+146,"Textile","South America",1890,NA,NA,NA,49000
+147,"Sculpture","South America",2010,"Purchase",NA,NA,10000
+148,"Jewelry","West Africa",1955,"Purchase",NA,"Domestic",48000
+149,"Jewelry","Pacific Islands",2005,"Purchase",NA,"Domestic",25000
+150,"Pottery","Southeast Asia",1957,"Purchase",NA,"Domestic",49000

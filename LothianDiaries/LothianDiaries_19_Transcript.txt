@@ -1,0 +1,46 @@
+File	Speaker	Start	End	Transcription
+LothianDiaries_19	19	1.11	7.515	"Hi, I'm Nicholas and I'm going to talk about lockdown and how it has affected my life so far."
+LothianDiaries_19	19	8.02	11.32	So first I'm going to talk about how my life has changed during lockdown.
+LothianDiaries_19	19	11.71	20.27	"Erm, things have definitely been very different, for example school work has been completely different, I've had to completely change my way around that {BR}"
+LothianDiaries_19	19	20.42	24.59	"there's not that much social interaction, which I find really frustrating"
+LothianDiaries_19	19	24.61	30.95	"and it's just been, kind of like hard, getting through it, but then, at the same time, I feel like I focus"
+LothianDiaries_19	19	31.1	34.39	better on tasks and school work.
+LothianDiaries_19	19	35.01	42.55	"There's also, erm, how I can't go outside, which has definitely, like, {se} like, yeah, stopped a lot for me, like"
+LothianDiaries_19	19	42.57	46.71	"I've, fresh air was definitely a major part of my life, even when I don't realise it"
+LothianDiaries_19	19	46.74	52.312	"so for example I walk up to school every day, which takes me about half an hour and it's a steep uphill"
+LothianDiaries_19	19	52.312	56.56	and I've definitely been noticing that cause I've {n} been not doing it recently.
+LothianDiaries_19	19	56.56	59.511	"So, exercise has definitely been"
+LothianDiaries_19	19	59.511	62.35	something that's quite hard to do during lockdown.
+LothianDiaries_19	19	62.36	66.638	"First of all, so, not seeing friends, which has really been"
+LothianDiaries_19	19	66.638	71.097	"quite difficult, as I really value social interaction and, like {BR}"
+LothianDiaries_19	19	71.097	74.149	"I want to see my friends a lot, and I do {BR}"
+LothianDiaries_19	19	74.149	79.96	"so every weekend I normally see them, {obv} obviously at school I see them, and not seeing them {BR}"
+LothianDiaries_19	19	79.98	84.352	"like, videocalling, obviously, it's, like, different, and it's not seeing them physically."
+LothianDiaries_19	19	86.31	92.384	"So, a typical day before lockdown was normally just going up to school, seeing {BR}"
+LothianDiaries_19	19	92.384	97.007	"my friends, normally, going up to Princes Street to go shopping, for example {BR}"
+LothianDiaries_19	19	97.007	103.534	"erm, definitely, like, {spn} going out for walks more, erm {LS}, going cycling"
+LothianDiaries_19	19	103.534	110.253	"now it's more staying at home and trying to find, trying to, like, find something to keep yourself entertained"
+LothianDiaries_19	19	110.253	116.041	"erm, I definitely, there's obviously still school work and I, you can obviously still go out for exercise"
+LothianDiaries_19	19	116.041	122.31	"but, erm {LS}, yeah, it's definitely different, as there's no shops open and, yeah, it's"
+LothianDiaries_19	19	122.41	124.1	much more boring I'd say.
+LothianDiaries_19	19	126.71	135.385	"{LS} One of the hardest things in lockdown, I would say, is definitely keeping, like, relationships steady and, like, keeping my social life {BR}"
+LothianDiaries_19	19	135.385	142.554	"steady, so, keeping my friends, like, by my side, for example I've had lots of arguments with my friends so far {BR}"
+LothianDiaries_19	19	142.554	149.224	"and it's really been quite hard to like {s}, keep, like, keep that relationship going"
+LothianDiaries_19	19	149.224	152.91	"but, erm, yeah, that's probably been the hardest part for me."
+LothianDiaries_19	19	154.01	157.89	"So, as I've said already, I have been learning from home {BR}"
+LothianDiaries_19	19	157.89	163.5	and this has definitely been quite a challenge because it's been quite hard to focus {BR}
+LothianDiaries_19	19	163.5	170.119	"erm, I find it very hard to do school work and, like, do my tasks, and stay focused, like, and stay on task {BR}"
+LothianDiaries_19	19	170.119	172.95	as it's online and there's constant distraction
+LothianDiaries_19	19	172.95	181.2	"{BR} there's also, it's also quite hard, as I {v} very much, I talk a lot in class, which is a bad thing, but then at the same time {BR}"
+LothianDiaries_19	19	181.22	185.938	"I talk, like, like, with my friends, and like, it helps me understand stuff"
+LothianDiaries_19	19	185.938	189.31	so not doing that on a daily basis is quite hard.
+LothianDiaries_19	19	190.01	198.014	"{LS} There's definitely been good things about lockdown, for example my family relationships have got, have gotten better {BR}"
+LothianDiaries_19	19	198.014	203.148	"erm, I've, yeah, I've been more friendly with my family, although we have also had some {BR}"
+LothianDiaries_19	19	203.148	207.257	"very rough arguments {LG} but, erm, yeah, I feel like I'm closer to them"
+LothianDiaries_19	19	207.257	211.276	"er, and, yeah, I've also learned to value my friends"
+LothianDiaries_19	19	211.276	213.96	and trying not to lose them on the way along.
+LothianDiaries_19	19	214.81	218.561	{LS} So I'm in lockdown with my mum and dad
+LothianDiaries_19	19	218.561	226.232	"{BR} erm, they're definitely finding it quite hard, even harder than me, to stay indoors, as they really value, like, {t} going outdoors"
+LothianDiaries_19	19	226.232	230.074	"{BR} which, obviously I value also a lot but a bit less than them"
+LothianDiaries_19	19	230.074	234.635	"erm, yeah, it has been quite hard to keep our cool sometimes, but erm"
+LothianDiaries_19	19	234.635	237.938	"yeah, I think, I think we're doing alright."

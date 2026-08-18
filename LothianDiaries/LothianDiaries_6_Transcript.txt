@@ -1,0 +1,47 @@
+File	Speaker	Start	End	Transcript
+LothianDiaries_6	6	0.068	4.082	"Thank you for the opportunity to do this video diary. Um,"
+LothianDiaries_6	6	4.291	10.898	"First, I start, Um I feel like there's some things that are important for you to know"
+LothianDiaries_6	6	11.025	14.373	"Um, for example, I am from Lithuania"
+LothianDiaries_6	6	14.503	22.736	"um, I live in Scotland uh in Edinburgh for two years already I came here to work and now I am studying"
+LothianDiaries_6	6	22.863	38.883	"Um, yeah um, so and it's already before even before lockdown it's been a um very hectic year I had ups and downs. Um, it was difficult"
+LothianDiaries_6	6	39.016	45.493	"So lockdown was um, another issue in my pocket. "
+LothianDiaries_6	6	45.621	50.213	"Um, though I found some good things about it. "
+LothianDiaries_6	6	50.33	55.149	"Uh, I learned a lot about my relationship with my boyfriend because we live together. "
+LothianDiaries_6	6	55.274	62.702	"Um, and yeah it's been a challenge, uh I like my pri privacy like uh, "
+LothianDiaries_6	6	62.832	70.593	"um, just space in in general, um, but I think um, we managed to talk it through"
+LothianDiaries_6	6	70.706	74.56	"um, and now our relationship are better than ever"
+LothianDiaries_6	6	74.705	82.228	"Um, I also found that lockdown impacted the way I work"
+LothianDiaries_6	6	82.355	86.663	though I struggled with the creativity
+LothianDiaries_6	6	86.787	90.287	"because my days would look the same, um,"
+LothianDiaries_6	6	90.414	101.063	"and I'm writing so it's very important to be creative. Uh, at the same time um, I was so much more productive because I didn't have distractions."
+LothianDiaries_6	6	101.186	109.885	"I couldn't go anywhere, nothing is happening around me, everyone is at their home, I don't even have um,"
+LothianDiaries_6	6	110.026	115.498	"a reason to to meet, to look for distractions, you know. "
+LothianDiaries_6	6	115.622	121.659	"So yeah, so that's that's really, that was really really helpful um,"
+LothianDiaries_6	6	121.798	139.996	"was pro more productiver than before em. so it also impacted um, my social life and I really miss my friends. Um, at the very beginning it was so interesting to talk through Skype and learn how all this technologies work so I communicated even more often with my friends than before. "
+LothianDiaries_6	6	140.125	149.266	"um, but now everything kind of um, went it it became new normal so I think"
+LothianDiaries_6	6	149.406	154.269	it's even harder to don't have a social life anymore.
+LothianDiaries_6	6	154.398	160.436	so to make my life more exciting um I created some challenges for myself.
+LothianDiaries_6	6	160.591	163.839	"Um, I learned how to ba bake bread"
+LothianDiaries_6	6	163.999	170.238	"Um, I am training to uh, be able to stand on my hands,"
+LothianDiaries_6	6	170.41	178.76	"Um, Um. yeah, so little things like that, um, Just to keep me going. Um, and "
+LothianDiaries_6	6	178.908	185.486	"last but not least I think it's even the most important thing for me, um"
+LothianDiaries_6	6	185.613	194.652	"is uh, homesickness and I never felt homesick because I have been living abroad for for a long time"
+LothianDiaries_6	6	194.776	204.387	"Um, and uh yeah and I kind of used to this thing to speaking ing with my family and friends um, "
+LothianDiaries_6	6	204.506	215.507	"Uh, through skype or whatever um, but when the lockdown started I realise how much I miss my home and how I uh um how"
+LothianDiaries_6	6	215.658	221.279	important for me is to be there and come back actually.
+LothianDiaries_6	6	221.419	228.419	"Um, and I I was worried about my family, how they are doing and stuff like that. "
+LothianDiaries_6	6	228.527	240.031	"Um, and it now it's the end of May and the lockdown uh restrictions are much much easier in my home country"
+LothianDiaries_6	6	240.157	249.522	"Um, and they actually opened up flights to many many countries, but not to UK. "
+LothianDiaries_6	6	249.662	257.097	"Um, and I can't come back um, and that's really bothering me,"
+LothianDiaries_6	6	257.227	262.072	because I'm liv at the moment I'm living um
+LothianDiaries_6	6	262.205	272.361	"on the edge of um waiting when I can go go back home, even though before I never planned to go home for for summer,"
+LothianDiaries_6	6	272.491	286.598	"right, but now I feel like it's very very important for me to come back because I miss my family, I miss my friends um, and I kind of feel like it's I shouldn't be here I should be with them. "
+LothianDiaries_6	6	286.731	291.5	"Uh, if something happens I should be there, you know. "
+LothianDiaries_6	6	291.627	297.319	"So um, yeah, this waiting is killing me actually. "
+LothianDiaries_6	6	297.444	304.654	"Um, and I hope that in the near future they will open up flights um but I'm checking uh,"
+LothianDiaries_6	6	304.82	312.345	it rises rise up my anxiety levels cause I am checking how many cases we have per day
+LothianDiaries_6	6	312.501	315.544	just to see when the tickets will open up
+LothianDiaries_6	6	315.69	333.61	"because we need, UK needs to re, needs to reach um two thousand cases per day so I could come back {spn}. But in general I am happy that everything is okay for and and we are healthy, me and my family um and uh. "
+LothianDiaries_6	6	333.747	340.419	"Uh, that I have a stable income and I don't have to worry about that"
+LothianDiaries_6	6	340.546	353.993	"Um, and I just want to thank you for um, giving me the opportunity to to do this video and reflect on what happened because I feel like it's very very important"
+LothianDiaries_6	6	354.152	367.124	"um, so it won't be forgetted and um, I will keep this recording and I will record I think something more of those for future. Thank you. "

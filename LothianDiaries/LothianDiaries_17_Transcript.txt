@@ -1,0 +1,22 @@
+File	Speaker	Start	End	Transcription
+LothianDiaries_17	17	0	4.54	"Hello, my name is Shona and I live in the Gilmerton area of Edinburgh."
+LothianDiaries_17	17	5.2	8.673	"I live alone apart from {Rusco}, my rather spoiled cat. "
+LothianDiaries_17	17	9.23	13.519	My family don't live locally to me but close enough if I need them.
+LothianDiaries_17	17	13.79	20.915	"So far, despite my son and daughter and grand daughter all working, {we have been well.} Thank goodness!"
+LothianDiaries_17	17	21.49	30.117	" Before lockdown, I led a really busy life. Retirement opened up time for all sorts of groups and classes."
+LothianDiaries_17	17	32.77	37.731	"I have done history {work}, pottery and gallery tours among others. "
+LothianDiaries_17	17	37.91	47.061	 I am a Taoist Tai Chi instructor and attend classes four times a week as well as travelling in GB and Europe to workshops.
+LothianDiaries_17	17	47.57	56.72	 I shoulda been in Canada in April but of course that's all cancelled sadly.  I'll get there one day.
+LothianDiaries_17	17	56.92	62.127	Swimming is always been one of my activities. I usually swim three or four times a week.
+LothianDiaries_17	17	62.58	80.96	"I sometimes take my grand daughter, my youngest one swimming on a Sunday and when I saw her at the weekend and socially distant of course in my son's garden, she told me she really missed school and swimming. I said ''{don't worry Minnie. It's alright.}''"
+LothianDiaries_17	17	82.25	86.11	I volunteer in Oxfam bookshop one afternoon a week.
+LothianDiaries_17	17	86.85	91.64	"Theaters, films, and meals out with family and  friends also keep my diary pretty filled.  "
+LothianDiaries_17	17	92.65	98.16	" Like many retired people, I wonder where I find time to work."
+LothianDiaries_17	17	98.57	112.98	"So I have find the last couple of months pretty difficult in some respects, a lack of real contact with my family and friends. I long for a hug, a handshake, just some physical contact. "
+LothianDiaries_17	17	113.57	129.68	"Of course Zoom, Facetime and video calls are great and I do spend time each day on some of these . But oh I I long I long  long to get back to get back to some sort of normality."
+LothianDiaries_17	17	130.63	140.43	"My Tai chi is most helpful thing I find. It calms me and keeps me focused. Although some day it also challenges me, I would be lost without it. "
+LothianDiaries_17	17	142.83	155.04	Getting back to the Oxfam shop would be an interesting challenge with social distancing and  whatever other issues that will throw up. I am not sure when that will be but I'll be glad to get back.
+LothianDiaries_17	17	156.74	171.41	{ } go to theater and ballet and opera a couple of times a week. Sometimes I coordinate this with friends and we virtually share a wee glass of wine or two if we were watching something on Youtube.
+LothianDiaries_17	17	173.25	196.63	"One of the best things about this lockdown and having all this time has been getting back into gardening.  I just have a very small garden but I rediscover my love of growing stuff, and I recently bought a wee green house. I hope to have some juicy tomatoes later on in the year. Home-grown. How lovely!"
+LothianDiaries_17	17	197.97	208.25	I think I am a bit apprehensive about starting out on this so called road map back to whatever normal will be. I don't think it will be like the old normal.
+LothianDiaries_17	17	210.98	229.03	"I hope we will get there and we 'll take it slow and steady into the future and one day I'll be travelling again and seeing my friends and family and having a hug with my daughter, my son and my grand children. "
