@@ -1,10 +1,15 @@
-# 7AAVBCS5 — teaching datasets
+# 7AAVBCS5 — public teaching materials and datasets
 
-Datasets for **Social and Cultural Analytics (7AAVBCS5)**, King's College London.
+Public student materials and datasets for **Social and Cultural Analytics (7AAVBCS5)**,
+King's College London.
 
-This repository exists so that worksheets can load their data over the internet when students are
-working in **Google Colab** rather than on their own machine. The teaching material itself lives
-in a separate private repository; this holds only the data files.
+This repository exists so that students can access the weekly worksheets and the data they need
+from one public location. It also lets worksheets load their data over the internet when students
+are working in **Google Colab** rather than on their own machine.
+
+The private teaching repository still holds staff-only material such as solutions, assessment
+notes, quizzes, slides and release planning. This public repository contains only the files that
+students should be able to access directly.
 
 Files are served over raw HTTPS, e.g.:
 
@@ -14,7 +19,22 @@ https://raw.githubusercontent.com/markjhill/7AAVBCS5-data/master/museum_data.csv
 
 Worksheets do this automatically — students never type a URL.
 
-## Contents
+## Worksheets
+
+Student-facing worksheets and live-coding files are organised by week:
+
+```
+worksheets/week-01/
+worksheets/week-02/
+...
+worksheets/week-11/
+```
+
+Each weekly folder contains Python scripts (`.py`) and notebook versions (`.ipynb`) where available.
+Solution and complete versions are intentionally not included here; those are released separately
+through Moodle when appropriate.
+
+## Data files
 
 | File | Rows × cols | Used in | Source and licence |
 |---|---|---|---|
@@ -52,7 +72,9 @@ Everything in this repository is world-readable and effectively permanent. Befor
 dataset about people, confirm it is already openly published by its originator; if it is not, it
 belongs on KEATS behind authentication instead.
 
-## Rebuilding
+## Maintenance
 
-Generated from the module's Moodle backup by `scripts/convert_datasets.py` in the main repository.
-Do not hand-edit; regenerate instead.
+The private teaching repository pins this public repository at a specific Git commit, so Moodle
+materials and worksheets can point to a known version of the student-facing files. When public
+worksheets or data files change, commit those changes here first, then update the pinned reference
+from the private repository.
