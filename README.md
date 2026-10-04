@@ -31,8 +31,9 @@ worksheets/week-11/
 ```
 
 Each weekly folder contains Python scripts (`.py`) and notebook versions (`.ipynb`) where available.
-Solution and complete versions are intentionally not included here; those are released separately
-through Moodle when appropriate.
+Live-coding complete versions are included, because they are useful for review after class. Worksheet
+solutions are intentionally not included here; those are released separately through Moodle when
+appropriate.
 
 ## Data files
 
