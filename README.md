@@ -44,6 +44,11 @@ appropriate.
 | `museum_data.csv` | 150 × 8 | W3–W5 | Constructed for teaching |
 | `BritishAndIrishNewspapersTitleList_20191118.csv` | 24,927 × 24 | W5 | British Library, British and Irish Newspapers title list. Bibliographic metadata. |
 | `London_Cultural_Infrastructure_2023.csv` | — | W5, W7 | Greater London Authority, London Datastore |
+| `london_cultural_venues_2023.csv` | 4,434 × 20 | W3–W8 | Greater London Authority, London Datastore. Cleaned venue-level teaching copy. |
+| `london_cultural_infrastructure_2023_borough_counts.csv` | 33 × 6 | W3–W8 | Aggregated from `london_cultural_venues_2023.csv`. |
+| `london_cultural_infrastructure_2023_borough_type_counts.csv` | 652 × 4 | W3–W8 | Aggregated from `london_cultural_venues_2023.csv`. |
+| `london_borough_profiles_2015.csv` | 33 × 13 | W3–W8 | Borough-level contextual indicators from the GLA ward profiles file. |
+| `london_cultural_infrastructure_2023_borough_context.csv` | 33 × 20 | W3–W8 | Borough venue counts joined to contextual indicators. |
 | `DawtryEtAl2015.csv` | 305 × 37 | W5, W8 | Dawtry, Sutton & Sibley (2015). Attribute in any published use. |
 | `alice.txt` | — | W9–W10 | *Alice's Adventures in Wonderland*, Project Gutenberg. Public domain. |
 | `SUA/` | 228 files | W10–W11 | US State of the Union addresses, 1790–2018. Public domain. |

@@ -1,0 +1,653 @@
+borough_name,borough_code,venue_type,venues
+Barking and Dagenham,E09000002,Artists workspaces,3
+Barking and Dagenham,E09000002,Cinemas,1
+Barking and Dagenham,E09000002,Creative workspaces,5
+Barking and Dagenham,E09000002,Dance performance venues,3
+Barking and Dagenham,E09000002,Dance rehearsal studios,1
+Barking and Dagenham,E09000002,Fashion and design,2
+Barking and Dagenham,E09000002,Libraries,6
+Barking and Dagenham,E09000002,Makerspaces,1
+Barking and Dagenham,E09000002,Making and manufacturing,1
+Barking and Dagenham,E09000002,Museums and public galleries,1
+Barking and Dagenham,E09000002,Music rehearsal studios,1
+Barking and Dagenham,E09000002,Music venues all,1
+Barking and Dagenham,E09000002,Textile design,1
+Barking and Dagenham,E09000002,Theatre,2
+Barking and Dagenham,E09000002,Theatre rehearsal studios,2
+Barnet,E09000003,Archives,8
+Barnet,E09000003,Artists workspaces,2
+Barnet,E09000003,Arts centres,1
+Barnet,E09000003,Cinemas,3
+Barnet,E09000003,Creative coworking desk space,1
+Barnet,E09000003,Creative workspaces,1
+Barnet,E09000003,Dance performance venues,2
+Barnet,E09000003,Dance rehearsal studios,5
+Barnet,E09000003,Jewellery design,1
+Barnet,E09000003,Libraries,16
+Barnet,E09000003,Makerspaces,1
+Barnet,E09000003,Making and manufacturing,1
+Barnet,E09000003,Museums and public galleries,4
+Barnet,E09000003,Music rehearsal studios,1
+Barnet,E09000003,Music venues all,1
+Barnet,E09000003,Prop and costume making,3
+Barnet,E09000003,Theatre,2
+Barnet,E09000003,Theatre rehearsal studios,2
+Bexley,E09000004,Archives,1
+Bexley,E09000004,Artists workspaces,2
+Bexley,E09000004,Cinemas,1
+Bexley,E09000004,Creative workspaces,1
+Bexley,E09000004,Fashion and design,1
+Bexley,E09000004,Libraries,12
+Bexley,E09000004,Making and manufacturing,1
+Bexley,E09000004,Museums and public galleries,4
+Bexley,E09000004,Music recording studios,1
+Bexley,E09000004,Music rehearsal studios,3
+Bexley,E09000004,Set and exhibition building,3
+Bexley,E09000004,Theatre,4
+Bexley,E09000004,Theatre rehearsal studios,2
+Brent,E09000005,Archives,1
+Brent,E09000005,Artists workspaces,8
+Brent,E09000005,Arts centres,1
+Brent,E09000005,Cinemas,3
+Brent,E09000005,Creative coworking desk space,1
+Brent,E09000005,Creative workspaces,1
+Brent,E09000005,Dance performance venues,2
+Brent,E09000005,Dance rehearsal studios,5
+Brent,E09000005,Fashion and design,4
+Brent,E09000005,Jewellery design,2
+Brent,E09000005,Libraries,9
+Brent,E09000005,Makerspaces,4
+Brent,E09000005,Making and manufacturing,1
+Brent,E09000005,Museums and public galleries,2
+Brent,E09000005,Music recording studios,10
+Brent,E09000005,Music rehearsal studios,1
+Brent,E09000005,Music venues all,4
+Brent,E09000005,Music venues grassroots,2
+Brent,E09000005,Prop and costume making,7
+Brent,E09000005,Set and exhibition building,5
+Brent,E09000005,Textile design,1
+Brent,E09000005,Theatre,2
+Brent,E09000005,Theatre rehearsal studios,2
+Bromley,E09000006,Artists workspaces,1
+Bromley,E09000006,Cinemas,3
+Bromley,E09000006,Dance performance venues,2
+Bromley,E09000006,Dance rehearsal studios,7
+Bromley,E09000006,Jewellery design,1
+Bromley,E09000006,Libraries,13
+Bromley,E09000006,Making and manufacturing,1
+Bromley,E09000006,Museums and public galleries,6
+Bromley,E09000006,Music nightclubs,1
+Bromley,E09000006,Music rehearsal studios,1
+Bromley,E09000006,Music venues all,3
+Bromley,E09000006,Prop and costume making,3
+Bromley,E09000006,Set and exhibition building,2
+Bromley,E09000006,Theatre,3
+Camden,E09000007,Archives,89
+Camden,E09000007,Artists workspaces,6
+Camden,E09000007,Arts centres,1
+Camden,E09000007,Cinemas,14
+Camden,E09000007,Commercial galleries,28
+Camden,E09000007,Creative coworking desk space,4
+Camden,E09000007,Creative workspaces,8
+Camden,E09000007,Dance performance venues,25
+Camden,E09000007,Dance rehearsal studios,26
+Camden,E09000007,Fashion and design,1
+Camden,E09000007,Jewellery design,58
+Camden,E09000007,LGBTQ venues,6
+Camden,E09000007,Libraries,12
+Camden,E09000007,Makerspaces,4
+Camden,E09000007,Making and manufacturing,4
+Camden,E09000007,Museums and public galleries,33
+Camden,E09000007,Music nightclubs,9
+Camden,E09000007,Music recording studios,10
+Camden,E09000007,Music rehearsal studios,8
+Camden,E09000007,Music venues all,36
+Camden,E09000007,Music venues grassroots,25
+Camden,E09000007,Prop and costume making,1
+Camden,E09000007,Set and exhibition building,2
+Camden,E09000007,Textile design,2
+Camden,E09000007,Theatre,27
+Camden,E09000007,Theatre rehearsal studios,30
+City of London,E09000001,Archives,48
+City of London,E09000001,Artists workspaces,1
+City of London,E09000001,Arts centres,1
+City of London,E09000001,Cinemas,2
+City of London,E09000001,Commercial galleries,5
+City of London,E09000001,Creative coworking desk space,1
+City of London,E09000001,Creative workspaces,2
+City of London,E09000001,Dance performance venues,4
+City of London,E09000001,Dance rehearsal studios,5
+City of London,E09000001,Fashion and design,1
+City of London,E09000001,Libraries,4
+City of London,E09000001,Making and manufacturing,1
+City of London,E09000001,Museums and public galleries,10
+City of London,E09000001,Music nightclubs,4
+City of London,E09000001,Music venues all,11
+City of London,E09000001,Music venues grassroots,1
+City of London,E09000001,Set and exhibition building,1
+City of London,E09000001,Theatre,6
+City of London,E09000001,Theatre rehearsal studios,3
+Croydon,E09000008,Archives,2
+Croydon,E09000008,Artists workspaces,5
+Croydon,E09000008,Arts centres,1
+Croydon,E09000008,Cinemas,3
+Croydon,E09000008,Creative coworking desk space,1
+Croydon,E09000008,Dance performance venues,4
+Croydon,E09000008,Dance rehearsal studios,4
+Croydon,E09000008,Libraries,14
+Croydon,E09000008,Makerspaces,1
+Croydon,E09000008,Making and manufacturing,1
+Croydon,E09000008,Museums and public galleries,1
+Croydon,E09000008,Music recording studios,1
+Croydon,E09000008,Music rehearsal studios,3
+Croydon,E09000008,Music venues all,6
+Croydon,E09000008,Music venues grassroots,3
+Croydon,E09000008,Prop and costume making,2
+Croydon,E09000008,Set and exhibition building,1
+Croydon,E09000008,Theatre,4
+Croydon,E09000008,Theatre rehearsal studios,1
+Ealing,E09000009,Archives,3
+Ealing,E09000009,Artists workspaces,7
+Ealing,E09000009,Cinemas,1
+Ealing,E09000009,Commercial galleries,2
+Ealing,E09000009,Creative workspaces,5
+Ealing,E09000009,Dance performance venues,3
+Ealing,E09000009,Dance rehearsal studios,5
+Ealing,E09000009,Fashion and design,1
+Ealing,E09000009,LGBTQ venues,1
+Ealing,E09000009,Libraries,13
+Ealing,E09000009,Making and manufacturing,9
+Ealing,E09000009,Museums and public galleries,1
+Ealing,E09000009,Music nightclubs,3
+Ealing,E09000009,Music recording studios,12
+Ealing,E09000009,Music rehearsal studios,5
+Ealing,E09000009,Music venues all,4
+Ealing,E09000009,Music venues grassroots,1
+Ealing,E09000009,Prop and costume making,8
+Ealing,E09000009,Set and exhibition building,3
+Ealing,E09000009,Textile design,1
+Ealing,E09000009,Theatre,2
+Ealing,E09000009,Theatre rehearsal studios,3
+Enfield,E09000010,Archives,2
+Enfield,E09000010,Artists workspaces,1
+Enfield,E09000010,Arts centres,1
+Enfield,E09000010,Cinemas,2
+Enfield,E09000010,Creative coworking desk space,1
+Enfield,E09000010,Creative workspaces,1
+Enfield,E09000010,Dance performance venues,3
+Enfield,E09000010,Dance rehearsal studios,2
+Enfield,E09000010,Fashion and design,6
+Enfield,E09000010,Jewellery design,1
+Enfield,E09000010,Libraries,17
+Enfield,E09000010,Makerspaces,1
+Enfield,E09000010,Music nightclubs,1
+Enfield,E09000010,Music venues all,1
+Enfield,E09000010,Textile design,2
+Enfield,E09000010,Theatre,4
+Enfield,E09000010,Theatre rehearsal studios,2
+Greenwich,E09000011,Archives,3
+Greenwich,E09000011,Artists workspaces,10
+Greenwich,E09000011,Arts centres,1
+Greenwich,E09000011,Cinemas,4
+Greenwich,E09000011,Commercial galleries,1
+Greenwich,E09000011,Creative coworking desk space,1
+Greenwich,E09000011,Creative workspaces,3
+Greenwich,E09000011,Dance performance venues,6
+Greenwich,E09000011,Dance rehearsal studios,8
+Greenwich,E09000011,Fashion and design,2
+Greenwich,E09000011,LGBTQ venues,2
+Greenwich,E09000011,Libraries,14
+Greenwich,E09000011,Makerspaces,5
+Greenwich,E09000011,Making and manufacturing,7
+Greenwich,E09000011,Museums and public galleries,9
+Greenwich,E09000011,Music nightclubs,2
+Greenwich,E09000011,Music recording studios,2
+Greenwich,E09000011,Music rehearsal studios,1
+Greenwich,E09000011,Music venues all,10
+Greenwich,E09000011,Music venues grassroots,2
+Greenwich,E09000011,Prop and costume making,3
+Greenwich,E09000011,Set and exhibition building,3
+Greenwich,E09000011,Theatre,4
+Greenwich,E09000011,Theatre rehearsal studios,6
+Hackney,E09000012,Archives,10
+Hackney,E09000012,Artists workspaces,44
+Hackney,E09000012,Arts centres,1
+Hackney,E09000012,Cinemas,5
+Hackney,E09000012,Commercial galleries,15
+Hackney,E09000012,Creative coworking desk space,14
+Hackney,E09000012,Creative workspaces,31
+Hackney,E09000012,Dance performance venues,11
+Hackney,E09000012,Dance rehearsal studios,21
+Hackney,E09000012,Fashion and design,6
+Hackney,E09000012,Jewellery design,8
+Hackney,E09000012,LGBTQ venues,5
+Hackney,E09000012,Libraries,9
+Hackney,E09000012,Makerspaces,11
+Hackney,E09000012,Making and manufacturing,5
+Hackney,E09000012,Museums and public galleries,7
+Hackney,E09000012,Music nightclubs,31
+Hackney,E09000012,Music recording studios,9
+Hackney,E09000012,Music rehearsal studios,14
+Hackney,E09000012,Music venues all,71
+Hackney,E09000012,Music venues grassroots,28
+Hackney,E09000012,Prop and costume making,5
+Hackney,E09000012,Set and exhibition building,3
+Hackney,E09000012,Textile design,8
+Hackney,E09000012,Theatre,12
+Hackney,E09000012,Theatre rehearsal studios,19
+Hammersmith and Fulham,E09000013,Archives,13
+Hammersmith and Fulham,E09000013,Artists workspaces,7
+Hammersmith and Fulham,E09000013,Arts centres,2
+Hammersmith and Fulham,E09000013,Cinemas,4
+Hammersmith and Fulham,E09000013,Commercial galleries,1
+Hammersmith and Fulham,E09000013,Creative coworking desk space,3
+Hammersmith and Fulham,E09000013,Creative workspaces,1
+Hammersmith and Fulham,E09000013,Dance performance venues,4
+Hammersmith and Fulham,E09000013,Dance rehearsal studios,5
+Hammersmith and Fulham,E09000013,Jewellery design,1
+Hammersmith and Fulham,E09000013,LGBTQ venues,1
+Hammersmith and Fulham,E09000013,Libraries,6
+Hammersmith and Fulham,E09000013,Makerspaces,4
+Hammersmith and Fulham,E09000013,Making and manufacturing,1
+Hammersmith and Fulham,E09000013,Museums and public galleries,4
+Hammersmith and Fulham,E09000013,Music nightclubs,1
+Hammersmith and Fulham,E09000013,Music recording studios,1
+Hammersmith and Fulham,E09000013,Music rehearsal studios,3
+Hammersmith and Fulham,E09000013,Music venues all,6
+Hammersmith and Fulham,E09000013,Music venues grassroots,2
+Hammersmith and Fulham,E09000013,Prop and costume making,4
+Hammersmith and Fulham,E09000013,Set and exhibition building,1
+Hammersmith and Fulham,E09000013,Textile design,2
+Hammersmith and Fulham,E09000013,Theatre,10
+Hammersmith and Fulham,E09000013,Theatre rehearsal studios,7
+Haringey,E09000014,Archives,6
+Haringey,E09000014,Artists workspaces,9
+Haringey,E09000014,Arts centres,2
+Haringey,E09000014,Cinemas,5
+Haringey,E09000014,Commercial galleries,1
+Haringey,E09000014,Creative coworking desk space,4
+Haringey,E09000014,Creative workspaces,12
+Haringey,E09000014,Dance performance venues,5
+Haringey,E09000014,Dance rehearsal studios,6
+Haringey,E09000014,Fashion and design,17
+Haringey,E09000014,Libraries,9
+Haringey,E09000014,Makerspaces,3
+Haringey,E09000014,Making and manufacturing,4
+Haringey,E09000014,Museums and public galleries,3
+Haringey,E09000014,Music nightclubs,2
+Haringey,E09000014,Music recording studios,13
+Haringey,E09000014,Music rehearsal studios,5
+Haringey,E09000014,Music venues all,8
+Haringey,E09000014,Music venues grassroots,4
+Haringey,E09000014,Prop and costume making,2
+Haringey,E09000014,Set and exhibition building,3
+Haringey,E09000014,Textile design,4
+Haringey,E09000014,Theatre,7
+Haringey,E09000014,Theatre rehearsal studios,7
+Harrow,E09000015,Archives,4
+Harrow,E09000015,Artists workspaces,2
+Harrow,E09000015,Arts centres,1
+Harrow,E09000015,Cinemas,1
+Harrow,E09000015,Creative workspaces,1
+Harrow,E09000015,Dance performance venues,2
+Harrow,E09000015,Dance rehearsal studios,2
+Harrow,E09000015,Jewellery design,1
+Harrow,E09000015,Libraries,7
+Harrow,E09000015,Museums and public galleries,4
+Harrow,E09000015,Music recording studios,1
+Harrow,E09000015,Music venues all,2
+Harrow,E09000015,Music venues grassroots,1
+Harrow,E09000015,Theatre,2
+Havering,E09000016,Cinemas,1
+Havering,E09000016,Creative workspaces,1
+Havering,E09000016,Dance performance venues,2
+Havering,E09000016,Dance rehearsal studios,2
+Havering,E09000016,Jewellery design,2
+Havering,E09000016,Libraries,10
+Havering,E09000016,Museums and public galleries,1
+Havering,E09000016,Theatre,2
+Havering,E09000016,Theatre rehearsal studios,1
+Hillingdon,E09000017,Archives,7
+Hillingdon,E09000017,Artists workspaces,1
+Hillingdon,E09000017,Cinemas,2
+Hillingdon,E09000017,Dance performance venues,4
+Hillingdon,E09000017,Dance rehearsal studios,5
+Hillingdon,E09000017,Fashion and design,1
+Hillingdon,E09000017,Libraries,17
+Hillingdon,E09000017,Making and manufacturing,2
+Hillingdon,E09000017,Museums and public galleries,1
+Hillingdon,E09000017,Prop and costume making,1
+Hillingdon,E09000017,Set and exhibition building,2
+Hillingdon,E09000017,Theatre,3
+Hillingdon,E09000017,Theatre rehearsal studios,3
+Hounslow,E09000018,Archives,7
+Hounslow,E09000018,Artists workspaces,5
+Hounslow,E09000018,Arts centres,2
+Hounslow,E09000018,Cinemas,3
+Hounslow,E09000018,Commercial galleries,2
+Hounslow,E09000018,Creative coworking desk space,1
+Hounslow,E09000018,Dance performance venues,2
+Hounslow,E09000018,Dance rehearsal studios,3
+Hounslow,E09000018,Libraries,11
+Hounslow,E09000018,Making and manufacturing,1
+Hounslow,E09000018,Museums and public galleries,9
+Hounslow,E09000018,Music nightclubs,1
+Hounslow,E09000018,Music recording studios,3
+Hounslow,E09000018,Music rehearsal studios,2
+Hounslow,E09000018,Music venues all,2
+Hounslow,E09000018,Music venues grassroots,1
+Hounslow,E09000018,Prop and costume making,1
+Hounslow,E09000018,Theatre,6
+Hounslow,E09000018,Theatre rehearsal studios,3
+Islington,E09000019,Archives,35
+Islington,E09000019,Artists workspaces,5
+Islington,E09000019,Cinemas,3
+Islington,E09000019,Commercial galleries,8
+Islington,E09000019,Creative coworking desk space,4
+Islington,E09000019,Creative workspaces,6
+Islington,E09000019,Dance performance venues,12
+Islington,E09000019,Dance rehearsal studios,21
+Islington,E09000019,Fashion and design,1
+Islington,E09000019,Jewellery design,4
+Islington,E09000019,LGBTQ venues,3
+Islington,E09000019,Libraries,10
+Islington,E09000019,Museums and public galleries,12
+Islington,E09000019,Music nightclubs,11
+Islington,E09000019,Music recording studios,2
+Islington,E09000019,Music rehearsal studios,5
+Islington,E09000019,Music venues all,29
+Islington,E09000019,Music venues grassroots,12
+Islington,E09000019,Prop and costume making,4
+Islington,E09000019,Set and exhibition building,1
+Islington,E09000019,Textile design,2
+Islington,E09000019,Theatre,16
+Islington,E09000019,Theatre rehearsal studios,22
+Kensington and Chelsea,E09000020,Archives,19
+Kensington and Chelsea,E09000020,Artists workspaces,5
+Kensington and Chelsea,E09000020,Arts centres,1
+Kensington and Chelsea,E09000020,Cinemas,7
+Kensington and Chelsea,E09000020,Commercial galleries,29
+Kensington and Chelsea,E09000020,Creative coworking desk space,1
+Kensington and Chelsea,E09000020,Creative workspaces,3
+Kensington and Chelsea,E09000020,Dance performance venues,3
+Kensington and Chelsea,E09000020,Dance rehearsal studios,3
+Kensington and Chelsea,E09000020,Fashion and design,1
+Kensington and Chelsea,E09000020,Jewellery design,2
+Kensington and Chelsea,E09000020,Libraries,7
+Kensington and Chelsea,E09000020,Makerspaces,2
+Kensington and Chelsea,E09000020,Making and manufacturing,1
+Kensington and Chelsea,E09000020,Museums and public galleries,14
+Kensington and Chelsea,E09000020,Music nightclubs,3
+Kensington and Chelsea,E09000020,Music recording studios,5
+Kensington and Chelsea,E09000020,Music rehearsal studios,1
+Kensington and Chelsea,E09000020,Music venues all,8
+Kensington and Chelsea,E09000020,Music venues grassroots,4
+Kensington and Chelsea,E09000020,Prop and costume making,2
+Kensington and Chelsea,E09000020,Set and exhibition building,3
+Kensington and Chelsea,E09000020,Textile design,2
+Kensington and Chelsea,E09000020,Theatre,9
+Kensington and Chelsea,E09000020,Theatre rehearsal studios,4
+Kingston upon Thames,E09000021,Artists workspaces,1
+Kingston upon Thames,E09000021,Cinemas,1
+Kingston upon Thames,E09000021,Dance performance venues,2
+Kingston upon Thames,E09000021,Dance rehearsal studios,2
+Kingston upon Thames,E09000021,Libraries,7
+Kingston upon Thames,E09000021,Museums and public galleries,3
+Kingston upon Thames,E09000021,Music nightclubs,1
+Kingston upon Thames,E09000021,Music venues all,3
+Kingston upon Thames,E09000021,Music venues grassroots,1
+Kingston upon Thames,E09000021,Theatre,3
+Lambeth,E09000022,Archives,27
+Lambeth,E09000022,Artists workspaces,17
+Lambeth,E09000022,Arts centres,2
+Lambeth,E09000022,Cinemas,7
+Lambeth,E09000022,Commercial galleries,12
+Lambeth,E09000022,Creative coworking desk space,6
+Lambeth,E09000022,Creative workspaces,10
+Lambeth,E09000022,Dance performance venues,11
+Lambeth,E09000022,Dance rehearsal studios,16
+Lambeth,E09000022,Fashion and design,2
+Lambeth,E09000022,Jewellery design,1
+Lambeth,E09000022,LGBTQ venues,8
+Lambeth,E09000022,Libraries,9
+Lambeth,E09000022,Makerspaces,8
+Lambeth,E09000022,Making and manufacturing,2
+Lambeth,E09000022,Museums and public galleries,14
+Lambeth,E09000022,Music nightclubs,10
+Lambeth,E09000022,Music recording studios,7
+Lambeth,E09000022,Music rehearsal studios,2
+Lambeth,E09000022,Music venues all,34
+Lambeth,E09000022,Music venues grassroots,9
+Lambeth,E09000022,Prop and costume making,1
+Lambeth,E09000022,Set and exhibition building,1
+Lambeth,E09000022,Textile design,2
+Lambeth,E09000022,Theatre,17
+Lambeth,E09000022,Theatre rehearsal studios,17
+Lewisham,E09000023,Archives,8
+Lewisham,E09000023,Artists workspaces,26
+Lewisham,E09000023,Arts centres,1
+Lewisham,E09000023,Cinemas,2
+Lewisham,E09000023,Commercial galleries,5
+Lewisham,E09000023,Creative coworking desk space,1
+Lewisham,E09000023,Creative workspaces,6
+Lewisham,E09000023,Dance performance venues,5
+Lewisham,E09000023,Dance rehearsal studios,6
+Lewisham,E09000023,Fashion and design,4
+Lewisham,E09000023,Jewellery design,4
+Lewisham,E09000023,LGBTQ venues,1
+Lewisham,E09000023,Libraries,12
+Lewisham,E09000023,Makerspaces,1
+Lewisham,E09000023,Making and manufacturing,4
+Lewisham,E09000023,Museums and public galleries,7
+Lewisham,E09000023,Music nightclubs,2
+Lewisham,E09000023,Music recording studios,4
+Lewisham,E09000023,Music rehearsal studios,3
+Lewisham,E09000023,Music venues all,15
+Lewisham,E09000023,Music venues grassroots,6
+Lewisham,E09000023,Prop and costume making,4
+Lewisham,E09000023,Set and exhibition building,4
+Lewisham,E09000023,Textile design,2
+Lewisham,E09000023,Theatre,8
+Lewisham,E09000023,Theatre rehearsal studios,7
+Merton,E09000024,Archives,5
+Merton,E09000024,Artists workspaces,3
+Merton,E09000024,Cinemas,2
+Merton,E09000024,Commercial galleries,1
+Merton,E09000024,Creative coworking desk space,2
+Merton,E09000024,Creative workspaces,2
+Merton,E09000024,Dance performance venues,2
+Merton,E09000024,Dance rehearsal studios,5
+Merton,E09000024,Fashion and design,2
+Merton,E09000024,Jewellery design,2
+Merton,E09000024,LGBTQ venues,1
+Merton,E09000024,Libraries,7
+Merton,E09000024,Making and manufacturing,1
+Merton,E09000024,Museums and public galleries,3
+Merton,E09000024,Music nightclubs,1
+Merton,E09000024,Music recording studios,2
+Merton,E09000024,Music rehearsal studios,1
+Merton,E09000024,Music venues all,2
+Merton,E09000024,Prop and costume making,1
+Merton,E09000024,Set and exhibition building,5
+Merton,E09000024,Theatre,6
+Merton,E09000024,Theatre rehearsal studios,2
+Newham,E09000025,Archives,7
+Newham,E09000025,Artists workspaces,12
+Newham,E09000025,Cinemas,2
+Newham,E09000025,Creative coworking desk space,2
+Newham,E09000025,Creative workspaces,5
+Newham,E09000025,Dance performance venues,3
+Newham,E09000025,Dance rehearsal studios,6
+Newham,E09000025,Fashion and design,5
+Newham,E09000025,Jewellery design,3
+Newham,E09000025,Libraries,10
+Newham,E09000025,Makerspaces,2
+Newham,E09000025,Making and manufacturing,3
+Newham,E09000025,Museums and public galleries,2
+Newham,E09000025,Music nightclubs,2
+Newham,E09000025,Music recording studios,2
+Newham,E09000025,Music rehearsal studios,2
+Newham,E09000025,Music venues all,4
+Newham,E09000025,Prop and costume making,1
+Newham,E09000025,Set and exhibition building,6
+Newham,E09000025,Textile design,3
+Newham,E09000025,Theatre,3
+Newham,E09000025,Theatre rehearsal studios,2
+Redbridge,E09000026,Archives,1
+Redbridge,E09000026,Artists workspaces,2
+Redbridge,E09000026,Arts centres,1
+Redbridge,E09000026,Cinemas,2
+Redbridge,E09000026,Dance performance venues,1
+Redbridge,E09000026,Dance rehearsal studios,2
+Redbridge,E09000026,Libraries,13
+Redbridge,E09000026,Museums and public galleries,2
+Redbridge,E09000026,Textile design,1
+Redbridge,E09000026,Theatre,2
+Redbridge,E09000026,Theatre rehearsal studios,2
+Richmond upon Thames,E09000027,Archives,4
+Richmond upon Thames,E09000027,Arts centres,2
+Richmond upon Thames,E09000027,Cinemas,3
+Richmond upon Thames,E09000027,Commercial galleries,2
+Richmond upon Thames,E09000027,Dance performance venues,3
+Richmond upon Thames,E09000027,Dance rehearsal studios,6
+Richmond upon Thames,E09000027,Jewellery design,2
+Richmond upon Thames,E09000027,Libraries,13
+Richmond upon Thames,E09000027,Makerspaces,1
+Richmond upon Thames,E09000027,Making and manufacturing,1
+Richmond upon Thames,E09000027,Museums and public galleries,10
+Richmond upon Thames,E09000027,Music nightclubs,1
+Richmond upon Thames,E09000027,Music recording studios,1
+Richmond upon Thames,E09000027,Music rehearsal studios,2
+Richmond upon Thames,E09000027,Music venues all,4
+Richmond upon Thames,E09000027,Prop and costume making,1
+Richmond upon Thames,E09000027,Set and exhibition building,1
+Richmond upon Thames,E09000027,Theatre,9
+Richmond upon Thames,E09000027,Theatre rehearsal studios,2
+Southwark,E09000028,Archives,35
+Southwark,E09000028,Artists workspaces,30
+Southwark,E09000028,Cinemas,7
+Southwark,E09000028,Commercial galleries,19
+Southwark,E09000028,Creative coworking desk space,8
+Southwark,E09000028,Creative workspaces,9
+Southwark,E09000028,Dance performance venues,15
+Southwark,E09000028,Dance rehearsal studios,21
+Southwark,E09000028,Fashion and design,3
+Southwark,E09000028,Jewellery design,6
+Southwark,E09000028,LGBTQ venues,1
+Southwark,E09000028,Libraries,12
+Southwark,E09000028,Makerspaces,16
+Southwark,E09000028,Making and manufacturing,11
+Southwark,E09000028,Museums and public galleries,16
+Southwark,E09000028,Music nightclubs,8
+Southwark,E09000028,Music recording studios,7
+Southwark,E09000028,Music rehearsal studios,5
+Southwark,E09000028,Music venues all,13
+Southwark,E09000028,Music venues grassroots,3
+Southwark,E09000028,Prop and costume making,9
+Southwark,E09000028,Set and exhibition building,6
+Southwark,E09000028,Textile design,5
+Southwark,E09000028,Theatre,20
+Southwark,E09000028,Theatre rehearsal studios,22
+Sutton,E09000029,Archives,1
+Sutton,E09000029,Artists workspaces,1
+Sutton,E09000029,Dance rehearsal studios,3
+Sutton,E09000029,Libraries,8
+Sutton,E09000029,Museums and public galleries,2
+Sutton,E09000029,Music nightclubs,1
+Sutton,E09000029,Music recording studios,3
+Sutton,E09000029,Music rehearsal studios,1
+Sutton,E09000029,Music venues all,2
+Sutton,E09000029,Music venues grassroots,2
+Tower Hamlets,E09000030,Archives,26
+Tower Hamlets,E09000030,Artists workspaces,30
+Tower Hamlets,E09000030,Arts centres,2
+Tower Hamlets,E09000030,Cinemas,6
+Tower Hamlets,E09000030,Commercial galleries,26
+Tower Hamlets,E09000030,Creative coworking desk space,8
+Tower Hamlets,E09000030,Creative workspaces,21
+Tower Hamlets,E09000030,Dance performance venues,12
+Tower Hamlets,E09000030,Dance rehearsal studios,14
+Tower Hamlets,E09000030,Fashion and design,12
+Tower Hamlets,E09000030,Jewellery design,4
+Tower Hamlets,E09000030,LGBTQ venues,2
+Tower Hamlets,E09000030,Libraries,8
+Tower Hamlets,E09000030,Makerspaces,7
+Tower Hamlets,E09000030,Making and manufacturing,4
+Tower Hamlets,E09000030,Museums and public galleries,15
+Tower Hamlets,E09000030,Music nightclubs,12
+Tower Hamlets,E09000030,Music recording studios,8
+Tower Hamlets,E09000030,Music rehearsal studios,5
+Tower Hamlets,E09000030,Music venues all,29
+Tower Hamlets,E09000030,Music venues grassroots,10
+Tower Hamlets,E09000030,Prop and costume making,5
+Tower Hamlets,E09000030,Set and exhibition building,2
+Tower Hamlets,E09000030,Textile design,5
+Tower Hamlets,E09000030,Theatre,8
+Tower Hamlets,E09000030,Theatre rehearsal studios,14
+Waltham Forest,E09000031,Archives,2
+Waltham Forest,E09000031,Artists workspaces,14
+Waltham Forest,E09000031,Creative coworking desk space,5
+Waltham Forest,E09000031,Creative workspaces,6
+Waltham Forest,E09000031,Dance performance venues,2
+Waltham Forest,E09000031,Dance rehearsal studios,4
+Waltham Forest,E09000031,Fashion and design,5
+Waltham Forest,E09000031,Jewellery design,1
+Waltham Forest,E09000031,Libraries,10
+Waltham Forest,E09000031,Makerspaces,5
+Waltham Forest,E09000031,Making and manufacturing,4
+Waltham Forest,E09000031,Museums and public galleries,6
+Waltham Forest,E09000031,Music recording studios,2
+Waltham Forest,E09000031,Music rehearsal studios,1
+Waltham Forest,E09000031,Music venues all,2
+Waltham Forest,E09000031,Music venues grassroots,1
+Waltham Forest,E09000031,Prop and costume making,2
+Waltham Forest,E09000031,Set and exhibition building,2
+Waltham Forest,E09000031,Textile design,5
+Waltham Forest,E09000031,Theatre,3
+Waltham Forest,E09000031,Theatre rehearsal studios,2
+Wandsworth,E09000032,Archives,13
+Wandsworth,E09000032,Artists workspaces,4
+Wandsworth,E09000032,Arts centres,1
+Wandsworth,E09000032,Cinemas,3
+Wandsworth,E09000032,Commercial galleries,11
+Wandsworth,E09000032,Creative coworking desk space,1
+Wandsworth,E09000032,Dance performance venues,4
+Wandsworth,E09000032,Dance rehearsal studios,9
+Wandsworth,E09000032,Fashion and design,1
+Wandsworth,E09000032,Jewellery design,3
+Wandsworth,E09000032,Libraries,11
+Wandsworth,E09000032,Makerspaces,2
+Wandsworth,E09000032,Making and manufacturing,1
+Wandsworth,E09000032,Museums and public galleries,1
+Wandsworth,E09000032,Music nightclubs,1
+Wandsworth,E09000032,Music recording studios,1
+Wandsworth,E09000032,Music rehearsal studios,5
+Wandsworth,E09000032,Music venues all,8
+Wandsworth,E09000032,Music venues grassroots,5
+Wandsworth,E09000032,Prop and costume making,1
+Wandsworth,E09000032,Theatre,6
+Wandsworth,E09000032,Theatre rehearsal studios,6
+Westminster,E09000033,Archives,157
+Westminster,E09000033,Artists workspaces,6
+Westminster,E09000033,Arts centres,1
+Westminster,E09000033,Cinemas,20
+Westminster,E09000033,Commercial galleries,132
+Westminster,E09000033,Creative coworking desk space,6
+Westminster,E09000033,Creative workspaces,4
+Westminster,E09000033,Dance performance venues,37
+Westminster,E09000033,Dance rehearsal studios,22
+Westminster,E09000033,Fashion and design,2
+Westminster,E09000033,Jewellery design,10
+Westminster,E09000033,LGBTQ venues,19
+Westminster,E09000033,Libraries,11
+Westminster,E09000033,Makerspaces,2
+Westminster,E09000033,Museums and public galleries,46
+Westminster,E09000033,Music nightclubs,25
+Westminster,E09000033,Music recording studios,9
+Westminster,E09000033,Music rehearsal studios,4
+Westminster,E09000033,Music venues all,52
+Westminster,E09000033,Music venues grassroots,9
+Westminster,E09000033,Prop and costume making,1
+Westminster,E09000033,Textile design,2
+Westminster,E09000033,Theatre,54
+Westminster,E09000033,Theatre rehearsal studios,22
