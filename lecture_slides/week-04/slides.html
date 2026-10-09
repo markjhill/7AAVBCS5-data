@@ -1091,55 +1091,65 @@ Dr Mark J. Hill · mark.j.hill@kcl.ac.uk
 <div class="columns">
 <div class="column" style="width:52%;">
 <ul>
-<li><strong>Part I: Missing Data</strong>
+<li><strong>Part I: Missing data</strong>
 <ul>
-<li>Understanding missing values</li>
-<li>Detecting missing data</li>
-<li>Handling strategies</li>
-<li>Best practices</li>
+<li>What counts as missing</li>
+<li><code>NaN</code>, <code>None</code>, and <code>.isna()</code></li>
+<li>Why pandas can be quiet about gaps</li>
 </ul></li>
-<li><strong>Part II: The cultural significance of missing data</strong></li>
-<li><strong>Part III: Changing a data frame</strong>
+<li><strong>Part II: Missingness in London cultural data</strong>
 <ul>
-<li>Adding and removing columns</li>
-<li>Adding and removing rows</li>
-<li>Combining two tables</li>
+<li>Counts and percentages</li>
+<li>Website, postcode, and address fields</li>
+<li>Missingness as evidence</li>
 </ul></li>
-<li><strong>Part IV: Live Coding</strong></li>
+<li><strong>Part III: Strategies</strong>
+<ul>
+<li>Delete, fill, or keep</li>
+<li>Missingness indicators</li>
+<li>Preserving the original data</li>
+</ul></li>
+<li><strong>Part IV: Joining context</strong>
+<ul>
+<li>How borough context gets attached</li>
+<li>Checking whether missingness is patterned</li>
+</ul></li>
+<li><strong>Part V: Live coding</strong></li>
 </ul>
 </div><div class="column" style="width:48%;">
 <p><strong>Key Learning Outcomes</strong></p>
 <p>By the end of this week you will be able to:</p>
 <ul>
-<li>Identify and handle missing data in Python</li>
-<li>Quantify how much is missing, and where</li>
-<li>Apply data cleaning techniques to real datasets</li>
-<li>Make informed decisions about missing data strategies</li>
-<li>Explain why missingness is itself evidence</li>
+<li>identify missing values in pandas</li>
+<li>quantify missingness with counts and percentages</li>
+<li>explain why missingness may be meaningful</li>
+<li>choose a defensible missing-data strategy</li>
+<li>create missingness indicators</li>
+<li>join venue records to borough context</li>
+<li>interpret missingness with denominators and caution</li>
 </ul>
 </div></div>
 </section>
-<section id="review-what-weve-learned-so-far" class="slide level2 smaller">
-<h2>Review: what we’ve learned so far</h2>
-<ul>
-<li>Python as a calculator; types; variables</li>
-<li>Notebook basics</li>
-<li>Lists, indexing and slicing; numpy arrays</li>
-<li>Dictionaries</li>
-<li>Descriptive statistics: min, max, sum, mean, median, standard deviation</li>
-<li>f-strings</li>
-<li>Comparisons and <code>if</code>/<code>elif</code>/<code>else</code></li>
-<li>Loading, selecting and filtering <strong>data frames</strong>
-<ul>
-<li><code>pd.DataFrame()</code>, <code>.info()</code>, <code>.describe()</code>, <code>.loc</code>, <code>.iloc</code>, <code>.query()</code></li>
-</ul></li>
-<li>Reading and saving CSV files
-<ul>
-<li><code>pd.read_csv()</code>, <code>.to_csv(index=False)</code></li>
-</ul></li>
-</ul>
-<p><strong>This week:</strong> the gaps in your data, and what they mean</p>
+<section>
+<section id="review" class="title-slide slide level1 center" data-background-color="#0A2D50">
+<h1>Review</h1>
+
 </section>
+<section id="what-we-learned-last-week" class="slide level2 smaller">
+<h2>What we learned last week</h2>
+<ul>
+<li>Data frames store rows and columns</li>
+<li>One row should describe one thing</li>
+<li><code>pd.read_csv()</code> loads CSV files</li>
+<li><code>.info()</code>, <code>.head()</code>, <code>.shape</code>, <code>.columns</code>, and <code>.describe()</code> inspect structure</li>
+<li>Square brackets select columns</li>
+<li><code>.loc[]</code> selects by label</li>
+<li><code>.iloc[]</code> selects by position</li>
+<li>Masks filter rows</li>
+<li><code>to_csv(index=False)</code> saves data without writing row labels</li>
+</ul>
+<p><strong>This week:</strong> what happens when a table has gaps</p>
+</section></section>
 <section>
 <section id="part-i-missing-data" class="title-slide slide level1 center" data-background-color="#0A2D50">
 <h1>Part I: Missing Data</h1>
@@ -1147,78 +1157,298 @@ Dr Mark J. Hill · mark.j.hill@kcl.ac.uk
 </section>
 <section id="missing-data" class="slide level2 smaller">
 <h2>Missing data</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
 <p><strong>What is missing data?</strong></p>
 <ul>
-<li>Data that should exist but doesn’t</li>
-<li>Represented by <code>NaN</code> in pandas (“Not a Number”), or <code>None</code></li>
-<li>pandas mostly treats <code>NaN</code> and <code>None</code> the same way</li>
+<li>a value that should logically exist, but does not</li>
+<li>a blank in a public record</li>
+<li>a field skipped by a survey respondent</li>
+<li>a place that cannot be joined to another geography because a postcode is absent</li>
+<li>an unknown value created by earlier data collection choices</li>
 </ul>
-<p><strong>Why does data go missing?</strong></p>
+<p><strong>Why it matters</strong></p>
 <ul>
-<li><strong>Recording errors:</strong> equipment failure, human error</li>
-<li><strong>Non-response:</strong> survey participants skip questions</li>
-<li><strong>Impossible to record:</strong> historical data, lost records</li>
-<li><strong>By design:</strong> not applicable to certain cases</li>
+<li>summaries may use fewer rows than you think</li>
+<li>comparisons may exclude particular places or groups</li>
+<li>missingness can reveal how the dataset was made</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<p><strong>The issue:</strong></p>
-<ul>
-<li>Can’t be ignored</li>
-<li>Impacts statistical analyses</li>
-<li>Requires thoughtful handling strategies</li>
-</ul>
-</div></div>
 </section>
-<section id="detecting-missing-values" class="slide level2 smaller">
-<h2>Detecting missing values</h2>
-<div id="e0d42fd0" class="cell" data-execution_count="1">
+<section id="why-values-go-missing" class="slide level2 smaller">
+<h2>Why values go missing</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cause</th>
+<th>Example</th>
+<th>Question to ask</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Recording error</td>
+<td>a field was left blank during data entry</td>
+<td>Is the error scattered or concentrated?</td>
+</tr>
+<tr class="even">
+<td>Non-response</td>
+<td>someone does not answer an income question</td>
+<td>Who is more likely not to answer?</td>
+</tr>
+<tr class="odd">
+<td>Impossible to record</td>
+<td>a historical source no longer exists</td>
+<td>What historical process produced the gap?</td>
+</tr>
+<tr class="even">
+<td>By design</td>
+<td>a field does not apply to some rows</td>
+<td>Is this really missing, or not applicable?</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="missing-values-in-pandas" class="slide level2 smaller">
+<h2>Missing values in pandas</h2>
+<div id="28cac960" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href aria-label="1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href aria-label="2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href aria-label="3"></a></span>
-<span id="cb1-4"><a href aria-label="4"></a>ages <span class="op">=</span> pd.Series([<span class="dv">23</span>, <span class="dv">45</span>, np.nan, <span class="dv">31</span>])</span>
-<span id="cb1-5"><a href aria-label="5"></a><span class="bu">print</span>(ages.isna())</span>
-<span id="cb1-6"><a href aria-label="6"></a><span class="bu">print</span>(<span class="st">&quot;how many missing:&quot;</span>, ages.isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
+<span id="cb1-4"><a href aria-label="4"></a>example <span class="op">=</span> pd.Series([<span class="st">&quot;website&quot;</span>, <span class="va">None</span>, <span class="st">&quot;website&quot;</span>, np.nan])</span>
+<span id="cb1-5"><a href aria-label="5"></a>example</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>0    website
+1        NaN
+2    website
+3        NaN
+dtype: str</code></pre>
+</div>
+</div>
+<div id="c625991b" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href aria-label="1"></a>example.isna()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>0    False
-1    False
-2     True
-3    False
-dtype: bool
-how many missing: 1</code></pre>
+1     True
+2    False
+3     True
+dtype: bool</code></pre>
 </div>
 </div>
-<div class="trap">
-<p>Never test with <code>== None</code> or <code>== np.nan</code>. <code>np.nan == np.nan</code> is <strong><code>False</code></strong>. Always use <code>.isna()</code>.</p>
+<div class="muted">
+<p>In pandas, missing values often appear as <code>NaN</code> or <code>None</code>. Use <code>.isna()</code> to detect both.</p>
 </div>
 </section>
-<section id="missing-values-break-calculations-or-quietly-dont" class="slide level2 smaller">
-<h2>Missing values break calculations – or quietly don’t</h2>
-<div id="ffac2295" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href aria-label="1"></a>ages <span class="op">=</span> pd.Series([<span class="dv">23</span>, <span class="dv">45</span>, np.nan, <span class="dv">31</span>])</span>
-<span id="cb3-2"><a href aria-label="2"></a><span class="bu">print</span>(<span class="st">&quot;pandas sum: &quot;</span>, ages.<span class="bu">sum</span>())            <span class="co"># skips the gap</span></span>
-<span id="cb3-3"><a href aria-label="3"></a><span class="bu">print</span>(<span class="st">&quot;numpy sum:  &quot;</span>, np.array([<span class="dv">23</span>, <span class="dv">45</span>, np.nan, <span class="dv">31</span>]).<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="nan-none-and-empty-strings" class="slide level2 smaller">
+<h2><code>NaN</code>, <code>None</code>, and empty strings</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Plain meaning</th>
+<th>How to detect it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>NaN</code></td>
+<td>missing or undefined numeric value</td>
+<td><code>.isna()</code></td>
+</tr>
+<tr class="even">
+<td><code>None</code></td>
+<td>no Python value supplied</td>
+<td><code>.isna()</code></td>
+</tr>
+<tr class="odd">
+<td><code>&quot;&quot;</code></td>
+<td>an empty string, not automatically missing</td>
+<td>compare to <code>&quot;&quot;</code> or clean first</td>
+</tr>
+<tr class="even">
+<td><code>0</code></td>
+<td>a real value, unless the codebook says otherwise</td>
+<td>do not treat as missing by default</td>
+</tr>
+</tbody>
+</table>
+<div class="trap">
+<p>Missing values are not the same as zeros or empty text. Check the codebook and the data source.</p>
+</div>
+</section>
+<section id="do-not-compare-to-missing-values" class="slide level2 smaller">
+<h2>Do not compare to missing values</h2>
+<div id="f6676ea6" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href aria-label="1"></a><span class="bu">print</span>(np.nan <span class="op">==</span> np.nan)</span>
+<span id="cb5-2"><a href aria-label="2"></a><span class="bu">print</span>(example <span class="op">==</span> np.nan)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>pandas sum:  99.0
-numpy sum:   nan</code></pre>
+<pre><code>False
+0    False
+1    False
+2    False
+3    False
+dtype: bool</code></pre>
+</div>
+</div>
+<div id="f7a8a717" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href aria-label="1"></a>example.isna()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>0    False
+1     True
+2    False
+3     True
+dtype: bool</code></pre>
 </div>
 </div>
 <div class="trap">
-<p>R’s <code>sum()</code> returned <code>NA</code> unless you passed <code>na.rm = TRUE</code>. <strong>pandas skips missing values by default</strong> — so nothing warns you that a number is based on fewer rows than you think.</p>
+<p>Never test for missing values with <code>== np.nan</code>. Use <code>.isna()</code>.</p>
 </div>
 </section>
-<section id="how-much-is-missing-and-where" class="slide level2 smaller">
-<h2>How much is missing, and where</h2>
-<div id="9b66db47" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href aria-label="1"></a>museum <span class="op">=</span> pd.read_csv(<span class="st">&quot;../../data/museum_data.csv&quot;</span>)</span>
-<span id="cb5-2"><a href aria-label="2"></a></span>
-<span id="cb5-3"><a href aria-label="3"></a>missing_summary <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb5-4"><a href aria-label="4"></a>    <span class="st">&quot;missing&quot;</span>: museum.isna().<span class="bu">sum</span>(),</span>
-<span id="cb5-5"><a href aria-label="5"></a>    <span class="st">&quot;missing_%&quot;</span>: (museum.isna().mean() <span class="op">*</span> <span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>),</span>
-<span id="cb5-6"><a href aria-label="6"></a>})</span>
-<span id="cb5-7"><a href aria-label="7"></a>missing_summary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<section id="pandas-can-be-quiet-about-gaps" class="slide level2 smaller">
+<h2>pandas can be quiet about gaps</h2>
+<div id="e2120b39" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href aria-label="1"></a>ages <span class="op">=</span> pd.Series([<span class="dv">23</span>, <span class="dv">45</span>, np.nan, <span class="dv">31</span>])</span>
+<span id="cb9-2"><a href aria-label="2"></a></span>
+<span id="cb9-3"><a href aria-label="3"></a><span class="bu">print</span>(<span class="st">&quot;mean:&quot;</span>, ages.mean())</span>
+<span id="cb9-4"><a href aria-label="4"></a><span class="bu">print</span>(<span class="st">&quot;based on:&quot;</span>, ages.notna().<span class="bu">sum</span>(), <span class="st">&quot;of&quot;</span>, <span class="bu">len</span>(ages), <span class="st">&quot;values&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>mean: 33.0
+based on: 3 of 4 values</code></pre>
+</div>
+</div>
+<div class="trap">
+<p>pandas summary methods usually skip missing values by default. That can be useful, but it also means nothing may warn you that a result uses fewer rows than the full dataset.</p>
+</div>
+</section>
+<section id="the-practical-issue" class="slide level2 smaller">
+<h2>The practical issue</h2>
+<p>Missing data affects every later step:</p>
+<ul>
+<li>summary statistics may use only complete values</li>
+<li>maps may exclude records without usable place information</li>
+<li>joins may fail when the shared key is missing or inconsistent</li>
+<li>group comparisons may over-represent better documented groups</li>
+<li>deletion can remove the cases you most need to understand</li>
+</ul>
+</section></section>
+<section>
+<section id="part-ii-missingness-in-london-cultural-data" class="title-slide slide level1 center" data-background-color="#0A2D50">
+<h1>Part II: Missingness in London Cultural Data</h1>
+
+</section>
+<section id="the-venue-records" class="slide level2 smaller">
+<h2>The venue records</h2>
+<div id="cefc658f" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href aria-label="1"></a>venues <span class="op">=</span> pd.read_csv(<span class="st">&quot;../../data/london_cultural_venues_2023.csv&quot;</span>)</span>
+<span id="cb11-2"><a href aria-label="2"></a></span>
+<span id="cb11-3"><a href aria-label="3"></a>venues[[</span>
+<span id="cb11-4"><a href aria-label="4"></a>    <span class="st">&quot;name&quot;</span>, <span class="st">&quot;venue_type&quot;</span>, <span class="st">&quot;borough_name&quot;</span>, <span class="st">&quot;postcode&quot;</span>,</span>
+<span id="cb11-5"><a href aria-label="5"></a>    <span class="st">&quot;website&quot;</span>, <span class="st">&quot;latitude&quot;</span>, <span class="st">&quot;longitude&quot;</span></span>
+<span id="cb11-6"><a href aria-label="6"></a>]].head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">venue_type</th>
+<th data-quarto-table-cell-role="th">borough_name</th>
+<th data-quarto-table-cell-role="th">postcode</th>
+<th data-quarto-table-cell-role="th">website</th>
+<th data-quarto-table-cell-role="th">latitude</th>
+<th data-quarto-table-cell-role="th">longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>DAGENHAM RM10</td>
+<td>Artists workspaces</td>
+<td>Barking and Dagenham</td>
+<td>NaN</td>
+<td>https://www.arbeit.org.uk/dagenham</td>
+<td>51.549708</td>
+<td>0.156633</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Ice House Court</td>
+<td>Artists workspaces</td>
+<td>Barking and Dagenham</td>
+<td>NaN</td>
+<td>www.bowarts.org    www.artiststudiofinder.org ...</td>
+<td>51.531488</td>
+<td>0.075994</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>River Mills Studios (Bow Arts)</td>
+<td>Artists workspaces</td>
+<td>Barking and Dagenham</td>
+<td>Barking</td>
+<td>https://bowarts.org/studios/riverside-mills-st...</td>
+<td>51.532525</td>
+<td>0.075726</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Vue Dagenham</td>
+<td>Cinemas</td>
+<td>Barking and Dagenham</td>
+<td>RM9 6UQ</td>
+<td>NaN</td>
+<td>51.532095</td>
+<td>0.135759</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Bow Arts</td>
+<td>Creative workspaces</td>
+<td>Barking and Dagenham</td>
+<td>Abbey Road</td>
+<td>www.bowarts.org    www.artiststudiofinder.org ...</td>
+<td>51.531410</td>
+<td>0.077946</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="first-check-where-are-the-gaps" class="slide level2 smaller">
+<h2>First check: where are the gaps?</h2>
+<div id="c903fd1a" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href aria-label="1"></a>missing_summary <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb12-2"><a href aria-label="2"></a>    <span class="st">&quot;missing&quot;</span>: venues.isna().<span class="bu">sum</span>(),</span>
+<span id="cb12-3"><a href aria-label="3"></a>    <span class="st">&quot;missing_%&quot;</span>: (venues.isna().mean() <span class="op">*</span> <span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>),</span>
+<span id="cb12-4"><a href aria-label="4"></a>})</span>
+<span id="cb12-5"><a href aria-label="5"></a></span>
+<span id="cb12-6"><a href aria-label="6"></a>missing_summary[missing_summary[<span class="st">&quot;missing&quot;</span>] <span class="op">&gt;</span> <span class="dv">0</span>].sort_values(</span>
+<span id="cb12-7"><a href aria-label="7"></a>    <span class="st">&quot;missing&quot;</span>, ascending<span class="op">=</span><span class="va">False</span></span>
+<span id="cb12-8"><a href aria-label="8"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 <style scoped>
 .dataframe tbody tr th:only-of-type {
@@ -1242,44 +1472,456 @@ text-align: right;
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">object_id</th>
-<td>0</td>
-<td>0.00</td>
+<th data-quarto-table-cell-role="th">postcode</th>
+<td>3042</td>
+<td>68.6</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">object_type</th>
-<td>0</td>
-<td>0.00</td>
+<th data-quarto-table-cell-role="th">address_2</th>
+<td>2217</td>
+<td>50.0</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">region</th>
-<td>0</td>
-<td>0.00</td>
+<th data-quarto-table-cell-role="th">website</th>
+<td>760</td>
+<td>17.1</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">acquisition_date</th>
-<td>0</td>
-<td>0.00</td>
+<th data-quarto-table-cell-role="th">address_1</th>
+<td>440</td>
+<td>9.9</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">acquisition_method</th>
-<td>43</td>
-<td>28.67</td>
+<th data-quarto-table-cell-role="th">address</th>
+<td>355</td>
+<td>8.0</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">original_owner</th>
-<td>134</td>
-<td>89.33</td>
+<th data-quarto-table-cell-role="th">uprn</th>
+<td>331</td>
+<td>7.5</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">cultural_significance</th>
-<td>75</td>
-<td>50.00</td>
+<th data-quarto-table-cell-role="th">easting</th>
+<td>8</td>
+<td>0.2</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">valuation</th>
-<td>4</td>
-<td>2.67</td>
+<th data-quarto-table-cell-role="th">northing</th>
+<td>8</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">ward_code</th>
+<td>6</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">ward_name</th>
+<td>6</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="counts-and-percentages" class="slide level2 smaller">
+<h2>Counts and percentages</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Counts answer:</strong></p>
+<p>How many values are missing?</p>
+<div id="ba5cbd4d" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href aria-label="1"></a>venues[<span class="st">&quot;website&quot;</span>].isna().<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>np.int64(760)</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Percentages answer:</strong></p>
+<p>How large is the problem?</p>
+<div id="39666dc0" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href aria-label="1"></a>venues[<span class="st">&quot;website&quot;</span>].isna().mean() <span class="op">*</span> <span class="dv">100</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>np.float64(17.14027965719441)</code></pre>
+</div>
+</div>
+</div></div>
+<div class="muted">
+<p>A count without a denominator is hard to interpret. Report both.</p>
+</div>
+</section>
+<section id="what-is-missing-in-this-dataset" class="slide level2 smaller">
+<h2>What is missing in this dataset?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>What the gap affects</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>website</code></td>
+<td>online visibility and discoverability</td>
+</tr>
+<tr class="even">
+<td><code>postcode</code></td>
+<td>address reliability and joining to other geographies</td>
+</tr>
+<tr class="odd">
+<td><code>address_1</code>, <code>address_2</code></td>
+<td>how precisely the venue can be located or checked</td>
+</tr>
+<tr class="even">
+<td><code>uprn</code></td>
+<td>linking to property-level records</td>
+</tr>
+<tr class="odd">
+<td><code>ward_name</code>, <code>ward_code</code></td>
+<td>ward-level comparisons</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="missingness-as-a-research-question" class="slide level2 smaller">
+<h2>Missingness as a research question</h2>
+<p>For this file, missing data suggests questions such as:</p>
+<ul>
+<li>Which venue types are easiest to find online?</li>
+<li>Which boroughs have weaker website coverage in the dataset?</li>
+<li>Are address gaps concentrated in particular records?</li>
+<li>Does missingness reflect the venue, the data source, or the cleaning process?</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Missingness is sometimes the finding, not just an obstacle before the finding.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a-missingness-indicator" class="slide level2 smaller">
+<h2>A missingness indicator</h2>
+<div id="ebc0760a" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href aria-label="1"></a>venues <span class="op">=</span> venues.copy()</span>
+<span id="cb17-2"><a href aria-label="2"></a>venues[<span class="st">&quot;has_website&quot;</span>] <span class="op">=</span> venues[<span class="st">&quot;website&quot;</span>].notna()</span>
+<span id="cb17-3"><a href aria-label="3"></a>venues[<span class="st">&quot;missing_postcode&quot;</span>] <span class="op">=</span> venues[<span class="st">&quot;postcode&quot;</span>].isna()</span>
+<span id="cb17-4"><a href aria-label="4"></a></span>
+<span id="cb17-5"><a href aria-label="5"></a>venues[[<span class="st">&quot;name&quot;</span>, <span class="st">&quot;venue_type&quot;</span>, <span class="st">&quot;has_website&quot;</span>, <span class="st">&quot;missing_postcode&quot;</span>]].head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">venue_type</th>
+<th data-quarto-table-cell-role="th">has_website</th>
+<th data-quarto-table-cell-role="th">missing_postcode</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>DAGENHAM RM10</td>
+<td>Artists workspaces</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Ice House Court</td>
+<td>Artists workspaces</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>River Mills Studios (Bow Arts)</td>
+<td>Artists workspaces</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Vue Dagenham</td>
+<td>Cinemas</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Bow Arts</td>
+<td>Creative workspaces</td>
+<td>True</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="muted">
+<p>A missingness indicator turns a gap into a variable we can analyse.</p>
+</div>
+</section>
+<section id="is-website-missingness-patterned" class="slide level2 smaller">
+<h2>Is website missingness patterned?</h2>
+<div id="a54ff9bf" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href aria-label="1"></a>website_by_type <span class="op">=</span> (</span>
+<span id="cb18-2"><a href aria-label="2"></a>    venues.groupby(<span class="st">&quot;venue_type&quot;</span>)</span>
+<span id="cb18-3"><a href aria-label="3"></a>    .agg(</span>
+<span id="cb18-4"><a href aria-label="4"></a>        venues<span class="op">=</span>(<span class="st">&quot;venue_id&quot;</span>, <span class="st">&quot;size&quot;</span>),</span>
+<span id="cb18-5"><a href aria-label="5"></a>        website_share<span class="op">=</span>(<span class="st">&quot;has_website&quot;</span>, <span class="st">&quot;mean&quot;</span>),</span>
+<span id="cb18-6"><a href aria-label="6"></a>    )</span>
+<span id="cb18-7"><a href aria-label="7"></a>)</span>
+<span id="cb18-8"><a href aria-label="8"></a></span>
+<span id="cb18-9"><a href aria-label="9"></a>website_by_type[<span class="st">&quot;website_share&quot;</span>] <span class="op">=</span> (</span>
+<span id="cb18-10"><a href aria-label="10"></a>    website_by_type[<span class="st">&quot;website_share&quot;</span>] <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb18-11"><a href aria-label="11"></a>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb18-12"><a href aria-label="12"></a></span>
+<span id="cb18-13"><a href aria-label="13"></a>website_by_type.sort_values(<span class="st">&quot;website_share&quot;</span>).head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">venues</th>
+<th data-quarto-table-cell-role="th">website_share</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">venue_type</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Libraries</th>
+<td>347</td>
+<td>0.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Cinemas</th>
+<td>123</td>
+<td>10.6</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Jewellery design</th>
+<td>117</td>
+<td>47.9</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">LGBTQ venues</th>
+<td>50</td>
+<td>54.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Music nightclubs</th>
+<td>133</td>
+<td>66.9</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Music venues all</th>
+<td>371</td>
+<td>74.4</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Arts centres</th>
+<td>26</td>
+<td>92.3</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Theatre</th>
+<td>266</td>
+<td>92.9</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Music venues grassroots</th>
+<td>132</td>
+<td>93.9</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Fashion and design</th>
+<td>80</td>
+<td>95.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="counts-by-venue-type" class="slide level2 smaller">
+<h2>Counts by venue type</h2>
+<div id="d49f5870" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href aria-label="1"></a>venues[<span class="st">&quot;venue_type&quot;</span>].value_counts().head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>venue_type
+Archives                        544
+Music venues all                371
+Libraries                       347
+Commercial galleries            300
+Artists workspaces              270
+Theatre                         266
+Museums and public galleries    253
+Dance rehearsal studios         252
+Theatre rehearsal studios       217
+Dance performance venues        196
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+<div class="trap">
+<p>Small groups can produce dramatic percentages. Always check the denominator before interpreting a percentage.</p>
+</div>
+</section>
+<section id="borough-differences" class="slide level2 smaller">
+<h2>Borough differences</h2>
+<div id="fb9ab6a6" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href aria-label="1"></a>website_by_borough <span class="op">=</span> (</span>
+<span id="cb21-2"><a href aria-label="2"></a>    venues.groupby(<span class="st">&quot;borough_name&quot;</span>)</span>
+<span id="cb21-3"><a href aria-label="3"></a>    .agg(</span>
+<span id="cb21-4"><a href aria-label="4"></a>        venues<span class="op">=</span>(<span class="st">&quot;venue_id&quot;</span>, <span class="st">&quot;size&quot;</span>),</span>
+<span id="cb21-5"><a href aria-label="5"></a>        website_share<span class="op">=</span>(<span class="st">&quot;has_website&quot;</span>, <span class="st">&quot;mean&quot;</span>),</span>
+<span id="cb21-6"><a href aria-label="6"></a>        postcode_missing<span class="op">=</span>(<span class="st">&quot;missing_postcode&quot;</span>, <span class="st">&quot;mean&quot;</span>),</span>
+<span id="cb21-7"><a href aria-label="7"></a>    )</span>
+<span id="cb21-8"><a href aria-label="8"></a>)</span>
+<span id="cb21-9"><a href aria-label="9"></a></span>
+<span id="cb21-10"><a href aria-label="10"></a>website_by_borough[[<span class="st">&quot;website_share&quot;</span>, <span class="st">&quot;postcode_missing&quot;</span>]] <span class="op">=</span> (</span>
+<span id="cb21-11"><a href aria-label="11"></a>    website_by_borough[[<span class="st">&quot;website_share&quot;</span>, <span class="st">&quot;postcode_missing&quot;</span>]] <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb21-12"><a href aria-label="12"></a>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb21-13"><a href aria-label="13"></a></span>
+<span id="cb21-14"><a href aria-label="14"></a>website_by_borough.sort_values(<span class="st">&quot;website_share&quot;</span>).head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">venues</th>
+<th data-quarto-table-cell-role="th">website_share</th>
+<th data-quarto-table-cell-role="th">postcode_missing</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">borough_name</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Havering</th>
+<td>22</td>
+<td>40.9</td>
+<td>95.5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Redbridge</th>
+<td>29</td>
+<td>48.3</td>
+<td>79.3</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Bromley</th>
+<td>47</td>
+<td>57.4</td>
+<td>70.2</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Enfield</th>
+<td>48</td>
+<td>58.3</td>
+<td>83.3</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Hillingdon</th>
+<td>49</td>
+<td>61.2</td>
+<td>69.4</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Sutton</th>
+<td>24</td>
+<td>62.5</td>
+<td>70.8</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Kingston upon Thames</th>
+<td>24</td>
+<td>62.5</td>
+<td>79.2</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Barnet</th>
+<td>55</td>
+<td>63.6</td>
+<td>67.3</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Bexley</th>
+<td>36</td>
+<td>63.9</td>
+<td>86.1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Croydon</th>
+<td>58</td>
+<td>67.2</td>
+<td>77.6</td>
 </tr>
 </tbody>
 </table>
@@ -1290,370 +1932,11 @@ text-align: right;
 </section>
 <section id="what-to-do-when-you-find-missing-data" class="slide level2 smaller">
 <h2>What to do when you find missing data</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Ask:</strong></p>
+<p>Ask three questions before fixing anything:</p>
 <ol type="1">
-<li><strong>How much is missing?</strong> Quantify. Is it a little or a big problem?</li>
-<li><strong>Why is it missing?</strong> Random or systematic? If systematic, investigate the cause.</li>
-<li><strong>What’s your goal?</strong> Descriptive: document and report. Predictive: may need imputation.</li>
-</ol>
-</div><div class="column" style="width:50%;">
-<p><strong>Important:</strong></p>
-<ul>
-<li>Always <strong>document</strong> your missing data and how you handled it</li>
-<li>Check if <strong>missingness itself is informative</strong></li>
-<li>Consider creating a “missing” indicator variable</li>
-<li>Be transparent in reporting</li>
-</ul>
-<p><strong>Red flags:</strong></p>
-<ul>
-<li>Never ignore gaps without investigating</li>
-<li>Avoid changing original data — create new columns</li>
-</ul>
-</div></div>
-</section>
-<section id="types-of-missingness" class="slide level2 smaller">
-<h2>Types of Missingness</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>MCAR</strong> (Missing Completely At Random)</p>
-<ul>
-<li>Unrelated to any variable in your dataset</li>
-<li><em>Random survey pages lost in the post</em></li>
-<li>Safe to use any handling method</li>
-</ul>
-<p><strong>MAR</strong> (Missing At Random)</p>
-<ul>
-<li>Relates to other <strong>observed</strong> variables</li>
-<li><em>Younger respondents skip income questions</em></li>
-<li>Account for the pattern when handling</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>MNAR</strong> (Missing Not At Random)</p>
-<ul>
-<li>Relates to the <strong>missing values themselves</strong></li>
-<li><em>High earners refusing to report income</em></li>
-<li>Most problematic — simple methods introduce bias</li>
-</ul>
-<p><strong>In cultural data:</strong></p>
-<ul>
-<li>Historical gaps often <strong>MNAR</strong> (power dynamics, deliberate omissions)</li>
-<li>Survey non-response often MAR</li>
-<li>Technical failures usually MCAR</li>
-</ul>
-</div></div>
-</section>
-<section id="strategy-1-deletion" class="slide level2 smaller">
-<h2>Strategy 1: Deletion</h2>
-<div id="e5c16734" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href aria-label="1"></a><span class="bu">print</span>(<span class="st">&quot;rows we started with:&quot;</span>, <span class="bu">len</span>(museum))</span>
-<span id="cb6-2"><a href aria-label="2"></a><span class="bu">print</span>(<span class="st">&quot;rows with no gaps at all:&quot;</span>, <span class="bu">len</span>(museum.dropna()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>rows we started with: 150
-rows with no gaps at all: 0</code></pre>
-</div>
-</div>
-<ul>
-<li><strong>Pros:</strong> simplest fix. Useful when only a few rows are affected</li>
-<li><strong>Cons:</strong> loss of data, potential bias</li>
-</ul>
-<div class="trap">
-<p>On this dataset, deletion leaves <strong>nothing</strong>. Every one of the 150 objects is missing something.</p>
-</div>
-</section>
-<section id="deletion-done-deliberately" class="slide level2 smaller">
-<h2>Deletion, done deliberately</h2>
-<div id="a16d10bb" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href aria-label="1"></a><span class="bu">print</span>(<span class="st">&quot;drop only rows with no valuation:&quot;</span>, <span class="bu">len</span>(museum.dropna(subset<span class="op">=</span>[<span class="st">&quot;valuation&quot;</span>])))</span>
-<span id="cb8-2"><a href aria-label="2"></a><span class="bu">print</span>(<span class="st">&quot;drop only columns that are half empty:&quot;</span>,</span>
-<span id="cb8-3"><a href aria-label="3"></a>      museum.dropna(axis<span class="op">=</span><span class="dv">1</span>, thresh<span class="op">=</span><span class="bu">int</span>(<span class="fl">0.5</span> <span class="op">*</span> <span class="bu">len</span>(museum))).shape[<span class="dv">1</span>], <span class="st">&quot;columns left&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>drop only rows with no valuation: 146
-drop only columns that are half empty: 7 columns left</code></pre>
-</div>
-</div>
-<p>Deletion is a scalpel, not a hammer: say <strong>what</strong> you are dropping and <strong>why</strong>.</p>
-</section>
-<section id="strategy-2-imputation" class="slide level2 smaller">
-<h2>Strategy 2: Imputation</h2>
-<div id="425ed6d8" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href aria-label="1"></a>filled <span class="op">=</span> museum.copy()</span>
-<span id="cb10-2"><a href aria-label="2"></a>filled[<span class="st">&quot;valuation&quot;</span>] <span class="op">=</span> filled[<span class="st">&quot;valuation&quot;</span>].fillna(filled[<span class="st">&quot;valuation&quot;</span>].median())</span>
-<span id="cb10-3"><a href aria-label="3"></a><span class="bu">print</span>(<span class="st">&quot;missing before:&quot;</span>, museum[<span class="st">&quot;valuation&quot;</span>].isna().<span class="bu">sum</span>())</span>
-<span id="cb10-4"><a href aria-label="4"></a><span class="bu">print</span>(<span class="st">&quot;missing after: &quot;</span>, filled[<span class="st">&quot;valuation&quot;</span>].isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>missing before: 4
-missing after:  0</code></pre>
-</div>
-</div>
-<ul>
-<li><strong>Pros:</strong> keeps the rows that are real</li>
-<li><strong>Cons:</strong> adds numbers that are <strong>not</strong> real — only estimates</li>
-</ul>
-</section>
-<section id="strategy-3-keep-and-handle" class="slide level2 smaller">
-<h2>Strategy 3: Keep and handle</h2>
-<div id="600c4437" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href aria-label="1"></a><span class="bu">print</span>(<span class="st">&quot;mean of what is there:&quot;</span>, <span class="bu">round</span>(museum[<span class="st">&quot;valuation&quot;</span>].mean(), <span class="dv">2</span>))</span>
-<span id="cb12-2"><a href aria-label="2"></a><span class="bu">print</span>(<span class="st">&quot;...based on how many objects:&quot;</span>, museum[<span class="st">&quot;valuation&quot;</span>].notna().<span class="bu">sum</span>(), <span class="st">&quot;of&quot;</span>, <span class="bu">len</span>(museum))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>mean of what is there: 28198.63
-...based on how many objects: 146 of 150</code></pre>
-</div>
-</div>
-<p>Some analyses tolerate gaps. <strong>Report the denominator.</strong></p>
-</section>
-<section id="key-points" class="slide level2 smaller">
-<h2>Key points</h2>
-<ul>
-<li>Missing values are <code>NaN</code> (or <code>None</code>) in pandas</li>
-<li><strong><code>.isna()</code></strong> identifies them and returns True/False</li>
-<li><code>.isna().sum()</code> counts them; <code>.isna().mean()</code> gives the proportion</li>
-<li><strong>pandas skips gaps by default</strong> — so check before you trust a statistic</li>
-<li>Never compare to <code>NaN</code> with <code>==</code></li>
-<li>Never modify the original: <code>.copy()</code> first, or make a new column</li>
-</ul>
-</section></section>
-<section>
-<section id="part-ii-the-cultural-significance-of-missing-data" class="title-slide slide level1 center" data-background-color="#0A2D50">
-<h1>Part II: The cultural significance of missing data</h1>
-
-</section>
-<section id="is-the-missingness-patterned" class="slide level2 smaller">
-<h2>Is the missingness patterned?</h2>
-<div id="1ccca009" class="cell" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href aria-label="1"></a>pd.crosstab(museum[<span class="st">&quot;acquisition_method&quot;</span>],</span>
-<span id="cb14-2"><a href aria-label="2"></a>            museum[<span class="st">&quot;cultural_significance&quot;</span>].isna())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
-<div>
-<style scoped>
-.dataframe tbody tr th:only-of-type {
-vertical-align: middle;
-}
-.dataframe tbody tr th {
-vertical-align: top;
-}
-.dataframe thead th {
-text-align: right;
-}
-</style>
-
-<table class="dataframe caption-top" data-border="1">
-<thead>
-<tr class="header" style="text-align: right;">
-<th data-quarto-table-cell-role="th">cultural_significance</th>
-<th data-quarto-table-cell-role="th">False</th>
-<th data-quarto-table-cell-role="th">True</th>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">acquisition_method</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Colonial Collection</th>
-<td>5</td>
-<td>24</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">Donation</th>
-<td>12</td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Purchase</th>
-<td>35</td>
-<td>21</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="counts-hide-it-percentages-show-it" class="slide level2 smaller">
-<h2>Counts hide it; percentages show it</h2>
-<div id="8ce4f72f" class="cell" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href aria-label="1"></a>(pd.crosstab(museum[<span class="st">&quot;acquisition_method&quot;</span>],</span>
-<span id="cb15-2"><a href aria-label="2"></a>             museum[<span class="st">&quot;cultural_significance&quot;</span>].isna(),</span>
-<span id="cb15-3"><a href aria-label="3"></a>             normalize<span class="op">=</span><span class="st">&quot;index&quot;</span>) <span class="op">*</span> <span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="9">
-<div>
-<style scoped>
-.dataframe tbody tr th:only-of-type {
-vertical-align: middle;
-}
-.dataframe tbody tr th {
-vertical-align: top;
-}
-.dataframe thead th {
-text-align: right;
-}
-</style>
-
-<table class="dataframe caption-top" data-border="1">
-<thead>
-<tr class="header" style="text-align: right;">
-<th data-quarto-table-cell-role="th">cultural_significance</th>
-<th data-quarto-table-cell-role="th">False</th>
-<th data-quarto-table-cell-role="th">True</th>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">acquisition_method</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Colonial Collection</th>
-<td>17.2</td>
-<td>82.8</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">Donation</th>
-<td>54.5</td>
-<td>45.5</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Purchase</th>
-<td>62.5</td>
-<td>37.5</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div class="big">
-<p>82.8% of colonial-collection objects have no cultural significance recorded, against 37.5% of purchases.</p>
-</div>
-</section>
-<section id="which-kind-of-missingness-is-that" class="slide level2 smaller">
-<h2>Which kind of missingness is that?</h2>
-<p>The gap is <strong>not</strong> random. It relates to how the object was acquired — and plausibly to what the acquirer knew, or chose to record, or could not ask.</p>
-<p>So: <strong>MNAR</strong>. Objects taken as colonial collections are the ones whose meaning went unrecorded.</p>
-<p>Imputing a “most common” cultural significance here would invent exactly the knowledge that colonial acquisition destroyed.</p>
-</section>
-<section id="cultural-implications" class="slide level2 smaller">
-<h2>Cultural implications</h2>
-<p>Missing data is a more important topic than simply how to handle it in Python.</p>
-<p>Returning to weeks 1 and 2: the historical existence and chosen structure of data reflects <strong>human decisions</strong>.</p>
-<p>When you come across missing data, ask:</p>
-<ol type="1">
-<li>What does it mean when certain cultural data is missing?</li>
-<li><strong>Whose</strong> data is more likely to be missing or excluded?</li>
-<li>How does imputation affect interpretation in cultural contexts?</li>
-</ol>
-<div class="muted">
-<p>Hill, “Contextual Analytics”, §5.2 — what entered the dataset, what did not, and why</p>
-</div>
-</section></section>
-<section>
-<section id="part-iii-changing-a-data-frame" class="title-slide slide level1 center" data-background-color="#0A2D50">
-<h1>Part III: Changing a data frame</h1>
-
-</section>
-<section id="adding-and-removing-columns" class="slide level2 smaller">
-<h2>Adding and removing columns</h2>
-<div id="a96f6e29" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href aria-label="1"></a>work <span class="op">=</span> museum.copy()</span>
-<span id="cb16-2"><a href aria-label="2"></a></span>
-<span id="cb16-3"><a href aria-label="3"></a>work[<span class="st">&quot;value_per_year&quot;</span>] <span class="op">=</span> work[<span class="st">&quot;valuation&quot;</span>] <span class="op">/</span> (<span class="dv">2026</span> <span class="op">-</span> work[<span class="st">&quot;acquisition_date&quot;</span>])</span>
-<span id="cb16-4"><a href aria-label="4"></a>work[<span class="st">&quot;owner_recorded&quot;</span>] <span class="op">=</span> work[<span class="st">&quot;original_owner&quot;</span>].notna()</span>
-<span id="cb16-5"><a href aria-label="5"></a></span>
-<span id="cb16-6"><a href aria-label="6"></a>work <span class="op">=</span> work.drop(columns<span class="op">=</span>[<span class="st">&quot;value_per_year&quot;</span>])</span>
-<span id="cb16-7"><a href aria-label="7"></a><span class="bu">print</span>(<span class="bu">list</span>(work.columns))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[&#39;object_id&#39;, &#39;object_type&#39;, &#39;region&#39;, &#39;acquisition_date&#39;, &#39;acquisition_method&#39;, &#39;original_owner&#39;, &#39;cultural_significance&#39;, &#39;valuation&#39;, &#39;owner_recorded&#39;]</code></pre>
-</div>
-</div>
-<div class="muted">
-<p>Best practice, as in R: prefer a new data frame to modifying the original. Do not risk losing data.</p>
-</div>
-</section>
-<section id="adding-and-removing-rows" class="slide level2 smaller">
-<h2>Adding and removing rows</h2>
-<div id="5a62a91d" class="cell" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href aria-label="1"></a>new_object <span class="op">=</span> pd.DataFrame([{</span>
-<span id="cb18-2"><a href aria-label="2"></a>    <span class="st">&quot;object_id&quot;</span>: <span class="dv">999</span>, <span class="st">&quot;object_type&quot;</span>: <span class="st">&quot;Mask&quot;</span>, <span class="st">&quot;region&quot;</span>: <span class="st">&quot;West Africa&quot;</span>,</span>
-<span id="cb18-3"><a href aria-label="3"></a>    <span class="st">&quot;acquisition_date&quot;</span>: <span class="dv">2024</span>, <span class="st">&quot;acquisition_method&quot;</span>: <span class="st">&quot;Donation&quot;</span>,</span>
-<span id="cb18-4"><a href aria-label="4"></a>    <span class="st">&quot;original_owner&quot;</span>: <span class="st">&quot;Known Community&quot;</span>, <span class="st">&quot;cultural_significance&quot;</span>: <span class="st">&quot;Ceremonial&quot;</span>,</span>
-<span id="cb18-5"><a href aria-label="5"></a>    <span class="st">&quot;valuation&quot;</span>: <span class="fl">12000.0</span>,</span>
-<span id="cb18-6"><a href aria-label="6"></a>}])</span>
-<span id="cb18-7"><a href aria-label="7"></a></span>
-<span id="cb18-8"><a href aria-label="8"></a>longer <span class="op">=</span> pd.concat([museum, new_object], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb18-9"><a href aria-label="9"></a><span class="bu">print</span>(<span class="bu">len</span>(museum), <span class="st">&quot;-&gt;&quot;</span>, <span class="bu">len</span>(longer))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>150 -&gt; 151</code></pre>
-</div>
-</div>
-</section>
-<section id="combining-two-tables" class="slide level2 smaller">
-<h2>Combining two tables</h2>
-<div id="ee31b70d" class="cell" data-execution_count="12">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href aria-label="1"></a>region_notes <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb20-2"><a href aria-label="2"></a>    <span class="st">&quot;region&quot;</span>: [<span class="st">&quot;West Africa&quot;</span>, <span class="st">&quot;Southeast Asia&quot;</span>, <span class="st">&quot;South America&quot;</span>,</span>
-<span id="cb20-3"><a href aria-label="3"></a>               <span class="st">&quot;Pacific Islands&quot;</span>, <span class="st">&quot;North Africa&quot;</span>],</span>
-<span id="cb20-4"><a href aria-label="4"></a>    <span class="st">&quot;continent&quot;</span>: [<span class="st">&quot;Africa&quot;</span>, <span class="st">&quot;Asia&quot;</span>, <span class="st">&quot;South America&quot;</span>, <span class="st">&quot;Oceania&quot;</span>, <span class="st">&quot;Africa&quot;</span>],</span>
-<span id="cb20-5"><a href aria-label="5"></a>})</span>
-<span id="cb20-6"><a href aria-label="6"></a></span>
-<span id="cb20-7"><a href aria-label="7"></a>merged <span class="op">=</span> museum.merge(region_notes, on<span class="op">=</span><span class="st">&quot;region&quot;</span>, how<span class="op">=</span><span class="st">&quot;left&quot;</span>)</span>
-<span id="cb20-8"><a href aria-label="8"></a><span class="bu">print</span>(merged[[<span class="st">&quot;region&quot;</span>, <span class="st">&quot;continent&quot;</span>]].drop_duplicates().to_string(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>         region     continent
-Pacific Islands       Oceania
- Southeast Asia          Asia
-    West Africa        Africa
-   North Africa        Africa
-  South America South America</code></pre>
-</div>
-</div>
-</section></section>
-<section>
-<section id="part-iv-live-coding" class="title-slide slide level1 center" data-background-color="#0A2D50">
-<h1>Part IV: Live Coding</h1>
-
-</section>
-<section id="exercise-1-quantify-the-gaps" class="slide level2 smaller">
-<h2>Exercise 1: quantify the gaps</h2>
-<ol type="1">
-<li>Build the missing-data summary table for <code>museum_data.csv</code></li>
-<li>Which column is worst? Which is nearly complete?</li>
-<li>How many rows survive <code>dropna()</code>? Why so few?</li>
-<li>Drop only the rows missing a <code>valuation</code>. How many go?</li>
-</ol>
-</section>
-<section id="exercise-2-is-the-missingness-patterned" class="slide level2 smaller">
-<h2>Exercise 2: is the missingness patterned?</h2>
-<ol type="1">
-<li>Cross-tabulate <code>acquisition_method</code> against missing <code>cultural_significance</code></li>
-<li>Do it again as row percentages. What changes?</li>
-<li>Try the same for <code>original_owner</code></li>
-<li>Decide: MCAR, MAR, or MNAR? Defend it</li>
-</ol>
-</section>
-<section id="exercise-3-your-own-project-data" class="slide level2 smaller">
-<h2>Exercise 3: your own project data</h2>
-<p>Bring the dataset you are considering for the report.</p>
-<ol type="1">
-<li>Load it</li>
-<li>Build its missing-data summary</li>
-<li>Find one column where the missingness looks <strong>patterned</strong></li>
-<li>Write two sentences for your data overview about what that pattern might mean</li>
-</ol>
-</section>
-<section id="before-next-week" class="slide level2 smaller">
-<h2>Before next week</h2>
-<ol type="1">
-<li>Complete <code>w04_worksheet.ipynb</code> in the workshop</li>
-<li>Keep working on your dataset choice — the data overview is due in <strong>Week 8</strong></li>
-<li>Read Hill, “Contextual Analytics”, §5.2</li>
+<li><strong>How much is missing?</strong> Count it, calculate percentages, and check which columns are affected.</li>
+<li><strong>Why might it be missing?</strong> Look for patterns by borough, venue type, source, or collection process.</li>
+<li><strong>What is your goal?</strong> Description, mapping, prediction, and interpretation may need different choices.</li>
 </ol>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -1664,7 +1947,818 @@ Pacific Islands       Oceania
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>The quiz in next week’s lecture covers <strong>this week’s</strong> material.</p>
+<p>Document the missingness and document what you did about it.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-much-is-missing" class="slide level2 smaller">
+<h2>How much is missing?</h2>
+<div id="ff5e03e2" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href aria-label="1"></a>missing_summary <span class="op">=</span> (</span>
+<span id="cb22-2"><a href aria-label="2"></a>    venues.isna()</span>
+<span id="cb22-3"><a href aria-label="3"></a>    .<span class="bu">sum</span>()</span>
+<span id="cb22-4"><a href aria-label="4"></a>    .to_frame(<span class="st">&quot;missing&quot;</span>)</span>
+<span id="cb22-5"><a href aria-label="5"></a>)</span>
+<span id="cb22-6"><a href aria-label="6"></a>missing_summary[<span class="st">&quot;missing_%&quot;</span>] <span class="op">=</span> (</span>
+<span id="cb22-7"><a href aria-label="7"></a>    missing_summary[<span class="st">&quot;missing&quot;</span>] <span class="op">/</span> <span class="bu">len</span>(venues) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb22-8"><a href aria-label="8"></a>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb22-9"><a href aria-label="9"></a></span>
+<span id="cb22-10"><a href aria-label="10"></a>missing_summary.sort_values(<span class="st">&quot;missing&quot;</span>, ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">missing</th>
+<th data-quarto-table-cell-role="th">missing_%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">postcode</th>
+<td>3042</td>
+<td>68.6</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">address_2</th>
+<td>2217</td>
+<td>50.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">website</th>
+<td>760</td>
+<td>17.1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">address_1</th>
+<td>440</td>
+<td>9.9</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">address</th>
+<td>355</td>
+<td>8.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">uprn</th>
+<td>331</td>
+<td>7.5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">easting</th>
+<td>8</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">northing</th>
+<td>8</td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="muted">
+<p>Counts show the scale. Percentages show the proportion. You usually need both.</p>
+</div>
+</section>
+<section id="why-might-it-be-missing" class="slide level2 smaller">
+<h2>Why might it be missing?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Possible interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>scattered across rows</td>
+<td>data entry or source integration problem</td>
+</tr>
+<tr class="even">
+<td>concentrated in one venue type</td>
+<td>documentation differs by sector</td>
+</tr>
+<tr class="odd">
+<td>concentrated in one borough</td>
+<td>local data source or coverage issue</td>
+</tr>
+<tr class="even">
+<td>concentrated in one field</td>
+<td>the field may not have been collected consistently</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="part-iii-strategies" class="title-slide slide level1 center" data-background-color="#0A2D50">
+<h1>Part III: Strategies</h1>
+
+</section>
+<section id="strategy-1-deletion" class="slide level2 smaller">
+<h2>Strategy 1: Deletion</h2>
+<div id="9f07ec88" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href aria-label="1"></a><span class="bu">print</span>(<span class="st">&quot;rows before:&quot;</span>, <span class="bu">len</span>(venues))</span>
+<span id="cb23-2"><a href aria-label="2"></a><span class="bu">print</span>(<span class="st">&quot;rows after dropping any missing value:&quot;</span>, <span class="bu">len</span>(venues.dropna()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rows before: 4434
+rows after dropping any missing value: 774</code></pre>
+</div>
+</div>
+<p>Deletion is simple, but it can change the dataset in ways you did not intend.</p>
+</section>
+<section id="deletion-pros-and-cons" class="slide level2 smaller">
+<h2>Deletion: pros and cons</h2>
+<p><strong>Useful when:</strong></p>
+<ul>
+<li>only a few rows are affected</li>
+<li>the analysis genuinely requires a complete field</li>
+<li>the missingness seems unrelated to the question</li>
+</ul>
+<p><strong>Risky when:</strong></p>
+<ul>
+<li>many rows disappear</li>
+<li>missingness is patterned by place or venue type</li>
+<li>the removed rows are culturally or analytically important</li>
+</ul>
+</section>
+<section id="deletion-with-a-reason" class="slide level2 smaller">
+<h2>Deletion with a reason</h2>
+<div id="a4dcb1e1" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href aria-label="1"></a>with_websites <span class="op">=</span> venues.dropna(subset<span class="op">=</span>[<span class="st">&quot;website&quot;</span>])</span>
+<span id="cb25-2"><a href aria-label="2"></a></span>
+<span id="cb25-3"><a href aria-label="3"></a><span class="bu">print</span>(<span class="st">&quot;rows before:&quot;</span>, <span class="bu">len</span>(venues))</span>
+<span id="cb25-4"><a href aria-label="4"></a><span class="bu">print</span>(<span class="st">&quot;rows with website:&quot;</span>, <span class="bu">len</span>(with_websites))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rows before: 4434
+rows with website: 3674</code></pre>
+</div>
+</div>
+<p>Dropping rows can be defensible when the analysis specifically requires that field.</p>
+<div class="muted">
+<p>Say what you dropped, why you dropped it, and how many rows remain.</p>
+</div>
+</section>
+<section id="strategy-2-filling-values" class="slide level2 smaller">
+<h2>Strategy 2: Filling values</h2>
+<div id="7aa93082" class="cell" data-execution_count="17">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href aria-label="1"></a>labelled <span class="op">=</span> venues.copy()</span>
+<span id="cb27-2"><a href aria-label="2"></a>labelled[<span class="st">&quot;website_status&quot;</span>] <span class="op">=</span> labelled[<span class="st">&quot;website&quot;</span>].fillna(<span class="st">&quot;No website recorded&quot;</span>)</span>
+<span id="cb27-3"><a href aria-label="3"></a></span>
+<span id="cb27-4"><a href aria-label="4"></a>labelled[<span class="st">&quot;website_status&quot;</span>].head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>0                   https://www.arbeit.org.uk/dagenham
+1    www.bowarts.org    www.artiststudiofinder.org ...
+2    https://bowarts.org/studios/riverside-mills-st...
+3                                  No website recorded
+4    www.bowarts.org    www.artiststudiofinder.org ...
+Name: website_status, dtype: str</code></pre>
+</div>
+</div>
+<p>This is not the same as discovering the missing websites. It labels the gap.</p>
+<div class="trap">
+<p>Filling can make data look more complete than it really is. Use clear labels when you are recording unknownness rather than replacing a value.</p>
+</div>
+</section>
+<section id="imputation-means-filling-in-values" class="slide level2 smaller">
+<h2>Imputation means filling in values</h2>
+<p>Imputation replaces missing values with plausible substitutes.</p>
+<p>Common examples:</p>
+<ul>
+<li>numeric mean or median</li>
+<li>most common category</li>
+<li>group average within a borough or venue type</li>
+<li>model-based estimate</li>
+</ul>
+<div class="trap">
+<p>Imputed values are estimates. They are not newly discovered facts.</p>
+</div>
+</section>
+<section id="strategy-3-keep-and-handle" class="slide level2 smaller">
+<h2>Strategy 3: Keep and handle</h2>
+<div id="6f99e4ab" class="cell" data-execution_count="18">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href aria-label="1"></a>summary <span class="op">=</span> venues.groupby(<span class="st">&quot;venue_type&quot;</span>).agg(</span>
+<span id="cb29-2"><a href aria-label="2"></a>    venues<span class="op">=</span>(<span class="st">&quot;venue_id&quot;</span>, <span class="st">&quot;size&quot;</span>),</span>
+<span id="cb29-3"><a href aria-label="3"></a>    websites_recorded<span class="op">=</span>(<span class="st">&quot;has_website&quot;</span>, <span class="st">&quot;sum&quot;</span>),</span>
+<span id="cb29-4"><a href aria-label="4"></a>    website_share<span class="op">=</span>(<span class="st">&quot;has_website&quot;</span>, <span class="st">&quot;mean&quot;</span>),</span>
+<span id="cb29-5"><a href aria-label="5"></a>)</span>
+<span id="cb29-6"><a href aria-label="6"></a>summary[<span class="st">&quot;website_share&quot;</span>] <span class="op">=</span> (summary[<span class="st">&quot;website_share&quot;</span>] <span class="op">*</span> <span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb29-7"><a href aria-label="7"></a>summary.sort_values(<span class="st">&quot;website_share&quot;</span>).head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">venues</th>
+<th data-quarto-table-cell-role="th">websites_recorded</th>
+<th data-quarto-table-cell-role="th">website_share</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">venue_type</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Libraries</th>
+<td>347</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Cinemas</th>
+<td>123</td>
+<td>13</td>
+<td>10.6</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Jewellery design</th>
+<td>117</td>
+<td>56</td>
+<td>47.9</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">LGBTQ venues</th>
+<td>50</td>
+<td>27</td>
+<td>54.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Music nightclubs</th>
+<td>133</td>
+<td>89</td>
+<td>66.9</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Keep the original field, add indicators, and report what each number is based on.</p>
+</section>
+<section id="keep-and-handle-why-it-often-fits-cultural-data" class="slide level2 smaller">
+<h2>Keep and handle: why it often fits cultural data</h2>
+<p>Keeping missing values allows you to:</p>
+<ul>
+<li>preserve the original record</li>
+<li>compare different handling choices</li>
+<li>analyse missingness as a pattern</li>
+<li>avoid inventing values for uncertain cultural fields</li>
+<li>report clearly how many observations support each claim</li>
+</ul>
+</section>
+<section id="mcar-mar-mnar" class="slide level2 smaller">
+<h2>MCAR, MAR, MNAR</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Plain meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MCAR</td>
+<td>missing for reasons unrelated to the data</td>
+<td>a random file transfer failure</td>
+</tr>
+<tr class="even">
+<td>MAR</td>
+<td>missingness relates to observed fields</td>
+<td>website missingness varies by venue type</td>
+</tr>
+<tr class="odd">
+<td>MNAR</td>
+<td>missingness relates to the missing value itself</td>
+<td>venues without websites are less likely to have websites recorded</td>
+</tr>
+</tbody>
+</table>
+<div class="muted">
+<p>The labels are less important than the reasoning: what pattern could have produced the gap?</p>
+</div>
+</section>
+<section id="mcar-missing-completely-at-random" class="slide level2 smaller">
+<h2>MCAR: missing completely at random</h2>
+<p><strong>Plain English:</strong> the gap has no relationship to the values in the dataset.</p>
+<p>Example:</p>
+<ul>
+<li>a file transfer error randomly deletes a small number of website entries</li>
+<li>every borough and venue type has roughly the same chance of being affected</li>
+</ul>
+<p><strong>Implication:</strong> deletion is less likely to bias comparisons, although it still reduces data.</p>
+</section>
+<section id="mar-missing-at-random" class="slide level2 smaller">
+<h2>MAR: missing at random</h2>
+<p><strong>Plain English:</strong> missingness relates to something we can observe.</p>
+<p>Example:</p>
+<ul>
+<li>website coverage differs by <code>venue_type</code></li>
+<li>postcode missingness differs by <code>borough_name</code></li>
+<li>one source file supplied fuller address fields than another</li>
+</ul>
+<p><strong>Implication:</strong> analyse the pattern before choosing a handling strategy.</p>
+</section>
+<section id="mnar-missing-not-at-random" class="slide level2 smaller">
+<h2>MNAR: missing not at random</h2>
+<p><strong>Plain English:</strong> missingness relates to the missing value itself or to something we cannot observe.</p>
+<p>Examples:</p>
+<ul>
+<li>venues with limited online presence are less likely to have websites recorded</li>
+<li>groups with lower institutional visibility have thinner public records</li>
+<li>historical records are absent because someone never collected them</li>
+</ul>
+<p><strong>Implication:</strong> simple deletion or filling can create serious bias.</p>
+</section>
+<section id="missingness-and-ethics" class="slide level2 smaller">
+<h2>Missingness and ethics</h2>
+<p>When cultural data is missing, ask:</p>
+<ol type="1">
+<li>Whose venues, institutions, or practices become harder to find?</li>
+<li>Does the gap come from the cultural world, the data source, or our cleaning choices?</li>
+<li>What would deletion remove from the analysis?</li>
+<li>What would filling the gap pretend to know?</li>
+</ol>
+</section>
+<section id="cultural-significance-of-missing-data" class="slide level2 smaller">
+<h2>Cultural significance of missing data</h2>
+<p>Missing data can reflect the history of collection and classification.</p>
+<p>In cultural datasets, gaps may show:</p>
+<ul>
+<li>which organisations maintain public-facing records</li>
+<li>which places are easier to map, search, or count</li>
+<li>whose activity enters official infrastructure lists</li>
+<li>which categories fit the data model and which do not</li>
+</ul>
+</section>
+<section id="missingness-as-evidence" class="slide level2 smaller">
+<h2>Missingness as evidence</h2>
+<div id="1b66bfa5" class="cell" data-execution_count="19">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href aria-label="1"></a>missing_by_type <span class="op">=</span> (</span>
+<span id="cb30-2"><a href aria-label="2"></a>    venues.assign(missing_website<span class="op">=</span>venues[<span class="st">&quot;website&quot;</span>].isna())</span>
+<span id="cb30-3"><a href aria-label="3"></a>    .groupby(<span class="st">&quot;venue_type&quot;</span>)</span>
+<span id="cb30-4"><a href aria-label="4"></a>    .agg(</span>
+<span id="cb30-5"><a href aria-label="5"></a>        venues<span class="op">=</span>(<span class="st">&quot;venue_id&quot;</span>, <span class="st">&quot;size&quot;</span>),</span>
+<span id="cb30-6"><a href aria-label="6"></a>        missing_websites<span class="op">=</span>(<span class="st">&quot;missing_website&quot;</span>, <span class="st">&quot;sum&quot;</span>),</span>
+<span id="cb30-7"><a href aria-label="7"></a>        missing_website_pct<span class="op">=</span>(<span class="st">&quot;missing_website&quot;</span>, <span class="st">&quot;mean&quot;</span>),</span>
+<span id="cb30-8"><a href aria-label="8"></a>    )</span>
+<span id="cb30-9"><a href aria-label="9"></a>)</span>
+<span id="cb30-10"><a href aria-label="10"></a></span>
+<span id="cb30-11"><a href aria-label="11"></a>missing_by_type[<span class="st">&quot;missing_website_pct&quot;</span>] <span class="op">=</span> (</span>
+<span id="cb30-12"><a href aria-label="12"></a>    missing_by_type[<span class="st">&quot;missing_website_pct&quot;</span>] <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb30-13"><a href aria-label="13"></a>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb30-14"><a href aria-label="14"></a></span>
+<span id="cb30-15"><a href aria-label="15"></a>missing_by_type.sort_values(<span class="st">&quot;missing_website_pct&quot;</span>, ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">venues</th>
+<th data-quarto-table-cell-role="th">missing_websites</th>
+<th data-quarto-table-cell-role="th">missing_website_pct</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">venue_type</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Libraries</th>
+<td>347</td>
+<td>347</td>
+<td>100.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Cinemas</th>
+<td>123</td>
+<td>110</td>
+<td>89.4</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Jewellery design</th>
+<td>117</td>
+<td>61</td>
+<td>52.1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">LGBTQ venues</th>
+<td>50</td>
+<td>23</td>
+<td>46.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Music nightclubs</th>
+<td>133</td>
+<td>44</td>
+<td>33.1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Music venues all</th>
+<td>371</td>
+<td>95</td>
+<td>25.6</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Arts centres</th>
+<td>26</td>
+<td>2</td>
+<td>7.7</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Theatre</th>
+<td>266</td>
+<td>19</td>
+<td>7.1</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Music venues grassroots</th>
+<td>132</td>
+<td>8</td>
+<td>6.1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Fashion and design</th>
+<td>80</td>
+<td>4</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="part-iv-joining-context" class="title-slide slide level1 center" data-background-color="#0A2D50">
+<h1>Part IV: Joining Context</h1>
+
+</section>
+<section id="why-join-tables" class="slide level2 smaller">
+<h2>Why join tables?</h2>
+<p>The venue file has one row per venue.</p>
+<p>The borough context file has one row per borough.</p>
+<p>A join lets us attach borough-level context to each venue record:</p>
+<ul>
+<li>population</li>
+<li>income</li>
+<li>PTAL score</li>
+<li>borough-level venue counts</li>
+<li>borough website share</li>
+</ul>
+</section>
+<section id="the-shared-key" class="slide level2 smaller">
+<h2>The shared key</h2>
+<div id="300e07c8" class="cell" data-execution_count="20">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href aria-label="1"></a>venues[[<span class="st">&quot;name&quot;</span>, <span class="st">&quot;borough_name&quot;</span>]].head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">borough_name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>DAGENHAM RM10</td>
+<td>Barking and Dagenham</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Ice House Court</td>
+<td>Barking and Dagenham</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>River Mills Studios (Bow Arts)</td>
+<td>Barking and Dagenham</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Vue Dagenham</td>
+<td>Barking and Dagenham</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Bow Arts</td>
+<td>Barking and Dagenham</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="d82354d1" class="cell" data-execution_count="21">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href aria-label="1"></a>borough_context <span class="op">=</span> pd.read_csv(</span>
+<span id="cb32-2"><a href aria-label="2"></a>    <span class="st">&quot;../../data/london_cultural_infrastructure_2023_borough_context.csv&quot;</span></span>
+<span id="cb32-3"><a href aria-label="3"></a>)</span>
+<span id="cb32-4"><a href aria-label="4"></a></span>
+<span id="cb32-5"><a href aria-label="5"></a>borough_context[[<span class="st">&quot;borough_name&quot;</span>, <span class="st">&quot;population_2015&quot;</span>, <span class="st">&quot;ptal_score_2014&quot;</span>]].head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">borough_name</th>
+<th data-quarto-table-cell-role="th">population_2015</th>
+<th data-quarto-table-cell-role="th">ptal_score_2014</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Westminster</td>
+<td>230550.0</td>
+<td>6.5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Camden</td>
+<td>230300.0</td>
+<td>5.7</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Hackney</td>
+<td>262700.0</td>
+<td>4.9</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Southwark</td>
+<td>308650.0</td>
+<td>4.9</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Tower Hamlets</td>
+<td>284300.0</td>
+<td>5.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="muted">
+<p>The shared column is <code>borough_name</code>. That is the key used to match rows.</p>
+</div>
+</section>
+<section id="a-left-join" class="slide level2 smaller">
+<h2>A left join</h2>
+<div id="624e2d87" class="cell" data-execution_count="22">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href aria-label="1"></a>venues_with_context <span class="op">=</span> venues.merge(</span>
+<span id="cb33-2"><a href aria-label="2"></a>    borough_context[[</span>
+<span id="cb33-3"><a href aria-label="3"></a>        <span class="st">&quot;borough_name&quot;</span>,</span>
+<span id="cb33-4"><a href aria-label="4"></a>        <span class="st">&quot;population_2015&quot;</span>,</span>
+<span id="cb33-5"><a href aria-label="5"></a>        <span class="st">&quot;median_household_income_2012_13&quot;</span>,</span>
+<span id="cb33-6"><a href aria-label="6"></a>        <span class="st">&quot;ptal_score_2014&quot;</span>,</span>
+<span id="cb33-7"><a href aria-label="7"></a>        <span class="st">&quot;website_share&quot;</span>,</span>
+<span id="cb33-8"><a href aria-label="8"></a>    ]],</span>
+<span id="cb33-9"><a href aria-label="9"></a>    on<span class="op">=</span><span class="st">&quot;borough_name&quot;</span>,</span>
+<span id="cb33-10"><a href aria-label="10"></a>    how<span class="op">=</span><span class="st">&quot;left&quot;</span>,</span>
+<span id="cb33-11"><a href aria-label="11"></a>)</span>
+<span id="cb33-12"><a href aria-label="12"></a></span>
+<span id="cb33-13"><a href aria-label="13"></a>venues.shape, venues_with_context.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<pre><code>((4434, 22), (4434, 26))</code></pre>
+</div>
+</div>
+<div class="muted">
+<p>A left join keeps all rows from the left table, then adds matching columns from the right table.</p>
+</div>
+</section>
+<section id="always-check-a-join" class="slide level2 smaller">
+<h2>Always check a join</h2>
+<div id="05d4396a" class="cell" data-execution_count="23">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href aria-label="1"></a><span class="bu">print</span>(<span class="st">&quot;rows before:&quot;</span>, <span class="bu">len</span>(venues))</span>
+<span id="cb35-2"><a href aria-label="2"></a><span class="bu">print</span>(<span class="st">&quot;rows after: &quot;</span>, <span class="bu">len</span>(venues_with_context))</span>
+<span id="cb35-3"><a href aria-label="3"></a><span class="bu">print</span>(<span class="st">&quot;missing context:&quot;</span>, venues_with_context[<span class="st">&quot;ptal_score_2014&quot;</span>].isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rows before: 4434
+rows after:  4434
+missing context: 0</code></pre>
+</div>
+</div>
+<div class="trap">
+<p>A join can silently multiply rows or leave unmatched rows. Check row counts and missing joined fields.</p>
+</div>
+</section>
+<section id="context-and-missingness" class="slide level2 smaller">
+<h2>Context and missingness</h2>
+<div id="74bfa920" class="cell" data-execution_count="24">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href aria-label="1"></a>venues_with_context[<span class="st">&quot;high_ptal&quot;</span>] <span class="op">=</span> (</span>
+<span id="cb37-2"><a href aria-label="2"></a>    venues_with_context[<span class="st">&quot;ptal_score_2014&quot;</span>] <span class="op">&gt;=</span> <span class="dv">5</span></span>
+<span id="cb37-3"><a href aria-label="3"></a>)</span>
+<span id="cb37-4"><a href aria-label="4"></a></span>
+<span id="cb37-5"><a href aria-label="5"></a>(pd.crosstab(</span>
+<span id="cb37-6"><a href aria-label="6"></a>    venues_with_context[<span class="st">&quot;high_ptal&quot;</span>],</span>
+<span id="cb37-7"><a href aria-label="7"></a>    venues_with_context[<span class="st">&quot;has_website&quot;</span>],</span>
+<span id="cb37-8"><a href aria-label="8"></a>    normalize<span class="op">=</span><span class="st">&quot;index&quot;</span></span>
+<span id="cb37-9"><a href aria-label="9"></a>) <span class="op">*</span> <span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<div>
+<style scoped>
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+.dataframe tbody tr th {
+vertical-align: top;
+}
+.dataframe thead th {
+text-align: right;
+}
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th">has_website</th>
+<th data-quarto-table-cell-role="th">False</th>
+<th data-quarto-table-cell-role="th">True</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">high_ptal</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">False</th>
+<td>20.4</td>
+<td>79.6</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">True</th>
+<td>13.7</td>
+<td>86.3</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="what-the-join-adds" class="slide level2 smaller">
+<h2>What the join adds</h2>
+<p>Before the join, we could ask:</p>
+<ul>
+<li>Which venues have websites recorded?</li>
+<li>Which venue types have weaker website coverage?</li>
+<li>Which boroughs have more missing postcodes?</li>
+</ul>
+<p>After the join, we can also ask:</p>
+<ul>
+<li>Does missingness vary with borough-level transport accessibility?</li>
+<li>Does missingness vary with borough-level income?</li>
+<li>Do borough summaries agree with venue-level records?</li>
+</ul>
+</section></section>
+<section>
+<section id="part-v-live-coding" class="title-slide slide level1 center" data-background-color="#0A2D50">
+<h1>Part V: Live Coding</h1>
+
+</section>
+<section id="exercise-1-quantify-missingness" class="slide level2 smaller">
+<h2>Exercise 1: quantify missingness</h2>
+<ol type="1">
+<li>Load <code>london_cultural_venues_2023.csv</code></li>
+<li>Use <code>.info()</code> to inspect the table</li>
+<li>Build a missingness summary with counts and percentages</li>
+<li>Identify the three columns with the most missing values</li>
+<li>Write one sentence about why each gap might matter</li>
+</ol>
+</section>
+<section id="exercise-2-missingness-indicators" class="slide level2 smaller">
+<h2>Exercise 2: missingness indicators</h2>
+<ol type="1">
+<li>Create <code>has_website</code></li>
+<li>Create <code>missing_postcode</code></li>
+<li>Compare website coverage by <code>venue_type</code></li>
+<li>Compare postcode missingness by <code>borough_name</code></li>
+<li>Check denominators before interpreting percentages</li>
+</ol>
+</section>
+<section id="exercise-3-join-borough-context" class="slide level2 smaller">
+<h2>Exercise 3: join borough context</h2>
+<ol type="1">
+<li>Load <code>london_cultural_infrastructure_2023_borough_context.csv</code></li>
+<li>Join it to the venue data using <code>borough_name</code></li>
+<li>Check row counts before and after</li>
+<li>Check whether any joined context is missing</li>
+<li>Use the joined data to ask whether website coverage varies by PTAL</li>
+</ol>
+</section>
+<section id="before-next-week" class="slide level2 smaller">
+<h2>Before next week</h2>
+<ol type="1">
+<li>Complete <code>w04_worksheet.ipynb</code> in the workshop</li>
+<li>Keep the original data intact when making derived columns</li>
+<li>In your notes, write one paragraph about missingness in your own dataset</li>
+</ol>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>The quiz covering this week’s material is in the Week 4 content folder.</p>
 </div>
 </div>
 </div>
