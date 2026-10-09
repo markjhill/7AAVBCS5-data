@@ -8,8 +8,8 @@ from one public location. It also lets worksheets load their data over the inter
 are working in **Google Colab** rather than on their own machine.
 
 The private teaching repository still holds staff-only material such as solutions, assessment
-notes, quizzes, slides and release planning. This public repository contains only the files that
-students should be able to access directly.
+notes, quizzes, speaker notes and release planning. This public repository contains only the files
+that students should be able to access directly.
 
 Files are served over raw HTTPS, e.g.:
 
@@ -33,6 +33,22 @@ worksheets/week-11/
 Each weekly folder contains notebook versions (`.ipynb`) where available. Live-coding complete
 versions are included, because they are useful for review after class. Worksheet solutions are
 intentionally not included here; those are released separately through Moodle when appropriate.
+
+## Lecture slides
+
+Student-facing slides are organised by week:
+
+```
+lecture_slides/week-01/slides.html
+lecture_slides/week-01/slides.pdf
+lecture_slides/week-02/slides.html
+lecture_slides/week-02/slides.pdf
+...
+```
+
+The HTML and PDF files are generated from the private teaching repository's QMD source with speaker
+notes stripped. Do not hand-edit slide files here; regenerate them from the private repository so
+there is only one source version.
 
 ## Data files
 
