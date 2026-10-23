@@ -1,23 +1,10 @@
 # 7AAVBCS5 — public teaching materials and datasets
 
-Public student materials and datasets for **Social and Cultural Analytics (7AAVBCS5)**,
-King's College London.
+Public student materials and datasets for **Social and Cultural Analytics (7AAVBCS5)**, King's College London.
 
-This repository exists so that students can access the weekly worksheets and the data they need
-from one public location. It also lets worksheets load their data over the internet when students
-are working in **Google Colab** rather than on their own machine.
+This repository exists so that students can access the weekly worksheets and the data they need from one public location. It also lets worksheets load their data over the internet when students are working in **Google Colab** rather than on their own machine.
 
-The private teaching repository still holds staff-only material such as solutions, assessment
-notes, quizzes, speaker notes and release planning. This public repository contains only the files
-that students should be able to access directly.
-
-Files are served over raw HTTPS, e.g.:
-
-```
-https://raw.githubusercontent.com/markjhill/7AAVBCS5-data/master/museum_data.csv
-```
-
-Worksheets do this automatically — students never type a URL.
+In theory, worksheets should pull this data automatically without students downloading or typing a URL.
 
 ## Worksheets
 
@@ -30,9 +17,7 @@ worksheets/week-02/
 worksheets/week-11/
 ```
 
-Each weekly folder contains notebook versions (`.ipynb`) where available. Live-coding complete
-versions are included, because they are useful for review after class. Worksheet solutions are
-intentionally not included here; those are released separately through Moodle when appropriate.
+Live-coding complete versions are included, because they are useful for review after class. Worksheet solutions are not included here and are released separately through Keats when appropriate.
 
 ## Lecture slides
 
@@ -45,10 +30,6 @@ lecture_slides/week-02/slides.html
 lecture_slides/week-02/slides.pdf
 ...
 ```
-
-The HTML and PDF files are generated from the private teaching repository's QMD source with speaker
-notes stripped. Do not hand-edit slide files here; regenerate them from the private repository so
-there is only one source version.
 
 ## Data files
 
@@ -75,27 +56,7 @@ worksheet needs an `encoding=` argument.
 
 ## Human-subjects data published here
 
-Two datasets in this repository are about people rather than objects or texts. Both are already
-published openly by their originators, and both are redistributed here **with attribution** so that
-Colab can reach them:
+Two datasets in this repository are about people rather than objects or texts. Both are already published openly by their originators, and both are redistributed here **with attribution** so that Colab can reach them:
 
-- **`LothianDiaries/`** — the Lothian Diary Project's own anonymised public release of Covid-19
-  lockdown diary transcripts, University of Edinburgh. Full citation, DOI, papers and licence note
-  in [`LothianDiaries/README.md`](LothianDiaries/README.md). Cite the DataShare deposit
-  (<https://doi.org/10.7488/ds/3009>), not this repository. Note that speakers introduce themselves
-  by **first name** — that is how the depositors published it, but it still matters for any
-  named-entity work.
-- **`ncv-data-2020-Apr-1.csv`** — UK government Covid-19 attitudes survey microdata (age, gender,
-  self-rated knowledge, lockdown compliance, perceived chance of infection). Public and anonymised.
-  ⚠️ **The exact source URL still needs adding here** so the attribution is complete.
-
-Everything in this repository is world-readable and effectively permanent. Before adding any further
-dataset about people, confirm it is already openly published by its originator; if it is not, it
-belongs on KEATS behind authentication instead.
-
-## Maintenance
-
-The private teaching repository pins this public repository at a specific Git commit, so Moodle
-materials and worksheets can point to a known version of the student-facing files. When public
-worksheets or data files change, commit those changes here first, then update the pinned reference
-from the private repository.
+- **`LothianDiaries/`** — the Lothian Diary Project's own anonymised public release of Covid-19 lockdown diary transcripts, University of Edinburgh. Full citation, DOI, papers and licence note in [`LothianDiaries/README.md`](LothianDiaries/README.md). Cite the DataShare deposit (<https://doi.org/10.7488/ds/3009>), not this repository. 
+- **`ncv-data-2020-Apr-1.csv`** — UK government Covid-19 attitudes survey microdata (age, gender, self-rated knowledge, lockdown compliance, perceived chance of infection). Public and anonymised. **Note to self: The exact source URL still needs adding here - UK Data Bank?** 
