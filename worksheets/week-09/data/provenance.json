@@ -1,0 +1,167 @@
+{
+  "source_hashes": {
+    "data\\wikipedia\\wikipedia_corpus_full.jsonl": "feaa72fa8852b2a8b7611a7e4d3e0637ba52424c2cd79f36847e95b6291aaa06",
+    "data\\wikipedia\\venue_wikipedia_matches_full.csv": "1babd337bb00303ec0a1633ddd6dff85d20e6f5cb5133fcc2764ed1b43918020",
+    "data\\reviews\\museum_reviews_london.csv": "34fe510927b2d24efd9506b06a9a7aada6c52232f2ae4f641311ecba96e5f69b"
+  },
+  "spacy": "3.8.15",
+  "model": "en_core_web_sm",
+  "model_version": "3.8.0",
+  "frequency_rule": "Remove section-heading lines; alphabetic tokens; exclude spaCy stop words; lower-case lemmas. Denominator = retained tokens. Names retained.",
+  "working_rule": "Distinct pageids linked by at least one own site match; related-only pages excluded.",
+  "working_documents": 413,
+  "collocation_rule": "Adjacent alphabetic surface-token pairs within sentences/documents; lower-case; punctuation interrupts adjacency; heading lines removed. PMI marginals are left/right positions in eligible pair slots; minimum pair count 5 and document count 3. Both-stop-word and one-stop-word pairs hidden only after counting.",
+  "eligible_pair_slots": 447905,
+  "teaching_tables": {
+    "articles": "Three selected complete articles; original text retained separately from heading-stripped text.",
+    "collocations": "Curated union of top-frequency pairs, top-PMI pairs and lecture candidates. Not an exhaustive pair table.",
+    "concordances": "Up to four retrieved sentences per candidate pair, plus the three selected-article music passages used on the lecture slide; not exhaustive occurrences. query_kind distinguishes surface forms from adjacent pairs.",
+    "reviews": "Three intentionally selected short museum reviews for interpretation; not a representative sample.",
+    "review_ids": "Teaching identifiers derived from text hashes, not source-provided unique review IDs.",
+    "review_scores": "All 468 museum reviews (five London venues, 2023-24) with their star rating, for a whole-sample sentiment check. Wording unchanged; not a representative visitor sample.",
+    "corpus": "All articles in the current full Wikipedia corpus, including related-only pages; one row per doc_id. Primary category uses Museum, then Theatre, then Music venue priority; borough is the first listed borough. Text has section-heading lines removed. Tokenisation and word selection happen in the lecture, not in this file."
+  },
+  "lecture_corpus": {
+    "file": "w09_corpus.csv.gz",
+    "documents": 439,
+    "scope": "All rows in wikipedia_corpus_full.jsonl, including related-only pages; distinct doc_id values, not venue records.",
+    "match_classes": {
+      "own": 412,
+      "related": 26,
+      "own;related": 1
+    },
+    "category_documents": {
+      "Music venue": 99,
+      "Museum": 166,
+      "Theatre": 174
+    },
+    "category_rule": "Museums and public galleries -> Museum; otherwise Theatre -> Theatre; otherwise Music venue. A single teaching label, not a claim that venues have only one function.",
+    "borough_rule": "First semicolon-separated source borough; not a unique location for multi-site articles.",
+    "counting_rule": "spaCy nlp.tokenizer; alphabetic tokens only; exclude spaCy stop words; lowercase surface forms (token.lower_), not lemmas. Denominator for category percentages: all retained word occurrences in that category.",
+    "source_attribution": "Wikipedia contributors, CC BY-SA 4.0; doc_id = wiki_{pageid}. Article URLs, revisions, venue links and full attribution are retained in the source JSONL. w09_articles.csv carries them for the three workshop articles."
+  },
+  "prepared_summary_cohort": {
+    "documents": 413,
+    "rule": "Distinct pageids linked by at least one own site match; related-only pages excluded.",
+    "files": [
+      "w09_prevalence.csv",
+      "w09_collocations.csv"
+    ],
+    "note": "Supplementary prepared summaries use the own-match subset, unlike the full lecture corpus. Top-level working_documents and frequency_rule describe these prepared examples, not the lecture surface-word counts."
+  },
+  "sentiment_reviews": {
+    "file": "w09_review_scores.csv",
+    "reviews": 468,
+    "venues": 5,
+    "date_range": [
+      "2023-11-30",
+      "2024-12-08"
+    ],
+    "rule": "All source museum reviews with an integer star rating from 1 to 5; original text, case and punctuation retained. VADER compound scores are calculated live; no precomputed sentiment score column.",
+    "source_doi": "10.5281/zenodo.16752356",
+    "licence": "CC BY 4.0"
+  },
+  "table_inventory": {
+    "w09_article_terms.csv": {
+      "rows": 12,
+      "columns": [
+        "doc_id",
+        "title",
+        "term",
+        "count",
+        "retained_tokens"
+      ],
+      "sha256": "8a5f1a53ee70c1a70d8d0cd928a906bb3c3dbf523347c0d7f753501648268458"
+    },
+    "w09_articles.csv": {
+      "rows": 3,
+      "columns": [
+        "doc_id",
+        "venue_ids",
+        "title",
+        "categories",
+        "url",
+        "revid",
+        "rev_timestamp",
+        "licence",
+        "text_original",
+        "text",
+        "opening_sentence"
+      ],
+      "sha256": "ab99f60194b355bae731dd0e5357ff41c84080163ed17adb9bac3bcb6ff518bf"
+    },
+    "w09_collocations.csv": {
+      "rows": 27,
+      "columns": [
+        "pair",
+        "count",
+        "documents",
+        "pmi"
+      ],
+      "sha256": "3e875d90a79ea561980da88434a1815f59d2667f2d542619b0e77ddb69ecdf36"
+    },
+    "w09_concordances.csv": {
+      "rows": 19,
+      "columns": [
+        "query",
+        "query_kind",
+        "pair",
+        "title",
+        "doc_id",
+        "sentence",
+        "url",
+        "revid",
+        "excerpt",
+        "licence"
+      ],
+      "sha256": "945752c17aa347785d5d9048d1979478304c679d751f949aa17fcac07c6f8362"
+    },
+    "w09_corpus.csv.gz": {
+      "rows": 439,
+      "columns": [
+        "doc_id",
+        "title",
+        "category",
+        "borough",
+        "text"
+      ],
+      "sha256": "7608ab5e4ac9db4cc4764019ab62daa4516ffa8d7930fc968f7aa79085602f04"
+    },
+    "w09_prevalence.csv": {
+      "rows": 3,
+      "columns": [
+        "surface_form",
+        "documents",
+        "percent",
+        "corpus_documents"
+      ],
+      "sha256": "c01ed38fea41513d0af5abe2a8238e99ac940616c26f17114693246b54ea3bc2"
+    },
+    "w09_review_scores.csv": {
+      "rows": 468,
+      "columns": [
+        "canonical_name",
+        "rating",
+        "review_date_iso",
+        "translated_flag",
+        "review_text"
+      ],
+      "sha256": "e3fee2336dd61aaabec5589e681bb2bea54f22885dd5717e224f603c89755a05"
+    },
+    "w09_reviews.csv": {
+      "rows": 3,
+      "columns": [
+        "review_id",
+        "venue_id",
+        "canonical_name",
+        "review_date_iso",
+        "rating",
+        "translated_flag",
+        "review_text",
+        "source_doi",
+        "licence"
+      ],
+      "sha256": "c33af58a2f9dd11a00654c32e4dff0a197241c041754ae94a1113b24b8ee4d5c"
+    }
+  }
+}

@@ -19,6 +19,17 @@ worksheets/week-11/
 
 Live-coding complete versions are included, because they are useful for review after class. Worksheet solutions are not included here and are released separately through Keats when appropriate.
 
+## Week 9: Text analysis and sentiment
+
+The current [Week 9 notebooks](worksheets/week-09/) cover introductory spaCy,
+London venue text comparisons and basic loops and conditionals. The folder
+includes the live notebooks, the main worksheet, further London practice and
+the self-study loops worksheet, with paired Python files. Required teaching
+tables and their attribution are in [the adjacent data folder](worksheets/week-09/data/README.md).
+The lecture uses 439 Wikipedia articles and a separate 468-review museum example.
+[Week 9 slides](lecture_slides/week-09/slides.html) and
+[the printable PDF](lecture_slides/week-09/slides.pdf) contain no presenter notes.
+
 ## Lecture slides
 
 Student-facing slides are organised by week:

@@ -1,0 +1,4 @@
+review_id,venue_id,canonical_name,review_date_iso,rating,translated_flag,review_text,source_doi,licence
+museum_04e14f76fa71,cim2023_2731,Victoria and Albert Museum,2024-07-30,3,0,Very rude ladies at the cafe. But lovely museum,10.5281/zenodo.16752356,CC BY 4.0
+museum_a66706fa00ed,cim2023_2739,Tate Modern,2024-09-08,4,0,"Amazing experience. But beware the ticket office. They add a ""donation"" without telling you.",10.5281/zenodo.16752356,CC BY 4.0
+museum_53f8667b93c0,cim2023_2685,British Museum,2024-11-08,3,0,Very interesting peaces but too many people and the building is not climatized,10.5281/zenodo.16752356,CC BY 4.0
