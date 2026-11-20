@@ -27,16 +27,26 @@ import pandas as pd
 from pathlib import Path
 nlp = spacy.load('en_core_web_sm')
 
-
 # %% tags=["provided-file-setup"]
-# PROVIDED FILE LOCATOR: locates supplied CSVs without loading or analysing them.
+# PROVIDED FILE LOCATOR: use local teaching files or download them from GitHub.
+from pathlib import Path
+from urllib.request import urlopen
 def teaching_file(name):
     for parent in (Path.cwd(), *Path.cwd().parents):
         for candidate in (parent / "data" / name,
-                          parent / "weeks/week-09/data" / name, parent / name):
+                          parent / "weeks/week-09/data" / name,
+                          parent / "worksheets/week-09/data" / name, parent / name):
             if candidate.is_file():
                 return candidate
-    raise FileNotFoundError(f"Cannot find {name}. Extract the Week 9 download, or upload the supplied data files in Colab.")
+    url = ("https://raw.githubusercontent.com/markjhill/7AAVBCS5-data/main/"
+           "worksheets/week-09/data/" + name)
+    print(f"Downloading {name} from the module GitHub repository...")
+    with urlopen(url, timeout=60) as response:
+        content = response.read()
+    target = Path.cwd() / "data" / name
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes(content)
+    return target
 
 
 # %% tags=["provided-setup"]

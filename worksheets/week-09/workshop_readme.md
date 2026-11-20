@@ -54,7 +54,9 @@ The file locator supports the module folder and files uploaded beside a notebook
 in Colab. Source URLs, revision IDs and licensing are retained with the article rows.
 The larger corpus and review data remain in the download for the lecture.
 
-In Colab, upload the notebook and the supplied data files. If spaCy or its English
+In Colab, open or upload the notebook. The supplied file locator downloads missing
+teaching data from the module's GitHub repository and keeps a local copy for reuse.
+If spaCy or its English
 model is missing, run these once in separate setup cells before the worksheet:
 
 ```python
